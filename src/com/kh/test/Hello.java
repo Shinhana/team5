@@ -19,6 +19,7 @@ System.out.println("dkdkd");
 	public static void main(String[] args) {
 		
 
+		syso
 	}
 
 }
