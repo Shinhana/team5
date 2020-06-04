@@ -2,13 +2,13 @@ package com.kh.test;
 
 import java.util.Scanner;
 
-public class Hello {
+public class Jaemin {
 	public void state() {
 		Scanner sc = new Scanner(System.in);
-		System.out.println("Áö±İ³»»óÅÂ´Â?");
-		System.out.println("1.Á¹¸®´Ù");
-		System.out.println("1¹øÀ» ´­·¯ ÁÖ½Ã¿ä");
-System.out.println("dkdkd");
+		System.out.println("ì§€ê¸ˆë‚´ìƒíƒœëŠ”?");
+		System.out.println("1.ì¡¸ë¦¬ë‹¤");
+ 		System.out.println("1ë²ˆì„ ëˆŒëŸ¬ ì£¼ì‹œìš”");
+    System.out.println("dkdkd");
 	}
 	
 	
@@ -17,11 +17,9 @@ System.out.println("dkdkd");
 	
 
 	public static void main(String[] args) {
-		
 
-	}
-
-}
-	}
 	
-}
+		System.out.println("ë‹¤ì‹œ ë ê¹Œìš”??");
+		System.out.println("í•œë²ˆë” ");
+	}
+
