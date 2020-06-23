@@ -1,4 +1,4 @@
-package team5.miniProject.chapter.chap03;
+package miniProject.chapter.chap03;
 
 import java.awt.Color;
 import java.awt.Graphics;
@@ -15,19 +15,22 @@ import miniProject.Run.PanelChange;
 
 
 
-public class Chap03OperatorPart01 extends JPanel{
+
+
+public class Chap03OperatorPart02 extends JPanel{
+
+	
 	Image image;
 	private PanelChange win;
 	private JTextArea memoTextField;
 	
 	
-	public Chap03OperatorPart01 (PanelChange win){
+	public Chap03OperatorPart02 (PanelChange win){
 		setLayout(null);
 		this.win = win;
 		
-		image = new ImageIcon("images/Operator_Part1.png").getImage();
-	
-		 //처음으로 돌아가는 버튼
+		image = new ImageIcon("images/Operator_Part2.png").getImage();
+		
 		JButton reset = new JButton("목차로");
 		reset.setSize(20,20);
 		reset.setBorderPainted(false); //테두리 페인팅
@@ -56,6 +59,24 @@ public class Chap03OperatorPart01 extends JPanel{
 		add(last);
 		last.addActionListener(new Last());
 		
+		JButton start = new JButton("맨 앞으로");
+		start.setSize(20,20);
+		start.setBorderPainted(false); //테두리 페인팅
+		start.setFocusPainted(false);
+		start.setContentAreaFilled(false);//누를 때 표시됨
+		start.setLocation(150,615);
+		add(start);
+		start.addActionListener(new Start());
+		
+		JButton back = new JButton("이전");
+		back.setSize(20,20);
+		back.setLocation(170,615);
+		back.setBorderPainted(false); //테두리 페인팅
+		back.setFocusPainted(false);
+		back.setContentAreaFilled(false);//누를 때 표시됨
+		add(back);
+		back.addActionListener(new Back());
+		
 		memoTextField =  new JTextArea();
 		memoTextField.setBounds(50,520,280,100);
 		memoTextField.setOpaque(false);
@@ -65,11 +86,6 @@ public class Chap03OperatorPart01 extends JPanel{
 		
 		add(memoTextField);
 	}
-	
-	
-	
-	
-	
 	@Override 
 	public void paint(Graphics g){
 		g.drawImage(image, 0, 0, getWidth(),getHeight(),this);
@@ -81,17 +97,33 @@ public class Chap03OperatorPart01 extends JPanel{
 		public void actionPerformed(ActionEvent e){
 			win.change("panellist");
 		}
-}
-class Next implements ActionListener{
+	}
+		class Next implements ActionListener{
 			@Override
 			public void actionPerformed(ActionEvent e){
-				win.change("operator_part2");
+				win.change("operator_part3");
 			}
 		}
-class Last implements ActionListener{
+		
+		class Back implements ActionListener{
 			@Override
 			public void actionPerformed(ActionEvent e){
-				win.change("operator_quiz2");
+				win.change("operator_part1");
 			}
 		}
+		
+		class Start implements ActionListener{
+			@Override
+			public void actionPerformed(ActionEvent e){
+				win.change("operator_part1");
+			}
+		}
+		
+		class Last implements ActionListener{
+			@Override
+			public void actionPerformed(ActionEvent e){
+				win.change("operator_part5");
+			}
+		}
+		
 }
