@@ -1,4 +1,4 @@
-package game.practice.chap06;
+package team5.miniProject.chapter.chap06;
 
 import javax.swing.JFrame;
 

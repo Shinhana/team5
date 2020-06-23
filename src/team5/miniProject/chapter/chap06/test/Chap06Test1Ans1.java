@@ -1,4 +1,4 @@
-package game.practice.test;
+package team5.miniProject.chapter.chap06.test;
 
 import java.awt.Graphics;
 import java.awt.Image;
@@ -10,7 +10,7 @@ import javax.swing.JButton;
 import javax.swing.JPanel;
 import javax.swing.JTextArea;
 
-import game.practice.chap06.Chap06Run;
+import team5.miniProject.chapter.chap06.Chap06Run;
 
 
 
