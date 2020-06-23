@@ -1,4 +1,4 @@
-package game.practice.quiz;
+package team5.miniProject.chapter.chap06.quiz;
 
 import java.awt.Graphics;
 import java.awt.Image;

@@ -1,4 +1,4 @@
-package game.practice.quiz;
+package team5.miniProject.chapter.chap06.quiz;
 
 import java.awt.Color;
 import java.awt.Graphics;
@@ -10,7 +10,7 @@ import javax.swing.ImageIcon;
 import javax.swing.JButton;
 import javax.swing.JPanel;
 
-import game.practice.chap06.Chap06Run;
+import team5.miniProject.chapter.chap06.Chap06Run;
 
 public class Chap06Choice extends JPanel{
       Image image;

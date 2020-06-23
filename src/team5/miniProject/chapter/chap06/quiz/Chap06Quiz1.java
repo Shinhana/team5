@@ -1,4 +1,4 @@
-package game.practice.quiz;
+package team5.miniProject.chapter.chap06.quiz;
 
 import java.awt.Graphics;
 import java.awt.Image;
@@ -10,7 +10,7 @@ import javax.swing.JButton;
 import javax.swing.JPanel;
 import javax.swing.JTextArea;
 
-import game.practice.chap06.Chap06Run;
+import team5.miniProject.chapter.chap06.Chap06Run;
 
 public class Chap06Quiz1 extends JPanel{
 

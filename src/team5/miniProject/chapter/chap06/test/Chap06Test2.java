@@ -1,4 +1,4 @@
-package game.practice.test;
+package team5.miniProject.chapter.chap06.test;
 
 import java.awt.Color;
 import java.awt.Graphics;
@@ -12,8 +12,7 @@ import javax.swing.JOptionPane;
 import javax.swing.JPanel;
 import javax.swing.JTextArea;
 
-import game.practice.chap06.Chap06Run;
-//import game.practice.chap06.Chap06Part2DArray1.MyActionListener2;
+import team5.miniProject.chapter.chap06.Chap06Run;
 
 
 
