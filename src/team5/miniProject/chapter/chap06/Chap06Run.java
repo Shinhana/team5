@@ -2,19 +2,19 @@ package team5.miniProject.chapter.chap06;
 
 import javax.swing.JFrame;
 
-import game.practice.quiz.Chap06Ans1;
-import game.practice.quiz.Chap06Ans2;
-import game.practice.quiz.Chap06AnsO;
-import game.practice.quiz.Chap06AnsX;
-import game.practice.quiz.Chap06Choice;
-import game.practice.quiz.Chap06Quiz1;
-import game.practice.quiz.Chap06Quiz2;
-import game.practice.test.Chap06Test1;
-import game.practice.test.Chap06Test1Ans1;
-import game.practice.test.Chap06Test1Ans2;
-import game.practice.test.Chap06Test2;
-import game.practice.test.Chap06Test2Ans1;
-import game.practice.test.Chap06Test2Ans2;
+import team5.miniProject.chapter.chap06.quiz.Chap06Ans1;
+import team5.miniProject.chapter.chap06.quiz.Chap06Ans2;
+import team5.miniProject.chapter.chap06.quiz.Chap06AnsO;
+import team5.miniProject.chapter.chap06.quiz.Chap06AnsX;
+import team5.miniProject.chapter.chap06.quiz.Chap06Choice;
+import team5.miniProject.chapter.chap06.quiz.Chap06Quiz1;
+import team5.miniProject.chapter.chap06.quiz.Chap06Quiz2;
+import team5.miniProject.chapter.chap06.test.Chap06Test1;
+import team5.miniProject.chapter.chap06.test.Chap06Test1Ans1;
+import team5.miniProject.chapter.chap06.test.Chap06Test1Ans2;
+import team5.miniProject.chapter.chap06.test.Chap06Test2;
+import team5.miniProject.chapter.chap06.test.Chap06Test2Ans1;
+import team5.miniProject.chapter.chap06.test.Chap06Test2Ans2;
 public class Chap06Run extends JFrame{
 
 	public JPanelList list =null;
