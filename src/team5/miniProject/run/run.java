@@ -1,4 +1,4 @@
-package miniProject.Run;
+package team5.miniProject.run;
 
 import javax.swing.JFrame;
 
