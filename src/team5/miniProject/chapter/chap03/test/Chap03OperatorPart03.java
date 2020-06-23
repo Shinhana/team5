@@ -1,4 +1,4 @@
-package team5.miniProject.chapter.chap03;
+package miniProject.chapter.chap03;
 
 import java.awt.Color;
 import java.awt.Graphics;
@@ -13,23 +13,18 @@ import javax.swing.JTextArea;
 
 import miniProject.Run.PanelChange;
 
+public class Chap03OperatorPart03 extends JPanel{
 
-
-
-
-public class Chap03OperatorPart02 extends JPanel{
-
-	
 	Image image;
 	private PanelChange win;
 	private JTextArea memoTextField;
 	
-	
-	public Chap03OperatorPart02 (PanelChange win){
+	public Chap03OperatorPart03(PanelChange win){
+		
 		setLayout(null);
 		this.win = win;
 		
-		image = new ImageIcon("images/Operator_Part2.png").getImage();
+		image = new ImageIcon("images/Operator_Part3.png").getImage();
 		
 		JButton reset = new JButton("¸ñÂ÷·Î");
 		reset.setSize(20,20);
@@ -86,6 +81,8 @@ public class Chap03OperatorPart02 extends JPanel{
 		
 		add(memoTextField);
 	}
+	
+	
 	@Override 
 	public void paint(Graphics g){
 		g.drawImage(image, 0, 0, getWidth(),getHeight(),this);
@@ -101,14 +98,14 @@ public class Chap03OperatorPart02 extends JPanel{
 		class Next implements ActionListener{
 			@Override
 			public void actionPerformed(ActionEvent e){
-				win.change("operator_part3");
+				win.change("operator_part4");
 			}
 		}
 		
 		class Back implements ActionListener{
 			@Override
 			public void actionPerformed(ActionEvent e){
-				win.change("operator_part1");
+				win.change("operator_part2");
 			}
 		}
 		
@@ -125,5 +122,5 @@ public class Chap03OperatorPart02 extends JPanel{
 				win.change("operator_part5");
 			}
 		}
-		
+	
 }

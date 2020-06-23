@@ -1,4 +1,4 @@
-package miniProject;
+package team5.miniProject.menu;
 
 import java.awt.Color;
 import java.awt.Graphics;

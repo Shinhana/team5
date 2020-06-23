@@ -1,46 +1,35 @@
-package miniProject.Run;
+package team5.miniProject.run;
 
 import javax.swing.JFrame;
 
-import miniProject.JPanel_Login;
-import miniProject.JPanel_Main;
-import miniProject.PanelList;
-import miniProject.chapter.chap01.Chap01ProgramPart01;
-import miniProject.chapter.chap01.Chap01ProgramPart02;
-import miniProject.chapter.chap01.Chap01ProgramPart03;
-import miniProject.chapter.chap01.Chap01ProgramPart04;
-import miniProject.chapter.chap01.Chap01ProgramPart05;
-import miniProject.chapter.chap01.Chap01ProgramPart06;
-import miniProject.chapter.chap01.Chap01ProgramPart07;
-import miniProject.chapter.chap03.Chap03OperatorPart01;
-import miniProject.chapter.chap03.Chap03OperatorPart02;
-import miniProject.chapter.chap03.Chap03OperatorPart03;
-import miniProject.chapter.chap03.Chap03OperatorPart04;
-import miniProject.chapter.chap03.Chap03OperatorPart05;
-import miniProject.chapter.chap03.quiz.Chap03OperatorQuiz1;
-import miniProject.chapter.chap03.quiz.Chap03OperatorQuiz2;
-import miniProject.chapter.chap03.quiz.Chap03OperatorQuizAnswer1;
-import miniProject.chapter.chap03.quiz.Chap03OperatorQuizAnswer2;
-import miniProject.chapter.chap03.test.Chap03OperatorTest1;
-import miniProject.chapter.chap03.test.Chap03OperatorTest2;
-import miniProject.chapter.chap03.test.Chap03OperatorTestAnswer1;
-import miniProject.chapter.chap05.Chap05Array;
-import miniProject.chapter.chap05.Chap05ArrayPart1;
-import miniProject.chapter.chap05.Chap05ArrayPart2;
-import miniProject.chapter.chap05.Chap05ArrayPart3;
-import miniProject.chapter.chap05.Chap05ArrayPart4;
-import miniProject.chapter.chap05.Chap05ArrayPart5;
-import miniProject.chapter.chap05.Chap05ArrayPart6;
-import miniProject.chapter.chap06.Chap06;
-import miniProject.chapter.chap06.Chap06Part1NLoop1;
-import miniProject.chapter.chap06.Chap06Part1NLoop2;
-import miniProject.chapter.chap06.Chap06Part1NLoop3;
-import miniProject.chapter.chap06.Chap06Part1NLoop4;
-import miniProject.chapter.chap06.Chap06Part1NLoop5;
-import miniProject.chapter.chap06.Chap06Part2DArray1;
-import miniProject.chapter.chap06.Chap06Part2DArray2;
-import miniProject.chapter.chap06.Chap06Part2DArray3;
-import miniProject.chapter.chap06.Chap06Part2DArray4;
+import team5.miniProject.chapter.chap03.Chap03OperatorPart01;
+import team5.miniProject.chapter.chap03.Chap03OperatorPart02;
+import team5.miniProject.chapter.chap03.Chap03OperatorPart03;
+import team5.miniProject.chapter.chap03.Chap03OperatorPart04;
+import team5.miniProject.chapter.chap03.Chap03OperatorPart05;
+import team5.miniProject.chapter.chap05.Chap05Array;
+import team5.miniProject.chapter.chap05.Chap05ArrayPart1;
+import team5.miniProject.chapter.chap05.Chap05ArrayPart2;
+import team5.miniProject.chapter.chap05.Chap05ArrayPart3;
+import team5.miniProject.chapter.chap05.Chap05ArrayPart4;
+import team5.miniProject.chapter.chap05.Chap05ArrayPart5;
+import team5.miniProject.chapter.chap05.Chap05ArrayPart6;
+import team5.miniProject.chapter.chap06.Chap06;
+import team5.miniProject.chapter.chap06.Chap06Part1NLoop1;
+import team5.miniProject.chapter.chap06.Chap06Part1NLoop2;
+import team5.miniProject.chapter.chap06.Chap06Part1NLoop3;
+import team5.miniProject.chapter.chap06.Chap06Part1NLoop4;
+import team5.miniProject.chapter.chap06.Chap06Part1NLoop5;
+import team5.miniProject.chapter.chap06.Chap06Part2DArray1;
+import team5.miniProject.chapter.chap06.Chap06Part2DArray2;
+import team5.miniProject.chapter.chap06.Chap06Part2DArray3;
+import team5.miniProject.chapter.chap06.Chap06Part2DArray4;
+import team5.miniProject.menu.JPanel_Login;
+import team5.miniProject.menu.JPanel_Main;
+import team5.miniProject.menu.PanelList;
+
+
+
 
 public class PanelChange extends JFrame{
 

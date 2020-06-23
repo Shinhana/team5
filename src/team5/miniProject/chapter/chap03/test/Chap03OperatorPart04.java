@@ -1,6 +1,5 @@
-package team5.miniProject.chapter.chap03;
+package miniProject.chapter.chap03;
 
-import java.awt.Color;
 import java.awt.Graphics;
 import java.awt.Image;
 import java.awt.event.ActionEvent;
@@ -13,23 +12,18 @@ import javax.swing.JTextArea;
 
 import miniProject.Run.PanelChange;
 
+public class Chap03OperatorPart04 extends JPanel{
 
-
-
-
-public class Chap03OperatorPart02 extends JPanel{
-
-	
 	Image image;
 	private PanelChange win;
 	private JTextArea memoTextField;
 	
-	
-	public Chap03OperatorPart02 (PanelChange win){
+	public Chap03OperatorPart04(PanelChange win){
+		
 		setLayout(null);
 		this.win = win;
 		
-		image = new ImageIcon("images/Operator_Part2.png").getImage();
+		image = new ImageIcon("images/Operator_Part4.png").getImage();
 		
 		JButton reset = new JButton("목차로");
 		reset.setSize(20,20);
@@ -77,21 +71,15 @@ public class Chap03OperatorPart02 extends JPanel{
 		add(back);
 		back.addActionListener(new Back());
 		
-		memoTextField =  new JTextArea();
-		memoTextField.setBounds(50,520,280,100);
-		memoTextField.setOpaque(false);
-		memoTextField.setForeground(Color.WHITE);
-		//테스트 공간 테두리 숨기기 
-		memoTextField.setBorder(javax.swing.BorderFactory.createEmptyBorder());
-		
-		add(memoTextField);
 	}
+
 	@Override 
 	public void paint(Graphics g){
 		g.drawImage(image, 0, 0, getWidth(),getHeight(),this);
 		setOpaque(false);//투명하게
 		super.paint(g);
 	}
+	
 	class Reset implements ActionListener{
 		@Override
 		public void actionPerformed(ActionEvent e){
@@ -101,14 +89,14 @@ public class Chap03OperatorPart02 extends JPanel{
 		class Next implements ActionListener{
 			@Override
 			public void actionPerformed(ActionEvent e){
-				win.change("operator_part3");
+				win.change("operator_part5");
 			}
 		}
 		
 		class Back implements ActionListener{
 			@Override
 			public void actionPerformed(ActionEvent e){
-				win.change("operator_part1");
+				win.change("operator_part3");
 			}
 		}
 		
@@ -125,5 +113,4 @@ public class Chap03OperatorPart02 extends JPanel{
 				win.change("operator_part5");
 			}
 		}
-		
 }

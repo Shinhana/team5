@@ -1,4 +1,4 @@
-package team5.miniProject.chapter.chap03;
+package miniProject.chapter.chap03.quiz;
 
 import java.awt.Color;
 import java.awt.Graphics;
@@ -13,23 +13,19 @@ import javax.swing.JTextArea;
 
 import miniProject.Run.PanelChange;
 
+public class Chap03OperatorQuizAnswer2 extends JPanel{
 
-
-
-
-public class Chap03OperatorPart02 extends JPanel{
-
-	
 	Image image;
 	private PanelChange win;
 	private JTextArea memoTextField;
 	
-	
-	public Chap03OperatorPart02 (PanelChange win){
+	public Chap03OperatorQuizAnswer2(PanelChange win){
+		
+
 		setLayout(null);
 		this.win = win;
 		
-		image = new ImageIcon("images/Operator_Part2.png").getImage();
+		image = new ImageIcon("images/Operator_Quiz2_Answer.png").getImage();
 		
 		JButton reset = new JButton("목차로");
 		reset.setSize(20,20);
@@ -85,30 +81,33 @@ public class Chap03OperatorPart02 extends JPanel{
 		memoTextField.setBorder(javax.swing.BorderFactory.createEmptyBorder());
 		
 		add(memoTextField);
+			
 	}
+	
 	@Override 
 	public void paint(Graphics g){
 		g.drawImage(image, 0, 0, getWidth(),getHeight(),this);
 		setOpaque(false);//투명하게
 		super.paint(g);
 	}
+	
 	class Reset implements ActionListener{
 		@Override
 		public void actionPerformed(ActionEvent e){
-			win.change("panellist");
+			win.change("operator_part1");
 		}
 	}
 		class Next implements ActionListener{
 			@Override
 			public void actionPerformed(ActionEvent e){
-				win.change("operator_part3");
+				win.change("operator_testAnswer2");
 			}
 		}
 		
 		class Back implements ActionListener{
 			@Override
 			public void actionPerformed(ActionEvent e){
-				win.change("operator_part1");
+				win.change("operator_quizAnswer1");
 			}
 		}
 		
@@ -122,8 +121,9 @@ public class Chap03OperatorPart02 extends JPanel{
 		class Last implements ActionListener{
 			@Override
 			public void actionPerformed(ActionEvent e){
-				win.change("operator_part5");
+				win.change("operator_testAnswer2");
 			}
 		}
-		
+	
+	
 }
