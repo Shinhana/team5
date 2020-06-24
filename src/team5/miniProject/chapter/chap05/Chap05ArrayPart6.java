@@ -1,4 +1,4 @@
-package com.kh.model.chap05;
+package team5.miniProject.chapter.chap05;
 
 import java.awt.Graphics;
 import java.awt.Image;
@@ -11,48 +11,48 @@ import javax.swing.JFrame;
 import javax.swing.JPanel;
 import javax.swing.JTextField;
 
-import com.kh.model.controller.ChangePanel;
+import team5.miniProject.run.PanelChange;
 
 public class Chap05ArrayPart6 extends JPanel {
 	JFrame f = new JFrame();
-	private ChangePanel ch;
+	private PanelChange win;
 	private JTextField textField;
 	Image imageMain;
 	
 	private JButton reset; //목차
 	private JButton next; // >
-	private JButton Last; // >>
+	private JButton last; // >>
 	private JButton back; // <
 	private JButton start; // <<
 	
-	public Chap05ArrayPart6(ChangePanel ch) {
-		this.ch = ch;
+	public Chap05ArrayPart6(PanelChange win) {
+		this.win = win;
 		setLayout(null);
 		
 		back = new JButton();
 		back.setSize(25,25);
 		back.setLocation(150,530);
-		back.addActionListener(new MyActionListener());
+		back.addActionListener(new Back());
 		
 		start= new JButton();
 		start.setSize(25,25);
 		start.setLocation(195,530);
-		start.addActionListener(new MyActionListener2());
+		start.addActionListener(new Start());
 		
 		reset = new JButton();
 		reset.setSize(25,25);
 		reset.setLocation(100,530);
-		reset.addActionListener(new MyActionListener3());
+		reset.addActionListener(new Reset());
 		
 		next = new JButton();
 		next.setSize(150,60);
 		next.setLocation(90,190);
-		next.addActionListener(new MyActionListener4());
+		next.addActionListener(new Next());
 		
-		Last = new JButton();
-		Last.setSize(150,60);
-		Last.setLocation(90,390);
-		Last.addActionListener(new MyActionListener5());
+		last = new JButton();
+		last.setSize(150,60);
+		last.setLocation(90,390);
+		last.addActionListener(new Last());
 		
 		imageMain = new ImageIcon("images/Array문제.PNG").getImage();
 
@@ -76,10 +76,10 @@ public class Chap05ArrayPart6 extends JPanel {
 		next.setContentAreaFilled(false);
 		this.add(next);
 		
-		Last.setBorderPainted(false);
-		Last.setFocusPainted(false);
-		Last.setContentAreaFilled(false);
-		this.add(Last);
+		last.setBorderPainted(false);
+		last.setFocusPainted(false);
+		last.setContentAreaFilled(false);
+		this.add(last);
 		
 	}
 	
@@ -91,41 +91,41 @@ public class Chap05ArrayPart6 extends JPanel {
 	}
 
 
-	class MyActionListener implements ActionListener{
+	class Back implements ActionListener{
 
 		@Override
 		public void actionPerformed(ActionEvent e) {
-			ch.change("panel6");
+			win.change("panel6");
 
 		}
 	}
 
 
-	class MyActionListener2 implements ActionListener{
+	class Start implements ActionListener{
 		@Override
 		public void actionPerformed(ActionEvent e){
-			ch.change("panel1");
+			win.change("panel1");
 		}
 	}
-	class MyActionListener3 implements ActionListener{
+	class Reset implements ActionListener{
 
 		@Override
 		public void actionPerformed(ActionEvent e) {
-			ch.change("panel1");
+			win.change("panel1");
 
 		}
 	}
-	class MyActionListener4 implements ActionListener{
+	class Next implements ActionListener{
 		@Override
 		public void actionPerformed(ActionEvent e){
-			ch.change("panel7");
+			win.change("panel7");
 		}
 	}
-	class MyActionListener5 implements ActionListener{
+	class Last implements ActionListener{
 
 		@Override
 		public void actionPerformed(ActionEvent e) {
-			ch.change("panel13");
+			win.change("panel13");
 
 		}
 	}
