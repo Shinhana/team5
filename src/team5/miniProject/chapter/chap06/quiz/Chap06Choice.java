@@ -21,31 +21,31 @@ public class Chap06Choice extends JPanel{
       setLayout(null);
       this.win=win;
      
-      image = new ImageIcon("images/¼±ÅÃ.png").getImage();
+      image = new ImageIcon("images/cho.png").getImage();
    
       JButton btn = new JButton();
       btn.setSize(172, 81);
       btn.setLocation(100,180);
       
       
-      //¹öÆ° ¾Èº¸ÀÌ°Ô ¼û±è
+      //ï¿½ï¿½Æ° ï¿½Èºï¿½ï¿½Ì°ï¿½ ï¿½ï¿½ï¿½ï¿½
       btn.setBackground(Color.WHITE);
       btn.setOpaque(false);
-      btn.setBorderPainted(false); //Å×µÎ¸® ÆäÀÎÆÃ
+      btn.setBorderPainted(false); //ï¿½×µÎ¸ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
       btn.setFocusPainted(false);
-      btn.setContentAreaFilled(false);//´©¸¦ ¶§ Ç¥½ÃµÊ
+      btn.setContentAreaFilled(false);//ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ Ç¥ï¿½Ãµï¿½
       
       JButton btn1 = new JButton();
       btn1.setSize(172, 81);
       btn1.setLocation(100,380);
       
       
-      //¹öÆ° ¾Èº¸ÀÌ°Ô ¼û±è
+      //ï¿½ï¿½Æ° ï¿½Èºï¿½ï¿½Ì°ï¿½ ï¿½ï¿½ï¿½ï¿½
       btn1.setBackground(Color.WHITE);
       btn1.setOpaque(false);
-      btn1.setBorderPainted(false); //Å×µÎ¸® ÆäÀÎÆÃ
+      btn1.setBorderPainted(false); //ï¿½×µÎ¸ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
       btn1.setFocusPainted(false);
-      btn1.setContentAreaFilled(false);//´©¸¦ ¶§ Ç¥½ÃµÊ
+      btn1.setContentAreaFilled(false);//ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ Ç¥ï¿½Ãµï¿½
       
       
       
@@ -63,22 +63,22 @@ public class Chap06Choice extends JPanel{
    @Override 
    public void paint(Graphics g){
       g.drawImage(image, 0, 0, getWidth(),getHeight(),this);
-      setOpaque(false);//Åõ¸íÇÏ°Ô
+      setOpaque(false);//ï¿½ï¿½ï¿½ï¿½ï¿½Ï°ï¿½
       super.paint(g);
    }
    
    class Btn implements ActionListener{
       @Override
       public void actionPerformed(ActionEvent e){
-         win.change("panellist");  //ÀÚ¹Ù È¯°æ±¸Ãà ->Çï·Î¿ì, ¹Ùº¸ -> ¾ÆÀÌµð,¾ÏÈ£
-         //win.change("panel02"); // ÀÚ¹Ù È¯°æ±¸Ãà->Çï·Î¿ì ,¹Ùº¸ 
+         win.change("panellist");  //ï¿½Ú¹ï¿½ È¯ï¿½æ±¸ï¿½ï¿½ ->ï¿½ï¿½Î¿ï¿½, ï¿½Ùºï¿½ -> ï¿½ï¿½ï¿½Ìµï¿½,ï¿½ï¿½È£
+         //win.change("panel02"); // ï¿½Ú¹ï¿½ È¯ï¿½æ±¸ï¿½ï¿½->ï¿½ï¿½Î¿ï¿½ ,ï¿½Ùºï¿½ 
       }
    }
       class Btn1 implements ActionListener{
           @Override
           public void actionPerformed(ActionEvent e){
-             win.change("ts1");  //ÀÚ¹Ù È¯°æ±¸Ãà ->Çï·Î¿ì, ¹Ùº¸ -> ¾ÆÀÌµð,¾ÏÈ£
-             //win.change("panel02"); // ÀÚ¹Ù È¯°æ±¸Ãà->Çï·Î¿ì ,¹Ùº¸ 
+             win.change("ts1");  //ï¿½Ú¹ï¿½ È¯ï¿½æ±¸ï¿½ï¿½ ->ï¿½ï¿½Î¿ï¿½, ï¿½Ùºï¿½ -> ï¿½ï¿½ï¿½Ìµï¿½,ï¿½ï¿½È£
+             //win.change("panel02"); // ï¿½Ú¹ï¿½ È¯ï¿½æ±¸ï¿½ï¿½->ï¿½ï¿½Î¿ï¿½ ,ï¿½Ùºï¿½ 
           }
    }
 }

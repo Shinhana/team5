@@ -22,7 +22,7 @@ public class Chap06Quiz1 extends JPanel{
 		setLayout(null);
 		this.win=win;
 	
-		image = new ImageIcon("images/연습문제1.png").getImage();
+		image = new ImageIcon("images/OX.png").getImage();
 		
 		JButton O = new JButton();
 		O.setSize(100,100);

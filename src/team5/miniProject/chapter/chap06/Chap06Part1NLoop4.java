@@ -29,7 +29,7 @@ public class Chap06Part1NLoop4 extends JPanel{
 		this.win = win;
 		this.setBackground(Color.black);
 		
-		image = new ImageIcon("images/ÁßÃ¸4.png").getImage();
+		image = new ImageIcon("images/NL4.png").getImage();
 
 		
 		JButton next  = new JButton();
@@ -95,15 +95,15 @@ public class Chap06Part1NLoop4 extends JPanel{
 		@Override 
 			public void paint(Graphics g){
 			g.drawImage(image, 0, 0, getWidth(),getHeight(),this);
-			setOpaque(false);//Åõ¸íÇÏ°Ô
+			setOpaque(false);//ï¿½ï¿½ï¿½ï¿½ï¿½Ï°ï¿½
 		super.paint(g);
 		
 	}
 		class Next implements ActionListener{
 		@Override
 		public void actionPerformed(ActionEvent e){
-			win.change("panel04");  //ÀÚ¹Ù È¯°æ±¸Ãà ->Çï·Î¿ì, ¹Ùº¸ -> ¾ÆÀÌµð,¾ÏÈ£
-			//win.change("panel02"); // ÀÚ¹Ù È¯°æ±¸Ãà->Çï·Î¿ì ,¹Ùº¸ 
+			win.change("panel04");  //ï¿½Ú¹ï¿½ È¯ï¿½æ±¸ï¿½ï¿½ ->ï¿½ï¿½Î¿ï¿½, ï¿½Ùºï¿½ -> ï¿½ï¿½ï¿½Ìµï¿½,ï¿½ï¿½È£
+			//win.change("panel02"); // ï¿½Ú¹ï¿½ È¯ï¿½æ±¸ï¿½ï¿½->ï¿½ï¿½Î¿ï¿½ ,ï¿½Ùºï¿½ 
 		}
 		}
 		class Back implements ActionListener{
