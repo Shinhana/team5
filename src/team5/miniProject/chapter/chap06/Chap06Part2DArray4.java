@@ -28,7 +28,7 @@ public class Chap06Part2DArray4 extends JPanel{
 		setLayout(null);
 		this.win=win;
 
-		image = new ImageIcon("images/2Â÷¿ø4.png").getImage();
+		image = new ImageIcon("images/DA4.png").getImage();
 
 		JButton next = new JButton();
 		next.setSize(100,28);

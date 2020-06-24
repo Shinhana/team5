@@ -26,7 +26,7 @@ public class Chap06Part1NLoop3 extends JPanel{
 		setLayout(null);
 		this.win=win;
 		// TODO Auto-generated constructor stub
-		image = new ImageIcon("images/ÁßÃ¸3.png").getImage();
+		image = new ImageIcon("images/NL3.png").getImage();
 		
 		JButton next = new JButton();
 		next.setSize(20,20);
@@ -93,22 +93,22 @@ public class Chap06Part1NLoop3 extends JPanel{
 	@Override 
 	public void paint(Graphics g){
 		g.drawImage(image, 0, 0, getWidth(),getHeight(),this);
-		setOpaque(false);//Åõ¸íÇÏ°Ô
+		setOpaque(false);//ï¿½ï¿½ï¿½ï¿½ï¿½Ï°ï¿½
 		super.paint(g);
 	}
 	
 	class Next implements ActionListener{
 		@Override
 		public void actionPerformed(ActionEvent e){
-			win.change("panel03");  //ÀÚ¹Ù È¯°æ±¸Ãà ->Çï·Î¿ì, ¹Ùº¸ -> ¾ÆÀÌµð,¾ÏÈ£
-			//win.change("panel02"); // ÀÚ¹Ù È¯°æ±¸Ãà->Çï·Î¿ì ,¹Ùº¸ 
+			win.change("panel03");  //ï¿½Ú¹ï¿½ È¯ï¿½æ±¸ï¿½ï¿½ ->ï¿½ï¿½Î¿ï¿½, ï¿½Ùºï¿½ -> ï¿½ï¿½ï¿½Ìµï¿½,ï¿½ï¿½È£
+			//win.change("panel02"); // ï¿½Ú¹ï¿½ È¯ï¿½æ±¸ï¿½ï¿½->ï¿½ï¿½Î¿ï¿½ ,ï¿½Ùºï¿½ 
 		}
 	}
 	class Back implements ActionListener{
 		@Override
 		public void actionPerformed(ActionEvent e){
-			win.change("panel02");  //ÀÚ¹Ù È¯°æ±¸Ãà ->Çï·Î¿ì, ¹Ùº¸ -> ¾ÆÀÌµð,¾ÏÈ£
-			//win.change("panel02"); // ÀÚ¹Ù È¯°æ±¸Ãà->Çï·Î¿ì ,¹Ùº¸ 
+			win.change("panel02");  //ï¿½Ú¹ï¿½ È¯ï¿½æ±¸ï¿½ï¿½ ->ï¿½ï¿½Î¿ï¿½, ï¿½Ùºï¿½ -> ï¿½ï¿½ï¿½Ìµï¿½,ï¿½ï¿½È£
+			//win.change("panel02"); // ï¿½Ú¹ï¿½ È¯ï¿½æ±¸ï¿½ï¿½->ï¿½ï¿½Î¿ï¿½ ,ï¿½Ùºï¿½ 
 		}	
 	}
 	class Last implements ActionListener{

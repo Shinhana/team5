@@ -18,7 +18,7 @@ import team5.miniProject.run.PanelChange;
 
 
 public class Chap06Part1NLoop2 extends JPanel{
-	//ImageIcon icon1 = new ImageIcon("C:\\Users\\hojong\\eclipse-workspace\\SoloProject\\src\\game\\practice\\img\\¸ñÂ÷·Î.png");
+	//ImageIcon icon1 = new ImageIcon("C:\\Users\\hojong\\eclipse-workspace\\SoloProject\\src\\game\\practice\\img\\ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½.png");
 	//ImageIcon icon2 = new ImageIcon("C:\\Users\\hojong\\eclipse-workspace\\SoloProject\\src\\game\\practice\\images\\icon.png");
 	
 	private JTextArea memoTextField;
@@ -31,7 +31,7 @@ public class Chap06Part1NLoop2 extends JPanel{
 		setLayout(null);
 		this.win = win;
 		
-//		JLabel lblLbl = new JLabel("¾ÆÀÌµð");
+//		JLabel lblLbl = new JLabel("ï¿½ï¿½ï¿½Ìµï¿½");
 //		lblLbl.setBounds(31,40,67,15);
 //		add(lblLbl);
 //		
@@ -40,7 +40,7 @@ public class Chap06Part1NLoop2 extends JPanel{
 //		add(textField);
 //		textField.setColumns(10);
 //		
-//		JLabel lblLbl_1  = new JLabel("¾ÏÈ£");
+//		JLabel lblLbl_1  = new JLabel("ï¿½ï¿½È£");
 //		lblLbl_1.setBounds(31,84,67,15);
 //		add(lblLbl_1);
 //		
@@ -48,7 +48,7 @@ public class Chap06Part1NLoop2 extends JPanel{
 //		passwordField.setBounds(123,84,116,21);
 //		add(passwordField);
 		
-		 image = new ImageIcon("images/ÁßÃ¸2.png").getImage();
+		 image = new ImageIcon("images/NL2.png").getImage();
 		
 		JButton back  = new JButton();
 		back .setSize(20,20);
@@ -111,7 +111,7 @@ public class Chap06Part1NLoop2 extends JPanel{
 		@Override 
 		public void paint(Graphics g){
 			g.drawImage(image, 0, 0, getWidth(),getHeight(),this);
-			setOpaque(false);//Åõ¸íÇÏ°Ô
+			setOpaque(false);//ï¿½ï¿½ï¿½ï¿½ï¿½Ï°ï¿½
 			super.paint(g);
 		}
 		

@@ -43,7 +43,7 @@ public class Chap06Part1NLoop1 extends JPanel{
 	 
 	public Chap06Part1NLoop1(PanelChange win){
 		win.add(this);
-		image = new ImageIcon("images/ÁßÃ¸1.png").getImage();
+		image = new ImageIcon("images/NL1.png").getImage();
 		
 		
 	this.win=win;
@@ -52,7 +52,7 @@ public class Chap06Part1NLoop1 extends JPanel{
 	
 	//jp.add(label);
 	
-	//¹öÆ° 1»ý¼º (ÀÚ¹ÙÈ¯°æ ±¸Ãà)
+	//ï¿½ï¿½Æ° 1ï¿½ï¿½ï¿½ï¿½ (ï¿½Ú¹ï¿½È¯ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½)
 	next = new JButton();
 	next.setSize(20,20);
 //	jButton1.setBorderPainted(true);
@@ -68,7 +68,7 @@ public class Chap06Part1NLoop1 extends JPanel{
 	
 //	jTextArea1 = new JTextArea();
 	
-	//¹öÆ° ¹Ø ÅØ½ºÆ® »óÀÚ °´Ã¼ »ý¼º 
+	//ï¿½ï¿½Æ° ï¿½ï¿½ ï¿½Ø½ï¿½Æ® ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½Ã¼ ï¿½ï¿½ï¿½ï¿½ 
 //	jScrollPane1 = new JScrollPane(jTextArea1);
 //	jScrollPane1.setSize(200,150);
 //	jScrollPane1.setLocation(10,40);
@@ -121,25 +121,25 @@ public class Chap06Part1NLoop1 extends JPanel{
 		@Override
 		public void paint(Graphics g){
 			g.drawImage(image, 0, 0, getWidth(), getHeight(),this);
-			setOpaque(false);//Åõ¸íÇÏ°Ô
+			setOpaque(false);//ï¿½ï¿½ï¿½ï¿½ï¿½Ï°ï¿½
 			super.paint(g);
 		}
 	
-	//' > ' Å¬¸¯ÇßÀ» ¶§ ³Ñ¾î°¡´Â Å¬·¡½º ¿À¹ö¶óÀÌµù
+	//' > ' Å¬ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ ï¿½Ñ¾î°¡ï¿½ï¿½ Å¬ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ìµï¿½
 	class Next implements ActionListener{
 		@Override
 		public void actionPerformed(ActionEvent e){
 			win.change("panel02");
 		}
 	}
-	//'<' Å¬¸¯ÇßÀ» ¶§ ³Ñ¾î°¡´Â Å¬·¡½º ¿À¹ö¶óÀÌµù
+	//'<' Å¬ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ ï¿½Ñ¾î°¡ï¿½ï¿½ Å¬ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ìµï¿½
 	class Back implements ActionListener{
 		@Override
 		public void actionPerformed(ActionEvent e){
-			win.change("jpanel_main"); // µÚ·Î°¡±â(¼±ÅÃÈ­¸éÀ¸·Î)
+			win.change("jpanel_main"); // ï¿½Ú·Î°ï¿½ï¿½ï¿½(ï¿½ï¿½ï¿½ï¿½È­ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½)
 		}
 	}
-	//¸ñÂ÷¸¦ Å¬¸¯ÇßÀ» ¶§ ³Ñ¾î°¡´Â Å¬·¡½º ¿À¹ö¶óÀÌµù
+	//ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ Å¬ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ ï¿½Ñ¾î°¡ï¿½ï¿½ Å¬ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ìµï¿½
 	class Reset implements ActionListener{
 		@Override
 		public void actionPerformed(ActionEvent e){
