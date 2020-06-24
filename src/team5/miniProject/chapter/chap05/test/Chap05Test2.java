@@ -1,5 +1,6 @@
-package com.kh.model.test;
+package team5.miniProject.chapter.chap05.test;
 
+import java.awt.Color;
 import java.awt.Graphics;
 import java.awt.Image;
 import java.awt.event.ActionEvent;
@@ -8,60 +9,39 @@ import java.awt.event.ActionListener;
 import javax.swing.ImageIcon;
 import javax.swing.JButton;
 import javax.swing.JFrame;
+import javax.swing.JOptionPane;
 import javax.swing.JPanel;
-import javax.swing.JTextField;
+import javax.swing.JTextArea;
 
-import com.kh.model.controller.ChangePanel;
+import team5.miniProject.run.PanelChange;
 
 public class Chap05Test2 extends JPanel {
 	JFrame f = new JFrame();
-	private ChangePanel ch;
-	private JTextField textField;
+	private PanelChange win;
+	private JTextArea textField;
 	Image imageMain;
 
 	private JButton reset; //목차
 	private JButton next; // >
-	private JButton Last; // >>
+	private JButton last; // >>
 	private JButton back; // <
 	private JButton start; // <<
 	private JButton ans;
 	
-	public Chap05Test2(ChangePanel ch) {
-		this.ch = ch;
+	public Chap05Test2(PanelChange win) {
+		this.win = win;
 		setLayout(null);
 
 		next= new JButton();
-		next.setSize(20,20);
-		next.setLocation(180,610);
-		next.addActionListener(new MyActionListener());
+		next.setSize(75,15);
+		next.setLocation(215,585);
+		next.addActionListener(new Next());
 		
 		back = new JButton();
-		back.setSize(20,20);
-		back.setLocation(155,610);
-		back.addActionListener(new MyActionListener2());
+		back.setSize(25,25);
+		back.setLocation(10,35);
+		back.addActionListener(new Back());
 		
-		Last= new JButton();
-		Last.setSize(20,20);
-		Last.setLocation(200,610);
-		Last.addActionListener(new MyActionListener3());
-		
-		start= new JButton();
-		start.setSize(20,20);
-		start.setLocation(130,610);
-		start.addActionListener(new MyActionListener4());
-		
-		reset = new JButton();
-		reset.setSize(20,20);
-		reset.setLocation(100,610);
-		reset.addActionListener(new MyActionListener5());
-		
-		ans = new JButton();
-		ans.setSize(70,20);
-		ans.setLocation(130,573);
-		ans.addActionListener(new MyActionListener6());
-		
-	
-
 		imageMain = new ImageIcon("images/ArrayTest2.PNG").getImage();
 
 		next.setBorderPainted(false);
@@ -74,26 +54,15 @@ public class Chap05Test2 extends JPanel {
 		back.setContentAreaFilled(false);
 		this.add(back);
 		
-		Last.setBorderPainted(false);
-		Last.setFocusPainted(false);
-		Last.setContentAreaFilled(false);
-		this.add(Last);
-		
-		start.setBorderPainted(false);
-		start.setFocusPainted(false);
-		start.setContentAreaFilled(false);
-		this.add(start);
-		
-		reset.setBorderPainted(false);
-		reset.setFocusPainted(false);
-		reset.setContentAreaFilled(false);
-		this.add(reset);
-		
-		ans.setBorderPainted(false);
-		ans.setFocusPainted(false);
-		ans.setContentAreaFilled(false);
-		this.add(ans);
-	
+		textField =  new JTextArea();
+		textField.setBounds(50,550,230,50);
+		textField.setOpaque(false);
+		textField.setForeground(Color.black);
+		//테스트 공간 테두리 숨기기 
+		textField.setBorder(javax.swing.BorderFactory.createEmptyBorder());	      
+		add(textField);
+
+			
 	}
 
 	@Override
@@ -104,54 +73,26 @@ public class Chap05Test2 extends JPanel {
 	}
 
 
-	class MyActionListener implements ActionListener{
-
-		@Override
-		public void actionPerformed(ActionEvent e) {
-			ch.change("panel10");
-
-		}
-	}
-
-
-	class MyActionListener2 implements ActionListener{
+	class Next implements ActionListener{
 		@Override
 		public void actionPerformed(ActionEvent e){
-			ch.change("panel7");
+			String str = textField.getText();
+			if(str.equals("char[ ] carr2 = carr1;")) {
+				JOptionPane.showMessageDialog(null,"정답입니다.");
+				win.change("panel17");
+			}else {
+				JOptionPane.showMessageDialog(null,"틀렸습니다.");
+				win.change("panel17"); 
+			}
+
 		}
 	}
-	class MyActionListener3 implements ActionListener{
 
+
+	class Back implements ActionListener{
 		@Override
-		public void actionPerformed(ActionEvent e) {
-			ch.change("panel10");
-
+		public void actionPerformed(ActionEvent e){
+			win.change("panel19");
 		}
 	}
-	class MyActionListener4 implements ActionListener{
-
-		@Override
-		public void actionPerformed(ActionEvent e) {
-			ch.change("panel1");
-
-		}
-	}
-	class MyActionListener5 implements ActionListener{
-
-		@Override
-		public void actionPerformed(ActionEvent e) {
-			ch.change("panel1");
-
-		}
-	}
-	class MyActionListener6 implements ActionListener{
-
-		@Override
-		public void actionPerformed(ActionEvent e) {
-			ch.change("panel14");
-
-		}
-	}
-
-
 }

@@ -1,4 +1,4 @@
-package com.kh.model.quiz;
+package team5.miniProject.chapter.chap05.quiz;
 
 import java.awt.Graphics;
 import java.awt.Image;
@@ -11,48 +11,48 @@ import javax.swing.JFrame;
 import javax.swing.JPanel;
 import javax.swing.JTextField;
 
-import com.kh.model.controller.ChangePanel;
+import team5.miniProject.run.PanelChange;
 
 public class Chap05Quiz1AnsX extends JPanel {
 	JFrame f = new JFrame();
-	private ChangePanel ch;
+	private PanelChange win;
 	private JTextField textField;
 	Image imageMain;
 
 	private JButton reset; //¸ñÂ÷
 	private JButton next; // >
-	private JButton Last; // >>
+	private JButton last; // >>
 	private JButton back; // <
 	private JButton start; // <<
 
-	public Chap05Quiz1AnsX(ChangePanel ch) {
-		this.ch = ch;
+	public Chap05Quiz1AnsX(PanelChange win) {
+		this.win = win;
 		setLayout(null);
 
 		next= new JButton();
 		next.setSize(20,20);
 		next.setLocation(180,610);
-		next.addActionListener(new MyActionListener());
+		next.addActionListener(new Next());
 		
 		back = new JButton();
 		back.setSize(20,20);
 		back.setLocation(155,610);
-		back.addActionListener(new MyActionListener2());
+		back.addActionListener(new Back());
 		
-		Last= new JButton();
-		Last.setSize(20,20);
-		Last.setLocation(200,610);
-		Last.addActionListener(new MyActionListener3());
+		last= new JButton();
+		last.setSize(20,20);
+		last.setLocation(200,610);
+		last.addActionListener(new Last());
 		
 		start= new JButton();
 		start.setSize(20,20);
 		start.setLocation(130,610);
-		start.addActionListener(new MyActionListener4());
+		start.addActionListener(new Start());
 		
 		reset = new JButton();
 		reset.setSize(20,20);
 		reset.setLocation(100,610);
-		reset.addActionListener(new MyActionListener5());
+		reset.addActionListener(new Reset());
 
 		imageMain = new ImageIcon("images/ArrayQuiz1X.PNG").getImage();
 
@@ -66,10 +66,10 @@ public class Chap05Quiz1AnsX extends JPanel {
 		back.setContentAreaFilled(false);
 		this.add(back);
 		
-		Last.setBorderPainted(false);
-		Last.setFocusPainted(false);
-		Last.setContentAreaFilled(false);
-		this.add(Last);
+		last.setBorderPainted(false);
+		last.setFocusPainted(false);
+		last.setContentAreaFilled(false);
+		this.add(last);
 		
 		start.setBorderPainted(false);
 		start.setFocusPainted(false);
@@ -89,39 +89,39 @@ public class Chap05Quiz1AnsX extends JPanel {
 		setOpaque(false);
 		super.paint(g);
 	}
-	class MyActionListener implements ActionListener{
+	class Next implements ActionListener{
 
 		@Override
 		public void actionPerformed(ActionEvent e) {
-			ch.change("panel10");
+			win.change("panel10");
 
 		}
 	}
 
 
-	class MyActionListener2 implements ActionListener{
+	class Back implements ActionListener{
 		@Override
 		public void actionPerformed(ActionEvent e){
-			ch.change("panel7");
+			win.change("panel7");
 		}
 	}
 
-	class MyActionListener3 implements ActionListener{
+	class Last implements ActionListener{
 		@Override
 		public void actionPerformed(ActionEvent e){
-			ch.change("panel10");
+			win.change("panel10");
 		}
 	}
-	class MyActionListener4 implements ActionListener{
+	class Start implements ActionListener{
 		@Override
 		public void actionPerformed(ActionEvent e){
-			ch.change("panel1");
+			win.change("panel1");
 		}
 	}
-	class MyActionListener5 implements ActionListener{
+	class Reset implements ActionListener{
 		@Override
 		public void actionPerformed(ActionEvent e){
-			ch.change("panel1");
+			win.change("panel1");
 		}
 	}
 
