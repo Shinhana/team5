@@ -1,6 +1,7 @@
-package miniProject.chapter.chap02.test;
+package team5.miniProject.chapter.chap02.test;
 
 import java.awt.Color;
+import team5.miniProject.run.PanelChange;
 import java.awt.Graphics;
 import java.awt.Image;
 import java.awt.event.ActionEvent;
@@ -12,10 +13,9 @@ import javax.swing.JOptionPane;
 import javax.swing.JPanel;
 import javax.swing.JTextArea;
 
-
 public class Chap02Test1 extends JPanel {
 	
-	private ChangePanel ch;
+	private PanelChange win;
 	Image imageMain;
 	
 	private JButton reset; //목차
@@ -28,21 +28,31 @@ public class Chap02Test1 extends JPanel {
 	
 	public Chap02Test1() {}
 	
-	public Chap02Test1(ChangePanel ch) {
+	public Chap02Test1(PanelChange win) {
 
-		this.ch = ch;
+		this.win = win;
 		setLayout(null);
 		
 		ImageIcon nextImg = new ImageIcon("images/next.png");
 		next= new JButton(nextImg);
 		next.setSize(20,20);
 		next.setLocation(206,606);
-		next.addActionListener(new MyActionListener());
+		next.addActionListener(new Next());
 		//버튼 투명하게 아래 3줄
 		next.setBorderPainted(false);
 		next.setFocusPainted(false);
 	    next.setContentAreaFilled(false);
 	    this.add(next);
+	    
+	    ImageIcon resetImg= new ImageIcon("images/reset.png");
+	    reset= new JButton(resetImg);
+	    reset.setSize(20,20);
+	    reset.setLocation(116,620);
+	    reset.addActionListener(new Reset());
+	    reset.setBorderPainted(false);
+	    reset.setFocusPainted(false);
+	    reset.setContentAreaFilled(false);
+	    this.add(reset);
 	    
 	    ImageIcon checkImg = new ImageIcon("images/answerCheck.png");
 	    check= new JButton(checkImg);
@@ -54,7 +64,6 @@ public class Chap02Test1 extends JPanel {
 	    check.setFocusPainted(false);
 	    check.setContentAreaFilled(false);
 	    this.add(check);
-		
 	   
 	    answerField = new JTextArea();
 	    answerField.setBounds(50,520,280,100);
@@ -63,8 +72,7 @@ public class Chap02Test1 extends JPanel {
 	    answerField.setBorder(javax.swing.BorderFactory.createEmptyBorder());
 	    add(answerField);
 		
-	    imageMain = new ImageIcon("images/chap2Level1.png").getImage();
-		
+	    imageMain = new ImageIcon("images/chap2Test1.png").getImage();
 		
 	}
 	
@@ -76,11 +84,27 @@ public class Chap02Test1 extends JPanel {
 	}
 	
 	//next
-	class MyActionListener implements ActionListener{
+	class Next implements ActionListener{
 		@Override
 		public void actionPerformed(ActionEvent e) {
-			ch.change("quiz2");
+			win.change("test2");
 			
+		}
+	}
+	
+	//last
+	class Last implements ActionListener{
+		@Override
+		public void actionPerformed(ActionEvent e){
+			win.change("test2");
+		}
+	}
+
+	//reset
+	class Reset implements ActionListener{
+		@Override
+		public void actionPerformed(ActionEvent e){
+			win.change("list");
 		}
 	}
 	
@@ -95,10 +119,10 @@ public class Chap02Test1 extends JPanel {
 		       
 		       if(str.equals("-124")){
 		    	   JOptionPane.showMessageDialog(null,"정답입니다");
-		    	   ch.change("operator_testAnswer1");
+		    	   win.change("operator_testAnswer1");
 		       } else {
 		    	   JOptionPane.showMessageDialog(null,"틀렸습니다.");
-		    	   ch.change("test1");
+		    	   win.change("test1");
 		       }
 		           
 		            

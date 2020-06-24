@@ -1,6 +1,7 @@
-package miniProject.chapter.chap02.quiz;
+package team5.miniProject.chapter.chap02.quiz;
 
 import java.awt.Color;
+import team5.miniProject.run.PanelChange;
 import java.awt.Graphics;
 import java.awt.Image;
 import java.awt.event.ActionEvent;
@@ -12,9 +13,10 @@ import javax.swing.JOptionPane;
 import javax.swing.JPanel;
 import javax.swing.JTextArea;
 
+
 public class Chap02Quiz2 extends JPanel {
 
-	private ChangePanel ch;
+	private PanelChange win;
 	Image imageMain;
 	
 	private JButton reset; //목차
@@ -27,21 +29,42 @@ public class Chap02Quiz2 extends JPanel {
 	
 	public Chap02Quiz2() {}
 	
-	public Chap02Quiz2(ChangePanel ch) {
+	public Chap02Quiz2(PanelChange win) {
 		
-		this.ch = ch;
+		this.win = win;
 		setLayout(null);
 		
 		ImageIcon backImg = new ImageIcon("images/back.png");
 		back= new JButton(backImg);
 		back.setSize(20,20);
 		back.setLocation(174,611);
-		back.addActionListener(new MyActionListener3());
+		back.addActionListener(new Back());
 		//버튼 투명하게 3줄
 		back.setBorderPainted(false);
 		back.setFocusPainted(false);
 		back.setContentAreaFilled(false);
 		this.add(back);
+		
+		ImageIcon startImg = new ImageIcon("images/start.png");
+		start = new JButton(startImg);
+		start.setSize(20,20);
+		start.setLocation(150,620);
+		start.addActionListener(new Start());
+		//버튼 투명하게 3줄
+		start.setBorderPainted(false);
+		start.setFocusPainted(false);
+		start.setContentAreaFilled(false);
+		this.add(start);
+		
+		ImageIcon resetImg= new ImageIcon("images/reset.png");
+		reset= new JButton(resetImg);
+		reset.setSize(20,20);
+		reset.setLocation(116,620);
+		reset.addActionListener(new Reset());
+		reset.setBorderPainted(false);
+		reset.setFocusPainted(false);
+		reset.setContentAreaFilled(false);
+		this.add(reset);
 
 		ImageIcon checkImg = new ImageIcon("images/answerCheck.png");
 		check= new JButton(checkImg);
@@ -53,8 +76,6 @@ public class Chap02Quiz2 extends JPanel {
 		check.setFocusPainted(false);
 		check.setContentAreaFilled(false);
 		this.add(check);
-			
-		
 		
 		answerField = new JTextArea();
 		answerField.setBounds(50,450,280,100);
@@ -63,7 +84,7 @@ public class Chap02Quiz2 extends JPanel {
 		answerField.setBorder(javax.swing.BorderFactory.createEmptyBorder());
 		add(answerField);
 			
-		imageMain = new ImageIcon("images/chapter2-mun2.png").getImage();
+		imageMain = new ImageIcon("images/chap2Quiz2.png").getImage();
 		
 	}
 	
@@ -74,25 +95,31 @@ public class Chap02Quiz2 extends JPanel {
 		super.paint(g);
 	}
 	
-	//next
-	class MyActionListener implements ActionListener{
+	//back
+	class Back implements ActionListener{
 		@Override
 		public void actionPerformed(ActionEvent e) {
-			ch.change("ans11");
+			win.change("qans11");
 			
 		}
 	}
-		
-	//back
-	class MyActionListener3 implements ActionListener{
-
+	
+	//start
+	class Start implements ActionListener{
 		@Override
-		public void actionPerformed(ActionEvent e) {
-			ch.change("quiz1");
-				
+		public void actionPerformed(ActionEvent e){
+			win.change("quiz1");
 		}
 	}
-		
+
+	//reset
+	class Reset implements ActionListener{
+		@Override
+		public void actionPerformed(ActionEvent e){
+			win.change("list");
+		}
+	}
+
 	//checkAns
 	class Answer implements ActionListener{
 	   @Override
@@ -105,10 +132,10 @@ public class Chap02Quiz2 extends JPanel {
 	      
 	       if(str.equals("byte,short,int,long\nfloat,double\ndouble")){
 	    	   JOptionPane.showMessageDialog(null,"정답입니다");
-	    	   ch.change("operator_quizAnswer1");
+	    	   win.change("operator_quizAnswer2");
 	       } else {
 	    	   JOptionPane.showMessageDialog(null,"틀렸습니다.");
-	    	   ch.change("quiz2");
+	    	   win.change("quiz2");
 	       }
 	           
 	            

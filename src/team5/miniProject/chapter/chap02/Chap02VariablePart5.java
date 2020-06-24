@@ -1,4 +1,4 @@
-package miniProject.chapter.chap02;
+package team5.miniProject.chapter.chap02;
 
 import java.awt.Color;
 import java.awt.Graphics;
@@ -12,9 +12,10 @@ import javax.swing.JPanel;
 import javax.swing.JTextArea;
 import javax.swing.JTextField;
 
+import team5.miniProject.run.PanelChange;
 public class Chap02VariablePart5 extends JPanel {
 	
-	private ChangePanel ch;
+	private PanelChange win;
 	Image imageMain;
 	
 	private JButton reset; //목차
@@ -26,15 +27,15 @@ public class Chap02VariablePart5 extends JPanel {
 
 	public Chap02VariablePart5() {}
 	
-	public Chap02VariablePart5(ChangePanel ch) {
-		this.ch = ch;
+	public Chap02VariablePart5(PanelChange win) {
+		this.win = win;
 		setLayout(null);
 	    
 		ImageIcon backImg= new ImageIcon("images/back.png");
 		back= new JButton(backImg);
 		back.setSize(20,20);
 		back.setLocation(180,620);
-		back.addActionListener(new MyActionListener3());
+		back.addActionListener(new Back());
 		//버튼 투명하게 3줄
 		back.setBorderPainted(false);
 		back.setFocusPainted(false);
@@ -45,7 +46,7 @@ public class Chap02VariablePart5 extends JPanel {
 		start = new JButton(startImg);
 		start.setSize(20,20);
 		start.setLocation(150,620);
-		start.addActionListener(new MyActionListener4());
+		start.addActionListener(new Start());
 		//버튼 투명하게 3줄
 		start.setBorderPainted(false);
 		start.setFocusPainted(false);
@@ -74,19 +75,19 @@ public class Chap02VariablePart5 extends JPanel {
 	
 
 	//back
-	class MyActionListener3 implements ActionListener{
+	class Back implements ActionListener{
 		@Override
 		public void actionPerformed(ActionEvent e){
-			ch.change("var4");
+			win.change("var4");
 		}
 	}
 			
 	//start
-	class MyActionListener4 implements ActionListener{
+	class Start implements ActionListener{
 		
 		@Override
 		public void actionPerformed(ActionEvent e) {
-			ch.change("var1");
+			win.change("var1");
 			
 		}
 	}

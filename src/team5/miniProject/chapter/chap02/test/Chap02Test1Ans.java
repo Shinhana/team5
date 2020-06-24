@@ -1,6 +1,7 @@
-package miniProject.chapter.chap02.test;
+package team5.miniProject.chapter.chap02.test;
 
 import java.awt.Graphics;
+import team5.miniProject.run.PanelChange;
 import java.awt.Image;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
@@ -9,10 +10,10 @@ import javax.swing.ImageIcon;
 import javax.swing.JButton;
 import javax.swing.JPanel;
 
-public class Chap02Test1Ans extends JPanel {
 
+public class Chap02Test1Ans extends JPanel {
 	
-	private ChangePanel ch;
+	private PanelChange win;
 	Image imageMain;
 	
 	private JButton next; // >, MyActionListener
@@ -23,22 +24,55 @@ public class Chap02Test1Ans extends JPanel {
 	
 	public Chap02Test1Ans() {}
 	
-	public Chap02Test1Ans(ChangePanel ch) {
+	public Chap02Test1Ans(PanelChange win) {
 		
-		this.ch = ch;
+		this.win = win;
 		setLayout(null);
 		
 		ImageIcon nextImg= new ImageIcon("images/next.png");
 		next= new JButton(nextImg);
 		next.setSize(20,20);
 		next.setLocation(100,100);
-		next.addActionListener(new MyActionListener());
+		next.addActionListener(new Next());
 //		next.setBorderPainted(false);
 //		next.setFocusPainted(false);
 //	    next.setContentAreaFilled(false);
 	    this.add(next);
 	    
-	    imageMain = new ImageIcon("images/chap2Level1ans.png").getImage();
+		ImageIcon lastImg= new ImageIcon("images/last.png");
+		last= new JButton(lastImg);
+		last.setSize(20,20);
+		last.setLocation(239,622);
+		last.addActionListener(new Last());
+		//버튼 투명하게 3줄
+		last.setBorderPainted(false);
+		last.setFocusPainted(false);
+		last.setContentAreaFilled(false);
+		this.add(last);
+		
+		ImageIcon startImg = new ImageIcon("images/start.png");
+		start = new JButton(startImg);
+		start.setSize(20,20);
+		start.setLocation(150,620);
+		start.addActionListener(new Start());
+		//버튼 투명하게 3줄
+		start.setBorderPainted(false);
+		start.setFocusPainted(false);
+		start.setContentAreaFilled(false);
+		this.add(start);
+		
+	    
+	    ImageIcon resetImg= new ImageIcon("images/reset.png");
+	    reset= new JButton(resetImg);
+	    reset.setSize(20,20);
+	    reset.setLocation(116,620);
+	    reset.addActionListener(new Reset());
+	    reset.setBorderPainted(false);
+	    reset.setFocusPainted(false);
+	    reset.setContentAreaFilled(false);
+	    this.add(reset);
+	    
+	    imageMain = new ImageIcon("images/chap2Test1ans.png").getImage();
 		
 	}
 	
@@ -48,13 +82,38 @@ public class Chap02Test1Ans extends JPanel {
 		setOpaque(false);//투명하게
 		super.paint(g);
 	}
-			
+	
+	//start
+	class Start implements ActionListener{
+		@Override
+		public void actionPerformed(ActionEvent e){
+			win.change("test1");
+		}
+	}
+	
 	//next
-	class MyActionListener implements ActionListener{
+	class Next implements ActionListener{
 		@Override
 		public void actionPerformed(ActionEvent e) {
-			ch.change("test2");
+			win.change("test2");
 			
+		}
+	}
+	
+	//last
+	class Last implements ActionListener{
+		@Override
+		public void actionPerformed(ActionEvent e){
+			win.change("test2");
+		}
+	}
+	
+
+	//reset
+	class Reset implements ActionListener{
+		@Override
+		public void actionPerformed(ActionEvent e){
+			win.change("list");
 		}
 	}
 	
