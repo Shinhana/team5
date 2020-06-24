@@ -19,11 +19,11 @@ public class Chap02Test21Ans extends JPanel {
 	private PanelChange win;
 	Image imageMain;
 	
-	private JButton next; // >, MyActionListener
-	private JButton last; // >>, MyActionListener2
-	private JButton back; // <, MyActionListener3
-	private JButton start; // <<, MyActionListener4
-	private JButton reset; //목차, MyActionListener5
+	private JButton next; // >
+	private JButton last; // >>
+	private JButton back; // <
+	private JButton start; // <<
+	private JButton reset;
 	
 	public Chap02Test21Ans() {}
 	
@@ -37,7 +37,6 @@ public class Chap02Test21Ans extends JPanel {
 		start.setSize(20,20);
 		start.setLocation(150,620);
 		start.addActionListener(new Start());
-		//버튼 투명하게 3줄
 		start.setBorderPainted(false);
 		start.setFocusPainted(false);
 		start.setContentAreaFilled(false);
@@ -61,7 +60,7 @@ public class Chap02Test21Ans extends JPanel {
 	@Override 
 	public void paint(Graphics g){
 		g.drawImage(imageMain, 0, 0, getWidth(),getHeight(),this);
-		setOpaque(false);//투명하게
+		setOpaque(false);
 		super.paint(g);
 	}
 	

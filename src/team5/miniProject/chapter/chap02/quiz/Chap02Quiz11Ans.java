@@ -10,8 +10,6 @@ import javax.swing.ImageIcon;
 import javax.swing.JButton;
 import javax.swing.JPanel;
 
-import team5.miniProject.chapter.chap02.PanelChange;
-
 public class Chap02Quiz11Ans extends JPanel {
 	
 	private PanelChange win;
@@ -35,7 +33,6 @@ public class Chap02Quiz11Ans extends JPanel {
 		back.setSize(20,20);
 		back.setLocation(180,620);
 		back.addActionListener(new Back());
-		//버튼 투명하게 3줄
 		back.setBorderPainted(false);
 		back.setFocusPainted(false);
 		back.setContentAreaFilled(false);
@@ -46,7 +43,6 @@ public class Chap02Quiz11Ans extends JPanel {
 		last.setSize(20,20);
 		last.setLocation(239,622);
 		last.addActionListener(new Last());
-		//버튼 투명하게 3줄
 		last.setBorderPainted(false);
 		last.setFocusPainted(false);
 		last.setContentAreaFilled(false);
@@ -57,7 +53,6 @@ public class Chap02Quiz11Ans extends JPanel {
 		next.setSize(20,20);
 		next.setLocation(100,100);
 		next.addActionListener(new Next());
-		//버튼 투명하게 3줄
 		next.setBorderPainted(false);
 		next.setFocusPainted(false);
 	    next.setContentAreaFilled(false);
@@ -81,7 +76,7 @@ public class Chap02Quiz11Ans extends JPanel {
 	@Override 
 	public void paint(Graphics g){
 		g.drawImage(imageMain, 0, 0, getWidth(),getHeight(),this);
-		setOpaque(false);//투명하게
+		setOpaque(false);
 		super.paint(g);
 	}
 	

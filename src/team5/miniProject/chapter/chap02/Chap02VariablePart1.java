@@ -17,12 +17,12 @@ public class Chap02VariablePart1 extends JPanel {
 	private PanelChange win;
 	Image imageMain;
 	
-	private JButton reset; //목차
+	private JButton reset; //list
 	private JButton next; // >
 	private JButton last; // >>
 	private JButton back; // <
 	private JButton start; // <<
-	private JTextArea memoTextField; //메모
+	private JTextArea memoTextField;
 	
 	public Chap02VariablePart1() {}
 	
@@ -36,7 +36,6 @@ public class Chap02VariablePart1 extends JPanel {
 		next.setSize(20,20);
 		next.setLocation(210,620);
 		next.addActionListener(new Next());
-		//버튼 투명하게 3줄
 		next.setBorderPainted(false);
 		next.setFocusPainted(false);
 	    next.setContentAreaFilled(false);
@@ -47,7 +46,6 @@ public class Chap02VariablePart1 extends JPanel {
 		last.setSize(20,20);
 		last.setLocation(237,622);
 		last.addActionListener(new Last());
-		//버튼 투명하게 3줄
 		last.setBorderPainted(false);
 		last.setFocusPainted(false);
 		last.setContentAreaFilled(false);
@@ -59,7 +57,6 @@ public class Chap02VariablePart1 extends JPanel {
 		reset.setSize(20,20);
 		reset.setLocation(116,620);
 		reset.addActionListener(new Reset());
-		//버튼 투명하게 3줄
 		reset.setBorderPainted(false);
 		reset.setFocusPainted(false);
 		reset.setContentAreaFilled(false);
@@ -80,7 +77,7 @@ public class Chap02VariablePart1 extends JPanel {
 	@Override 
 	public void paint(Graphics g){
 		g.drawImage(imageMain, 0, 0, getWidth(),getHeight(),this);
-		setOpaque(false); //투명하게
+		setOpaque(false);
 		super.paint(g);
 	}
 	
