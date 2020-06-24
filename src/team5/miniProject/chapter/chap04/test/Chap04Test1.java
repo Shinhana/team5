@@ -1,5 +1,5 @@
 package team5.miniProject.chapter.chap04.test;
-
+import team5.miniProject.run.PanelChange;
 import java.awt.Color;
 import java.awt.Graphics;
 import java.awt.Image;
@@ -20,7 +20,7 @@ public class Chap04Test1 extends JPanel {
 	private JTextArea memoTextField;
 	private JButton reset; //목차
 	private JButton next; // >
-	private JButton Last; // >>
+	private JButton last; // >>
 	private JButton back; // <
 	private JButton start; // <<
 
@@ -28,7 +28,7 @@ public class Chap04Test1 extends JPanel {
 		setLayout(null);
 		this.win = win;
 		
-		image = new ImageIcon("/Users/jess/Desktop/images/test1.png").getImage().getScaledInstance(360, 640, 0);
+		image = new ImageIcon("images/JP_test1.png").getImage().getScaledInstance(360, 640, 0);
 		
 		reset = new JButton("1");
 		reset.setSize(20,20);
@@ -37,7 +37,7 @@ public class Chap04Test1 extends JPanel {
 		reset.setFocusPainted(false);
 		reset.setContentAreaFilled(false);
 		add(reset);
-		reset.addActionListener(new MyActionListener());
+		reset.addActionListener(new Reset());
 
 		start = new JButton("2");
 		start.setSize(20,20);
@@ -46,7 +46,7 @@ public class Chap04Test1 extends JPanel {
 		start.setFocusPainted(false);
 		start.setContentAreaFilled(false);
 		add(start);
-		start.addActionListener(new MyActionListener2());
+		start.addActionListener(new Start());
 
 		back = new JButton("3");
 		back.setSize(20, 20);
@@ -55,7 +55,7 @@ public class Chap04Test1 extends JPanel {
 		back.setFocusPainted(false);
 		back.setContentAreaFilled(false);
 		add(back);
-		back.addActionListener(new MyActionListener3());
+		back.addActionListener(new Back());
 
 		next = new JButton("4");
 		next.setSize(20, 20);
@@ -64,21 +64,21 @@ public class Chap04Test1 extends JPanel {
 		next.setFocusPainted(false);
 		next.setContentAreaFilled(false);
 		add(next);
-		next.addActionListener(new MyActionListener4());
+		next.addActionListener(new Next());
 
 
-		Last = new JButton("5");
-		Last.setSize(20, 20);
-		Last.setLocation(240, 626);
-		add(Last);
-		Last.setBorderPainted(false);
-		Last.setFocusable(false);
-		Last.setContentAreaFilled(false);
-		Last.addActionListener(new MyActionListener5());
+		last = new JButton("5");
+		last.setSize(20, 20);
+		last.setLocation(240, 626);
+		add(last);
+		last.setBorderPainted(false);
+		last.setFocusable(false);
+		last.setContentAreaFilled(false);
+		last.addActionListener(new Last());
 
 
 		memoTextField =  new JTextArea();
-		memoTextField.setBounds(50,520,280,100);
+		memoTextField.setBounds(50,380,280,220);
 		memoTextField.setOpaque(false);
 		memoTextField.setForeground(Color.WHITE);
 		memoTextField.setBorder(javax.swing.BorderFactory.createEmptyBorder());
@@ -94,49 +94,44 @@ public class Chap04Test1 extends JPanel {
 		
 	}
 	
-	class MyActionListener implements ActionListener{
+	class Reset implements ActionListener{
 
 		@Override
 		public void actionPerformed(ActionEvent e) {
-			// TODO Auto-generated method stub
-			
+			win.change("jpanelList");
 		}
 		
 	}
 	
-	class MyActionListener2 implements ActionListener{
+	class Start implements ActionListener{
 
 		@Override
 		public void actionPerformed(ActionEvent e) {
-			// TODO Auto-generated method stub
-			
+			win.change("Chap04ControlStatement");
 		}
 		
 	}
-	class MyActionListener3 implements ActionListener{
+	class Back implements ActionListener{
 
 		@Override
 		public void actionPerformed(ActionEvent e) {
-			// TODO Auto-generated method stub
-			
+			win.change("Chap04ControlStatement");
 		}
 		
 	}
-	class MyActionListener4 implements ActionListener{
+	class Next implements ActionListener{
 
 		@Override
 		public void actionPerformed(ActionEvent e) {
-			// TODO Auto-generated method stub
-			
+			win.change("Chap04Test2");
 		}
 		
 	}
-	class MyActionListener5 implements ActionListener{
+	class Last implements ActionListener{
 
 		@Override
 		public void actionPerformed(ActionEvent e) {
-			// TODO Auto-generated method stub
-			
+			win.change("jpanelList");
 		}
 		
 	}

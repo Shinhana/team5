@@ -1,5 +1,5 @@
 package team5.miniProject.chapter.chap04.quiz;
-
+import team5.miniProject.run.PanelChange;
 import java.awt.Graphics;
 import java.awt.Image;
 import java.awt.event.ActionEvent;
@@ -21,14 +21,14 @@ public class Chap04Quiz1Ans extends JPanel{
 	private JButton start; // <<
 	private JButton back; // <
 	private JButton next; // >
-	private JButton Last; // >>
+	private JButton last; // >>
 	
 	public Chap04Quiz1Ans(JPanelTest win) {
 		
 		setLayout(null);
 		this.win = win;
 		
-		image = new ImageIcon("/Users/jess/Desktop/images/answer1.png").getImage().getScaledInstance(360, 640, 0);
+		image = new ImageIcon("images/JP_answer1.png").getImage().getScaledInstance(360, 640, 0);
 		
 		reset = new JButton("1");
 		reset.setSize(20, 20);
@@ -37,7 +37,7 @@ public class Chap04Quiz1Ans extends JPanel{
 		reset.setFocusPainted(false);
 		reset.setContentAreaFilled(false);
 		add(reset);
-		reset.addActionListener(new MyActionListener());
+		reset.addActionListener(new Reset());
 
 		start = new JButton("2");
 		start.setSize(20,20);
@@ -46,7 +46,7 @@ public class Chap04Quiz1Ans extends JPanel{
 		start.setFocusPainted(false);
 		start.setContentAreaFilled(false);
 		add(start);
-		start.addActionListener(new MyActionListener2());
+		start.addActionListener(new Start());
 		
 		
 		back = new JButton();
@@ -56,7 +56,7 @@ public class Chap04Quiz1Ans extends JPanel{
 		back.setFocusPainted(false);
 		back.setContentAreaFilled(false);
 		add(back);
-		back.addActionListener(new MyActionListener3());
+		back.addActionListener(new Back());
 		
 		
 		next = new JButton();
@@ -66,16 +66,16 @@ public class Chap04Quiz1Ans extends JPanel{
 		next.setFocusPainted(false);
 		next.setContentAreaFilled(false);
 		add(next);
-		next.addActionListener(new MyActionListener4());
+		next.addActionListener(new Next());
 		
-		Last = new JButton();
-		Last.setSize(20, 20);
-		Last.setLocation(240, 626);
-		Last.setBorderPainted(false);
-		Last.setFocusPainted(false);
-		Last.setContentAreaFilled(false);
-		add(Last);
-		Last.addActionListener(new MyActionListener5());
+		last = new JButton();
+		last.setSize(20, 20);
+		last.setLocation(240, 626);
+		last.setBorderPainted(false);
+		last.setFocusPainted(false);
+		last.setContentAreaFilled(false);
+		add(last);
+		last.addActionListener(new Last());
 		
 		
 	}
@@ -85,15 +85,15 @@ public class Chap04Quiz1Ans extends JPanel{
 		setOpaque(false);
 		super.paint(g);
 	}
-	class MyActionListener implements ActionListener{
+	class Reset implements ActionListener{
 
 		@Override
 		public void actionPerformed(ActionEvent e) {
-			win.change("Chap04ControlStatement");
+			win.change("jpanelList");
 		}
 		
 	}
-	class MyActionListener2 implements ActionListener{
+	class Start implements ActionListener{
 
 		@Override
 		public void actionPerformed(ActionEvent e) {
@@ -101,7 +101,7 @@ public class Chap04Quiz1Ans extends JPanel{
 		}
 		
 	}
-	class MyActionListener3 implements ActionListener{
+	class Back implements ActionListener{
 
 		@Override
 		public void actionPerformed(ActionEvent e) {
@@ -109,21 +109,19 @@ public class Chap04Quiz1Ans extends JPanel{
 		}
 		
 	}
-	class MyActionListener4 implements ActionListener{
+	class Next implements ActionListener{
 
 		@Override
 		public void actionPerformed(ActionEvent e) {
-			// TODO Auto-generated method stub
-			
+			win.change("jpanelList");
 		}
 		
 	}
-	class MyActionListener5 implements ActionListener{
+	class Last implements ActionListener{
 
 		@Override
 		public void actionPerformed(ActionEvent e) {
-			// TODO Auto-generated method stub
-			
+			win.change("jpanelList");
 		}
 		
 	}

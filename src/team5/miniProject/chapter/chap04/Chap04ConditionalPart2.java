@@ -1,5 +1,5 @@
 package team5.miniProject.chapter.chap04;
-
+import team5.miniProject.run.PanelChange;
 import java.awt.Color;
 import java.awt.Graphics;
 import java.awt.Image;
@@ -21,7 +21,7 @@ public class Chap04ConditionalPart2 extends JPanel{
 	private JButton start; // <<
 	private JButton back; // <
 	private JButton next; // >
-	private JButton Last; // >>
+	private JButton last; // >>
 
 	
 	public Chap04ConditionalPart2(JPanelTest win){
@@ -29,7 +29,7 @@ public class Chap04ConditionalPart2 extends JPanel{
 		setLayout(null);
 		this.win = win;
 
-		image = new ImageIcon("/Users/jess/Desktop/images/if2.png").getImage().getScaledInstance(360, 640, 0);
+		image = new ImageIcon("images/JP_if2.png").getImage().getScaledInstance(360, 640, 0);
 
 
 
@@ -40,7 +40,7 @@ public class Chap04ConditionalPart2 extends JPanel{
 		reset.setFocusPainted(false);
 		reset.setContentAreaFilled(false);
 		add(reset);
-		reset.addActionListener(new MyActionListener());
+		reset.addActionListener(new Reset());
 
 		start = new JButton("2");
 		start.setSize(20,20);
@@ -49,7 +49,7 @@ public class Chap04ConditionalPart2 extends JPanel{
 		start.setFocusPainted(false);
 		start.setContentAreaFilled(false);
 		add(start);
-		start.addActionListener(new MyActionListener2());
+		start.addActionListener(new Start());
 		
 		
 		back = new JButton();
@@ -59,7 +59,7 @@ public class Chap04ConditionalPart2 extends JPanel{
 		back.setFocusPainted(false);
 		back.setContentAreaFilled(false);
 		add(back);
-		back.addActionListener(new MyActionListener3());
+		back.addActionListener(new Back());
 		
 		
 		next = new JButton();
@@ -69,17 +69,17 @@ public class Chap04ConditionalPart2 extends JPanel{
 		next.setFocusPainted(false);
 		next.setContentAreaFilled(false);
 		add(next);
-		next.addActionListener(new MyActionListener4());
+		next.addActionListener(new Next());
 				
 		
-		Last = new JButton();
-		Last.setSize(20, 20);
-		Last.setLocation(240, 626);
-		Last.setBorderPainted(false);
-		Last.setFocusPainted(false);
-		Last.setContentAreaFilled(false);
-		add(Last);
-		Last.addActionListener(new MyActionListener5());
+		last = new JButton();
+		last.setSize(20, 20);
+		last.setLocation(240, 626);
+		last.setBorderPainted(false);
+		last.setFocusPainted(false);
+		last.setContentAreaFilled(false);
+		add(last);
+		last.addActionListener(new Last());
 		
 		
 
@@ -97,25 +97,28 @@ public class Chap04ConditionalPart2 extends JPanel{
 		g.drawImage(image, 0, 0, getWidth(),getHeight(),this);
 		setOpaque(false);//투명하게
 		super.paint(g);
+		
+		
 	}
-	class MyActionListener2 implements ActionListener{
+	class Reset implements ActionListener{
+		
+		@Override
+		public void actionPerformed(ActionEvent e) {
+			win.change("jpanelList");
+		}
+	}
+	
+	class Start implements ActionListener{
 		@Override
 		public void actionPerformed(ActionEvent e){
 			win.change("Chap04ControlStatement");  //자바 환경구축 ->헬로우, 바보 -> 아이디,암호
 			//win.change("panel02"); // 자바 환경구축->헬로우 ,바보 
 		}
 
-	}
-	class MyActionListener implements ActionListener{
-
-		@Override
-		public void actionPerformed(ActionEvent e) {
-			win.change("jpanelList");
-		}
 		
 	}
 	
-	class MyActionListener3 implements ActionListener{
+	class Back implements ActionListener{
 
 		@Override
 		public void actionPerformed(ActionEvent e) {
@@ -125,7 +128,7 @@ public class Chap04ConditionalPart2 extends JPanel{
 		}
 		
 	}
-	class MyActionListener4 implements ActionListener{
+	class Next implements ActionListener{
 
 		@Override
 		public void actionPerformed(ActionEvent e) {
@@ -133,7 +136,7 @@ public class Chap04ConditionalPart2 extends JPanel{
 		}
 		
 	}
-	class MyActionListener5 implements ActionListener{
+	class Last implements ActionListener{
 
 		@Override
 		public void actionPerformed(ActionEvent e) {

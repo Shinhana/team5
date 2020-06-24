@@ -10,8 +10,7 @@ import javax.swing.ImageIcon;
 import javax.swing.JButton;
 import javax.swing.JPanel;
 
-import miniProject.Run.PanelChange;
-import miniProject.chapter.chap03.Chap03OperatorMain;
+import team5.miniProject.run.PanelChange;
 
 public class JPanel_Main extends JPanel{
 		Image image;
@@ -29,12 +28,12 @@ public class JPanel_Main extends JPanel{
 		btn.setLocation(250,600);
 		
 		
-		//¹öÆ° ¾Èº¸ÀÌ°Ô ¼û±è
+		//ï¿½ï¿½Æ° ï¿½Èºï¿½ï¿½Ì°ï¿½ ï¿½ï¿½ï¿½ï¿½
 		btn.setBackground(Color.WHITE);
 		btn.setOpaque(false);
-		btn.setBorderPainted(false); //Å×µÎ¸® ÆäÀÎÆÃ
+		btn.setBorderPainted(false); //ï¿½×µÎ¸ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 		btn.setFocusPainted(false);
-		btn.setContentAreaFilled(true);//´©¸¦ ¶§ Ç¥½ÃµÊ
+		btn.setContentAreaFilled(true);//ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ Ç¥ï¿½Ãµï¿½
 		
 		add(btn);
 		btn.addActionListener(new MyActionListener3());
@@ -43,15 +42,15 @@ public class JPanel_Main extends JPanel{
 	@Override 
 	public void paint(Graphics g){
 		g.drawImage(image, 0, 0, getWidth(),getHeight(),this);
-		setOpaque(false);//Åõ¸íÇÏ°Ô
+		setOpaque(false);//ï¿½ï¿½ï¿½ï¿½ï¿½Ï°ï¿½
 		super.paint(g);
 	}
 	
 	class MyActionListener3 implements ActionListener{
 		@Override
 		public void actionPerformed(ActionEvent e){
-			win.change("jpanel_login");  //ÀÚ¹Ù È¯°æ±¸Ãà ->Çï·Î¿ì, ¹Ùº¸ -> ¾ÆÀÌµð,¾ÏÈ£
-			//win.change("panel02"); // ÀÚ¹Ù È¯°æ±¸Ãà->Çï·Î¿ì ,¹Ùº¸ 
+			win.change("jpanel_login");  //ï¿½Ú¹ï¿½ È¯ï¿½æ±¸ï¿½ï¿½ ->ï¿½ï¿½Î¿ï¿½, ï¿½Ùºï¿½ -> ï¿½ï¿½ï¿½Ìµï¿½,ï¿½ï¿½È£
+			//win.change("panel02"); // ï¿½Ú¹ï¿½ È¯ï¿½æ±¸ï¿½ï¿½->ï¿½ï¿½Î¿ï¿½ ,ï¿½Ùºï¿½ 
 		}
 	}
 	

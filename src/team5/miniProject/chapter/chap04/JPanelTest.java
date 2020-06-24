@@ -1,5 +1,5 @@
 package team5.miniProject.chapter.chap04;
-
+import team5.miniProject.run.PanelChange;
 import java.awt.Color;
 
 import javax.swing.JFrame;
@@ -25,9 +25,8 @@ public class JPanelTest extends JFrame{
 	public Chap04Quiz1 Chap04Quiz1 = null;
 	public Chap04Quiz2 Chap04Quiz2 = null;
 	public Chap04Quiz1Ans Chap04Quiz1Ans = null;
-	
-	
 	public Chap04Test1 Chap04Test1 = null;
+	
 	public Chap04Test2 Chap04Test2 = null;
 	public Chap04Test1Ans1 Chap04Test1Ans1 = null;
 	public Chap04Test1Ans2 Chap04Test1Ans2 = null;
@@ -114,10 +113,32 @@ public class JPanelTest extends JFrame{
 			revalidate();
 			repaint();
 		}
-//		else if(panelName.equals("Chap04Test2")) {
-//			getContentPane().removeAll();
-//			getContentPane().add();
-//		}
+		else if(panelName.equals("Chap04Test2")) {
+			getContentPane().removeAll();
+			getContentPane().add(Chap04Test2);
+			revalidate();
+			repaint();
+			
+		}
+		else if(panelName.equals("Chap04Test1Ans1")) {
+			getContentPane().removeAll();
+			getContentPane().add(Chap04Test1Ans1);
+			revalidate();
+			repaint();
+			
+		}
+		else if(panelName.equals("Chap04Test1Ans2")) {
+			getContentPane().removeAll();
+			getContentPane().add(Chap04Test1Ans2);
+			revalidate();
+			repaint();
+		}
+		else if(panelName.equals("Chap04Test2Ans")) {
+			getContentPane().removeAll();
+			getContentPane().add(Chap04Test2Ans);
+			revalidate();
+			repaint();
+		}
 	}
 	
 	public static void main(String[]args){
@@ -141,6 +162,10 @@ public class JPanelTest extends JFrame{
 		win.Chap04Quiz2 = new Chap04Quiz2(win);
 		win.Chap04Quiz1Ans = new Chap04Quiz1Ans(win);
 		win.Chap04Test1 = new Chap04Test1(win);
+		win.Chap04Test2 = new Chap04Test2(win);
+		win.Chap04Test1Ans1 = new Chap04Test1Ans1(win);
+		win.Chap04Test1Ans2 = new Chap04Test1Ans2(win);
+		win.Chap04Test2Ans = new Chap04Test2Ans(win);
 		win.jpanelList = new JPanelList(win);
 		
 		win.add(win.Chap04ControlStatement);

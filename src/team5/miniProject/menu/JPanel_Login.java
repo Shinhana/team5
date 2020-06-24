@@ -12,28 +12,28 @@ import javax.swing.JPanel;
 import javax.swing.JPasswordField;
 import javax.swing.JTextField;
 
-import miniProject.Run.PanelChange;
+import team5.miniProject.run.PanelChange;
 
 public class JPanel_Login extends JPanel{
-	//Àü¿ª º¯¼ö·Î º¯¼öµéÀ» ¼³Á¤(ÃßÈÄ »ý¼ºÀÚ°¡ ¾Æ´Ñ ¸Þ¼Òµå¿¡¼­ Á¢±ÙÇØ¼­ ÀÌº¥Æ® Ã³¸®¸¦ ÇØ¾ß µÇ±â ¶§¹®)
+	//ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½(ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Ú°ï¿½ ï¿½Æ´ï¿½ ï¿½Þ¼Òµå¿¡ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Ø¼ï¿½ ï¿½Ìºï¿½Æ® Ã³ï¿½ï¿½ï¿½ï¿½ ï¿½Ø¾ï¿½ ï¿½Ç±ï¿½ ï¿½ï¿½ï¿½ï¿½)
 	//BufferedImage img = null;
 	JTextField loginTextField;
 	JPasswordField passwordField;
 	JButton btn;
-	//°¢°¢ ÀÌ¹ÌÁö,ÅØ½ºÆ®ÇÊµå,ºñ¹Ð¹øÈ£ÇÊµå,¹öÆ°
+	//ï¿½ï¿½ï¿½ï¿½ ï¿½Ì¹ï¿½ï¿½ï¿½,ï¿½Ø½ï¿½Æ®ï¿½Êµï¿½,ï¿½ï¿½Ð¹ï¿½È£ï¿½Êµï¿½,ï¿½ï¿½Æ°
 	Image image;
 	private PanelChange win;
 	
-	//»ý¼ºÀÚ
+	//ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 	public JPanel_Login(PanelChange win){
 		
 		this.win=win;
-		//setTitle("·Î±×ÀÎ Å×½ºÆ®");
+		//setTitle("ï¿½Î±ï¿½ï¿½ï¿½ ï¿½×½ï¿½Æ®");
 		setSize(1200,700);
 		//setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		
 		
-		//·¹ÀÌ¾Æ¿ô¼³Á¤ , ¼¿·ÎÆÇÁöÃ³·³ Ã³¸®¸¦ ÇØÁÜ JLayeredPane
+		//ï¿½ï¿½ï¿½Ì¾Æ¿ï¿½ï¿½ï¿½ï¿½ï¿½ , ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ã³ï¿½ï¿½ Ã³ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ JLayeredPane
 		setLayout(null);
 		JLayeredPane layeredPane = new JLayeredPane();
 		layeredPane.setBounds(0,0,1200,700);
@@ -41,61 +41,61 @@ public class JPanel_Login extends JPanel{
 		
 			
 		
-		//ÆÐ³Î1
-		//ÀÌ¹ÌÁö ¹Þ¾Æ¿À±â
+		//ï¿½Ð³ï¿½1
+		//ï¿½Ì¹ï¿½ï¿½ï¿½ ï¿½Þ¾Æ¿ï¿½ï¿½ï¿½
 //		try{
 //			img = ImageIO.read(new File("C:\\Users\\JMKIM\\eclipse-workspace\\SoloProject\\src\\game\\practice\\img\\login_redesign2.png"));
 //		}catch(IOException e){
-//			System.out.println("¾È³ç");
+//			System.out.println("ï¿½È³ï¿½");
 //			System.exit(0);
 //			
 //		}
 		image = new ImageIcon("images/login_redesign2.png").getImage();
 		
 		MyPanel panel = new MyPanel();
-		//setLayoutÀ» null°ªÀ¸·Î ¼³Á¤Çß±â¶§¹®¿¡ ÆÐ³ÎÀ§Ä¡¸¦ ´Ù½Ã ¼³Á¤
+		//setLayoutï¿½ï¿½ nullï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ß±â¶§ï¿½ï¿½ï¿½ï¿½ ï¿½Ð³ï¿½ï¿½ï¿½Ä¡ï¿½ï¿½ ï¿½Ù½ï¿½ ï¿½ï¿½ï¿½ï¿½
 		panel.setBounds(0,0,1200,700);
 		
-		//·Î±×ÀÎ ³»¿ë
-		//·Î±×ÀÎ ÇÊµå ,15±ÛÀÚ Á¦ÇÑ
+		//ï¿½Î±ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
+		//ï¿½Î±ï¿½ï¿½ï¿½ ï¿½Êµï¿½ ,15ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
 		loginTextField = new JTextField(15);
-		//À§Ä¡ Àý´ë°ª ¼³Á¤
+		//ï¿½ï¿½Ä¡ ï¿½ï¿½ï¿½ë°ª ï¿½ï¿½ï¿½ï¿½
 		loginTextField.setBounds(150,220,280,30);
-		//¼¿·ÎÆÇÁö ·¹ÀÌ¾îµå ÇÊµå¿¡ textÇÊµå¸¦ ³Ö¾î´Þ¶ó
+		//ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½Ì¾ï¿½ï¿½ ï¿½Êµå¿¡ textï¿½Êµå¸¦ ï¿½Ö¾ï¿½Þ¶ï¿½
 		layeredPane.add(loginTextField);
-		//Ä¿½ºÅÍ¸¶ÀÌÂ¡ Ã³¸®
+		//Ä¿ï¿½ï¿½ï¿½Í¸ï¿½ï¿½ï¿½Â¡ Ã³ï¿½ï¿½
 		loginTextField.setOpaque(false);
-		//±ÛÀÚ »ö ¼³Á¤
+		//ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
 		loginTextField.setForeground(Color.WHITE);
 		loginTextField.setSize(80, 100);
-		//ÅØ½ºÆ® ÇÊµåÀÇ °æ°è¼±À» ¾ø¾Ú
+		//ï¿½Ø½ï¿½Æ® ï¿½Êµï¿½ï¿½ï¿½ ï¿½ï¿½è¼±ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
 		loginTextField.setBorder(javax.swing.BorderFactory.createEmptyBorder());
 		
-		//ÆÐ½º¿öµå
+		//ï¿½Ð½ï¿½ï¿½ï¿½ï¿½ï¿½
 		passwordField = new JPasswordField(15);
 		passwordField.setBounds(150,370,280,30);
-		//Ä¿½ºÅÍ¸¶ÀÌÂ¡ Ã³¸®		
-		//ºñ¹Ð¹øÈ£ ³»¿ë
+		//Ä¿ï¿½ï¿½ï¿½Í¸ï¿½ï¿½ï¿½Â¡ Ã³ï¿½ï¿½		
+		//ï¿½ï¿½Ð¹ï¿½È£ ï¿½ï¿½ï¿½ï¿½
 		passwordField.setOpaque(false);
-		//±ÛÀÚ »ö ¼³Á¤
+		//ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
 		passwordField.setForeground(Color.WHITE);
 		loginTextField.setSize(80, 100);
 		passwordField.setBorder(javax.swing.BorderFactory.createEmptyBorder());
-		//¼¿·ÎÆÇÁö ·¹ÀÌ¾îµå ÇÊµå¿¡ ÆÐ½º¿öµå ÇÊµå¸¦ ³Ö¾î´Þ¶ó
+		//ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½Ì¾ï¿½ï¿½ ï¿½Êµå¿¡ ï¿½Ð½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½Êµå¸¦ ï¿½Ö¾ï¿½Þ¶ï¿½
 		layeredPane.add(passwordField);
 		
 		
-		//·Î±×ÀÎ ¹öÆ° Ãß°¡
+		//ï¿½Î±ï¿½ï¿½ï¿½ ï¿½ï¿½Æ° ï¿½ß°ï¿½
 		btn = new JButton(new ImageIcon("images/Group 63.png"));
 		btn.setBounds(40,480,274,58);
 		
 		
-		//·Î±×ÀÎ ¹öÆ° Åõ¸íÃ³¸®
+		//ï¿½Î±ï¿½ï¿½ï¿½ ï¿½ï¿½Æ° ï¿½ï¿½ï¿½ï¿½Ã³ï¿½ï¿½
 		
-		//¹öÆ°¿¡¼­ Èò»ö ¹è°æÀ» °ËÁ¤»öÀ¸·Î º¯È¯
+		//ï¿½ï¿½Æ°ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½È¯
 		//btn.setBackground(Color.black);
 		
-		//°æ°è¼±À» Åõ¸íÈ­
+		//ï¿½ï¿½è¼±ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½È­
 		btn.setBorderPainted(false);
 		btn.setFocusPainted(false);
 		btn.setContentAreaFilled(true);
@@ -104,9 +104,9 @@ public class JPanel_Login extends JPanel{
 		
 	
 		layeredPane.add(btn);
-		//¸¶Áö¸·Ãß°¡µé
-		//¹Ýµå½Ã layeredPaneÀÇ Á¦ÀÏ ¸¶Áö¸·¿¡ addÇØÁà¾ßÇÔ. 
-		//ÆÐ³ÎÀº jframe¿¡ Ãß°¡½ÃÅ´
+		//ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ß°ï¿½ï¿½ï¿½
+		//ï¿½Ýµï¿½ï¿½ layeredPaneï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ addï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½. 
+		//ï¿½Ð³ï¿½ï¿½ï¿½ jframeï¿½ï¿½ ï¿½ß°ï¿½ï¿½ï¿½Å´
 		layeredPane.add(panel);
 		add(layeredPane);
 		setVisible(true);
@@ -114,18 +114,18 @@ public class JPanel_Login extends JPanel{
 		
 	}
 	class MyPanel extends JPanel{
-		//JPanel¿¡ ±×¸²À» ±×¸®°Ú´Ù´Â ¸Þ¼Òµå
+		//JPanelï¿½ï¿½ ï¿½×¸ï¿½ï¿½ï¿½ ï¿½×¸ï¿½ï¿½Ú´Ù´ï¿½ ï¿½Þ¼Òµï¿½
 		public void paint(Graphics g){
 			g.drawImage(image,0,0,null);
-			//ÀúÀåÇÑ ÀÌ¹ÌÁö(img) ºÒ·¯¿À±â
+			//ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½Ì¹ï¿½ï¿½ï¿½(img) ï¿½Ò·ï¿½ï¿½ï¿½ï¿½ï¿½
 		}
 	}
 	
 	class MyActionListener3 implements ActionListener{
 		@Override
 		public void actionPerformed(ActionEvent e){
-			win.change("panellist");  //ÀÚ¹Ù È¯°æ±¸Ãà ->Çï·Î¿ì, ¹Ùº¸ -> ¾ÆÀÌµð,¾ÏÈ£
-			//win.change("panel02"); // ÀÚ¹Ù È¯°æ±¸Ãà->Çï·Î¿ì ,¹Ùº¸ 
+			win.change("panellist");  //ï¿½Ú¹ï¿½ È¯ï¿½æ±¸ï¿½ï¿½ ->ï¿½ï¿½Î¿ï¿½, ï¿½Ùºï¿½ -> ï¿½ï¿½ï¿½Ìµï¿½,ï¿½ï¿½È£
+			//win.change("panel02"); // ï¿½Ú¹ï¿½ È¯ï¿½æ±¸ï¿½ï¿½->ï¿½ï¿½Î¿ï¿½ ,ï¿½Ùºï¿½ 
 		}
 	}
 	

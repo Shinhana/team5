@@ -1,5 +1,5 @@
 package team5.miniProject.chapter.chap04;
-
+import team5.miniProject.run.PanelChange;
 import java.awt.Graphics;
 import java.awt.Image;
 import java.awt.event.ActionEvent;
@@ -20,7 +20,7 @@ public class Chap04QuizTime extends JPanel{
 		setLayout(null);
 		this.win = win;
 		
-		image = new ImageIcon("images/QuizTime.png").getImage().getScaledInstance(360, 640, 0);
+		image = new ImageIcon("images/JP_QuizTime.png").getImage().getScaledInstance(360, 640, 0);
 		
 		
 		practice = new JButton();

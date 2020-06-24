@@ -1,5 +1,5 @@
 package team5.miniProject.chapter.chap04;
-
+import team5.miniProject.run.PanelChange;
 import java.awt.Color;
 import java.awt.Image;
 import java.awt.event.ActionEvent;
@@ -30,14 +30,14 @@ public class Chap04ControlStatement extends JPanel{
 	public Chap04ControlStatement(JPanelTest win){
 
 		//JFrame f = new JFrame();
-		System.out.println(f.getContentPane());
+	//	System.out.println(f.getContentPane());
 		this.setBackground(Color.BLACK);
 
 
 		this.win=win;
 		setLayout(null);
 
-		Image images1 = new ImageIcon("images/loopmainButton.png").getImage().getScaledInstance(282, 83, 0);
+		Image images1 = new ImageIcon("images/JP_ifmainButton.png").getImage().getScaledInstance(282, 83, 0);
 		//jp.add(label);
 
 		//버튼 1생성 (자바환경 구축)
@@ -51,7 +51,7 @@ public class Chap04ControlStatement extends JPanel{
 		add(jButton1);
 
 		//	ImageIcon images2 = new ImageIcon("/Users/jess/Desktop/images/ifmainButton.png");
-		Image images2 = new ImageIcon("images/ifmainButton.png").getImage().getScaledInstance(282, 83, 0);
+		Image images2 = new ImageIcon("images/JP_loopmainButton.png").getImage().getScaledInstance(282, 83, 0);
 
 		jButton2 = new JButton(new ImageIcon(images2));
 		jButton2.setSize(282,83);
@@ -59,7 +59,7 @@ public class Chap04ControlStatement extends JPanel{
 		jButton2.setLocation(39,278);
 		add(jButton2);
 
-		Image images3 = new ImageIcon("images/continuemainButton.png").getImage().getScaledInstance(282, 83, 0);
+		Image images3 = new ImageIcon("images/JP_continuemainButton.png").getImage().getScaledInstance(282, 83, 0);
 
 
 		jButton3 = new JButton(new ImageIcon(images3));

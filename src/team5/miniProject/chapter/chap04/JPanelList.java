@@ -1,5 +1,5 @@
 package team5.miniProject.chapter.chap04;
-
+import team5.miniProject.run.PanelChange;
 import java.awt.Graphics;
 import java.awt.Image;
 import java.awt.event.ActionEvent;
@@ -19,11 +19,14 @@ public class JPanelList extends JPanel{
 		this.win=win;
 		
 		
-		Image mainIg = new ImageIcon("/Users/jess/Desktop/images/Mainlist.png").getImage().getScaledInstance(360, 640, 0);
+		Image mainIg = new ImageIcon("images/JP_Mainlist.png").getImage().getScaledInstance(360, 640, 0);
 		
 		jButton1 = new JButton (new ImageIcon(mainIg));
 		jButton1.setSize(360, 640);
-		jButton1.setContentAreaFilled(false);
+		jButton1.setBorderPainted(true);
+		jButton1.setFocusPainted(true);
+	//	btn.setContentAreaFilled(true);
+		jButton1.setContentAreaFilled(true);
 		add(jButton1);
 		
 		
@@ -31,12 +34,18 @@ public class JPanelList extends JPanel{
 		JButton btn = new JButton("버튼");
 		btn.setSize(70,20);
 		btn.setLocation(10,10);
+		btn.setBorderPainted(true);
+		btn.setFocusPainted(true);
+		btn.setContentAreaFilled(true);
 		add(btn);
 		btn.addActionListener(new MyActionListener3());
 		
 		JButton btn2 = new JButton("다음장");
-		btn.setSize(70,20);
-		btn.setLocation(50,10);
+		btn2.setSize(70,20);
+		btn2.setLocation(50,10);
+		btn2.setBorderPainted(true);
+		btn2.setFocusPainted(true);
+		btn2.setContentAreaFilled(true);
 		add(btn2);
 		btn2.addActionListener(new MyActionListener2());
 		
