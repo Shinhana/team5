@@ -1,4 +1,4 @@
-package miniProject.chapter.chap03.quiz;
+package team5.miniProject.chapter.chap03.quiz;
 
 import java.awt.Color;
 import java.awt.Graphics;
@@ -11,7 +11,7 @@ import javax.swing.JButton;
 import javax.swing.JPanel;
 import javax.swing.JTextArea;
 
-import miniProject.Run.PanelChange;
+import team5.miniProject.run.PanelChange;
 
 
 public class Chap03OperatorQuizAnswer1 extends JPanel{

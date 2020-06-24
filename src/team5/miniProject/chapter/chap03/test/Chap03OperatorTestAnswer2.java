@@ -1,5 +1,6 @@
-package miniProject.chapter.chap03;
+package team5.miniProject.chapter.chap03.test;
 
+import java.awt.Color;
 import java.awt.Graphics;
 import java.awt.Image;
 import java.awt.event.ActionEvent;
@@ -10,20 +11,24 @@ import javax.swing.JButton;
 import javax.swing.JPanel;
 import javax.swing.JTextArea;
 
-import miniProject.Run.PanelChange;
+import team5.miniProject.run.PanelChange;
 
-public class Chap03OperatorPart05 extends JPanel{
 
+public class Chap03OperatorTestAnswer2 extends JPanel{
+
+	
 	Image image;
 	private PanelChange win;
 	private JTextArea memoTextField;
 	
-	public Chap03OperatorPart05(PanelChange win){
+	
+	
+	public Chap03OperatorTestAnswer2(PanelChange win){
 		
 		setLayout(null);
 		this.win = win;
 		
-		image = new ImageIcon("images/Operator_Part5.png").getImage();
+		image = new ImageIcon("images/Operator_Test2_Answer.png").getImage();
 		
 		JButton reset = new JButton("목차로");
 		reset.setSize(20,20);
@@ -71,10 +76,17 @@ public class Chap03OperatorPart05 extends JPanel{
 		add(back);
 		back.addActionListener(new Back());
 		
+		memoTextField =  new JTextArea();
+		memoTextField.setBounds(50,520,280,100);
+		memoTextField.setOpaque(false);
+		memoTextField.setForeground(Color.WHITE);
+		//테스트 공간 테두리 숨기기 
+		memoTextField.setBorder(javax.swing.BorderFactory.createEmptyBorder());
 		
+		add(memoTextField);
 		
 	}
-
+	
 	@Override 
 	public void paint(Graphics g){
 		g.drawImage(image, 0, 0, getWidth(),getHeight(),this);
@@ -91,14 +103,14 @@ public class Chap03OperatorPart05 extends JPanel{
 		class Next implements ActionListener{
 			@Override
 			public void actionPerformed(ActionEvent e){
-				win.change("operator_quiz1");
+				win.change("operator_testAnswer2");
 			}
 		}
 		
 		class Back implements ActionListener{
 			@Override
 			public void actionPerformed(ActionEvent e){
-				win.change("operator_part4");
+				win.change("operator_testAnswer1");
 			}
 		}
 		
@@ -112,7 +124,9 @@ public class Chap03OperatorPart05 extends JPanel{
 		class Last implements ActionListener{
 			@Override
 			public void actionPerformed(ActionEvent e){
-				win.change("operator_part5");
+				win.change("operator_testAnswer2");
 			}
 		}
+		
+	
 }

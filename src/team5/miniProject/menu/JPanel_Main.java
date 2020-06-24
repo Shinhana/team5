@@ -11,6 +11,10 @@ import javax.swing.JButton;
 import javax.swing.JPanel;
 
 import team5.miniProject.run.PanelChange;
+// <<<<<<< 20200624_chap03_1_(김재민)
+// import team5.miniProject.chapter.chap03.Chap03OperatorMain;
+// =======
+// >>>>>>> master
 
 public class JPanel_Main extends JPanel{
 		Image image;

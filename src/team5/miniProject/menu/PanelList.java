@@ -12,6 +12,10 @@ import javax.swing.JPanel;
 import javax.swing.JTextArea;
 
 import team5.miniProject.run.PanelChange;
+// <<<<<<< 20200624_chap03_1_(김재민)
+// import team5.miniProject.chapter.chap03.Chap03OperatorMain;
+// =======
+// >>>>>>> master
 
 
 
