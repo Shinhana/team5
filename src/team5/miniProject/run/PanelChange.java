@@ -9,6 +9,7 @@ import team5.miniProject.chapter.chap01.Chap01ProgramPart04;
 import team5.miniProject.chapter.chap01.Chap01ProgramPart05;
 import team5.miniProject.chapter.chap01.Chap01ProgramPart06;
 import team5.miniProject.chapter.chap01.Chap01ProgramPart07;
+import team5.miniProject.chapter.chap02.Chap02VariableList;
 import team5.miniProject.chapter.chap03.Chap03OperatorPart01;
 import team5.miniProject.chapter.chap03.Chap03OperatorPart02;
 import team5.miniProject.chapter.chap03.Chap03OperatorPart03;
@@ -64,6 +65,7 @@ public class PanelChange extends JFrame{
 	public Chap03OperatorTestAnswer2 operator_testAnswer2 = null;
 	public JPanel_Login jpanel_login = null;
 	public JPanel_Main jpanel_main = null;
+	public JPanel_Main jpanel_main2 = null;
 	public Chap01ProgramPart01 program_part1 = null;
 	public Chap01ProgramPart02 program_part2 = null;
 	public Chap01ProgramPart03 program_part3 = null;
@@ -88,8 +90,7 @@ public class PanelChange extends JFrame{
 	public Chap06Part2DArray2 darray_part2= null;
 	public Chap06Part2DArray3 darray_part3= null;
 	public Chap06Part2DArray4 darray_part4= null;
-	
-	
+	public Chap02VariableList variable_part1 = null;
 	
 	
 	
@@ -262,6 +263,11 @@ public void change(String panelName){
 		}else if(panelName.equals("nloop_part5")){
 			getContentPane().removeAll();
 			getContentPane().add(nloop_part5);
+			revalidate();
+			repaint();
+		}else if(panelName.equals("variable_part1")){
+			getContentPane().removeAll();
+			getContentPane().add(variable_part1);
 			revalidate();
 			repaint();
 		}
