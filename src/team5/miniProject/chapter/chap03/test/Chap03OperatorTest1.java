@@ -1,4 +1,4 @@
-package miniProject.chapter.chap03;
+package team5.miniProject.chapter.chap03.test;
 
 import java.awt.Color;
 import java.awt.Graphics;
@@ -8,23 +8,29 @@ import java.awt.event.ActionListener;
 
 import javax.swing.ImageIcon;
 import javax.swing.JButton;
+import javax.swing.JOptionPane;
 import javax.swing.JPanel;
 import javax.swing.JTextArea;
 
-import miniProject.Run.PanelChange;
+import team5.miniProject.run.PanelChange;
 
-public class Chap03OperatorPart03 extends JPanel{
+
+
+
+public class Chap03OperatorTest1 extends JPanel{
 
 	Image image;
 	private PanelChange win;
 	private JTextArea memoTextField;
 	
-	public Chap03OperatorPart03(PanelChange win){
+	
+	
+	public Chap03OperatorTest1(PanelChange win){
 		
 		setLayout(null);
 		this.win = win;
 		
-		image = new ImageIcon("images/Operator_Part3.png").getImage();
+		image = new ImageIcon("images/Operator_Test1.png").getImage();
 		
 		JButton reset = new JButton("목차로");
 		reset.setSize(20,20);
@@ -72,6 +78,15 @@ public class Chap03OperatorPart03 extends JPanel{
 		add(back);
 		back.addActionListener(new Back());
 		
+		JButton answer = new JButton("정답확인");
+		answer.setSize(40,20);
+		answer.setLocation(160,585);
+		answer.setBorderPainted(false); //테두리 페인팅
+		answer.setFocusPainted(false);
+		answer.setContentAreaFilled(true);//누를 때 표시됨
+		add(answer);
+		answer.addActionListener(new Answer());
+		
 		memoTextField =  new JTextArea();
 		memoTextField.setBounds(50,520,280,100);
 		memoTextField.setOpaque(false);
@@ -82,13 +97,14 @@ public class Chap03OperatorPart03 extends JPanel{
 		add(memoTextField);
 	}
 	
-	
+
 	@Override 
 	public void paint(Graphics g){
 		g.drawImage(image, 0, 0, getWidth(),getHeight(),this);
 		setOpaque(false);//투명하게
 		super.paint(g);
 	}
+	
 	class Reset implements ActionListener{
 		@Override
 		public void actionPerformed(ActionEvent e){
@@ -98,14 +114,14 @@ public class Chap03OperatorPart03 extends JPanel{
 		class Next implements ActionListener{
 			@Override
 			public void actionPerformed(ActionEvent e){
-				win.change("operator_part4");
+				win.change("operator_test2");
 			}
 		}
 		
 		class Back implements ActionListener{
 			@Override
 			public void actionPerformed(ActionEvent e){
-				win.change("operator_part2");
+				win.change("operator_quiz2");
 			}
 		}
 		
@@ -119,7 +135,25 @@ public class Chap03OperatorPart03 extends JPanel{
 		class Last implements ActionListener{
 			@Override
 			public void actionPerformed(ActionEvent e){
-				win.change("operator_part5");
+				win.change("operator_part9");
+			}
+		}
+		
+		class Answer implements ActionListener{
+			@Override
+			public void actionPerformed(ActionEvent e){
+				System.out.println(e.getActionCommand());
+				String str = memoTextField.getText();
+				//str = str.trim();
+				System.out.println(str);
+				if(str.equals("num>0?\"양수\":(num<0?\"음수\":0)")){
+					JOptionPane.showMessageDialog(null,"정답");
+					
+				}else{
+					JOptionPane.showMessageDialog(null,"땡");
+				}
+				win.change("operator_testAnswer1");
+				
 			}
 		}
 	

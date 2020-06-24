@@ -1,4 +1,4 @@
-package miniProject.chapter.chap03.quiz;
+package team5.miniProject.chapter.chap03.quiz;
 
 import java.awt.Color;
 import java.awt.Graphics;
@@ -12,8 +12,8 @@ import javax.swing.JOptionPane;
 import javax.swing.JPanel;
 import javax.swing.JTextArea;
 
-import miniProject.Run.PanelChange;
-import miniProject.chapter.chap03.Chap03OperatorMain;
+import team5.miniProject.run.PanelChange;
+import team5.miniProject.chapter.chap03.Chap03OperatorMain;
 
 
 

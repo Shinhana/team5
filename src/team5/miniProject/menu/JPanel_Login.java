@@ -12,7 +12,7 @@ import javax.swing.JPanel;
 import javax.swing.JPasswordField;
 import javax.swing.JTextField;
 
-import miniProject.Run.PanelChange;
+import team5.miniProject.run.PanelChange;
 
 public class JPanel_Login extends JPanel{
 	//전역 변수로 변수들을 설정(추후 생성자가 아닌 메소드에서 접근해서 이벤트 처리를 해야 되기 때문)

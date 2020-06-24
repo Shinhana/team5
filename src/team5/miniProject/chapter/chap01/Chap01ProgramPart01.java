@@ -1,4 +1,4 @@
-package team5.miniProject.chapter.chap03;
+package team5.miniProject.chapter.chap01;
 
 import java.awt.Color;
 import java.awt.Graphics;
@@ -10,23 +10,28 @@ import javax.swing.ImageIcon;
 import javax.swing.JButton;
 import javax.swing.JPanel;
 import javax.swing.JTextArea;
+import javax.swing.JTextField;
 
 import team5.miniProject.run.PanelChange;
 
 
 
-public class Chap03OperatorPart01 extends JPanel{
-	Image image;
-	private PanelChange win;
+public class Chap01ProgramPart01 extends JPanel{
+	private JTextField textField;
+	//private JTextField memoTextField;
 	private JTextArea memoTextField;
+	private PanelChange win;
+	Image image;
 	
-	
-	public Chap03OperatorPart01 (PanelChange win){
+	public Chap01ProgramPart01(PanelChange win){
 		setLayout(null);
 		this.win = win;
 		
-		image = new ImageIcon("images/Operator_Part1.png").getImage();
-	
+		
+		image = new ImageIcon("images/chapter 1-1.png").getImage();
+//		File f = new File("C:\\Users\\JMKIM\\eclipse-workspace\\SoloProject\\src\\game\\practice\\img\\chapter 1-1.png");
+//		System.out.println(f.exists() ?  "y" : "n"); 
+		
 		 //처음으로 돌아가는 버튼
 		JButton reset = new JButton("목차로");
 		reset.setSize(20,20);
@@ -36,6 +41,7 @@ public class Chap03OperatorPart01 extends JPanel{
 		reset.setLocation(115,615);
 	
 		add(reset);
+		
 		reset.addActionListener(new Reset());
 		
 		JButton next = new JButton("다음장");
@@ -47,6 +53,15 @@ public class Chap03OperatorPart01 extends JPanel{
 		add(next);
 		next.addActionListener(new Next());
 		
+		JButton back = new JButton("이전");
+		back.setSize(20,20);
+		back.setLocation(170,615);
+		back.setBorderPainted(false); //테두리 페인팅
+		back.setFocusPainted(false);
+		back.setContentAreaFilled(false);//누를 때 표시됨
+		add(back);
+		back.addActionListener(new Back());
+		
 		JButton last = new JButton("맨 뒤로");
 		last.setSize(20,20);
 		last.setBorderPainted(false); //테두리 페인팅
@@ -56,6 +71,16 @@ public class Chap03OperatorPart01 extends JPanel{
 		add(last);
 		last.addActionListener(new Last());
 		
+		JButton start = new JButton("맨 앞으로");
+		start.setSize(20,20);
+		start.setBorderPainted(false); //테두리 페인팅
+		start.setFocusPainted(false);
+		start.setContentAreaFilled(false);//누를 때 표시됨
+		start.setLocation(150,615);
+		add(start);
+		start.addActionListener(new Start());
+		
+		//메모 텍스트 공간 설정
 		memoTextField =  new JTextArea();
 		memoTextField.setBounds(50,520,280,100);
 		memoTextField.setOpaque(false);
@@ -64,34 +89,50 @@ public class Chap03OperatorPart01 extends JPanel{
 		memoTextField.setBorder(javax.swing.BorderFactory.createEmptyBorder());
 		
 		add(memoTextField);
-	}
+		
+		}
 	
-	
-	
-	
-	
-	@Override 
-	public void paint(Graphics g){
-		g.drawImage(image, 0, 0, getWidth(),getHeight(),this);
-		setOpaque(false);//투명하게
-		super.paint(g);
-	}
-	class Reset implements ActionListener{
+		@Override 
+		public void paint(Graphics g){
+			g.drawImage(image, 0, 0, getWidth(),getHeight(),this);
+			setOpaque(false);//투명하게
+			super.paint(g);
+		}
+		
+		class Reset implements ActionListener{
 		@Override
 		public void actionPerformed(ActionEvent e){
 			win.change("panellist");
 		}
-}
-class Next implements ActionListener{
+	}
+		class Next implements ActionListener{
 			@Override
 			public void actionPerformed(ActionEvent e){
-				win.change("operator_part2");
+				win.change("program_part2");
 			}
 		}
-class Last implements ActionListener{
+		
+		class Back implements ActionListener{
 			@Override
 			public void actionPerformed(ActionEvent e){
-				win.change("operator_quiz2");
+				win.change("program_part1");
 			}
 		}
-}
+		
+		class Start implements ActionListener{
+			@Override
+			public void actionPerformed(ActionEvent e){
+				win.change("program_part1");
+			}
+		}
+		
+		class Last implements ActionListener{
+			@Override
+			public void actionPerformed(ActionEvent e){
+				win.change("program_part7");
+			}
+		}
+		
+		
+	}
+

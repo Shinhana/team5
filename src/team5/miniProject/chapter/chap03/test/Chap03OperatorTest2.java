@@ -1,4 +1,4 @@
-package team5.miniProject.chapter.chap03.quiz;
+package team5.miniProject.chapter.chap03.test;
 
 import java.awt.Color;
 import java.awt.Graphics;
@@ -12,23 +12,24 @@ import javax.swing.JOptionPane;
 import javax.swing.JPanel;
 import javax.swing.JTextArea;
 
+import team5.miniProject.chapter.chap03.test.Chap03OperatorTest1.Answer;
 import team5.miniProject.run.PanelChange;
 
 
 
-public class Chap03OperatorQuiz1 extends JPanel{
+public class Chap03OperatorTest2 extends JPanel{
 
 	Image image;
 	private PanelChange win;
 	private JTextArea memoTextField;
 	
 	
-	public Chap03OperatorQuiz1(PanelChange win){
-
+	public Chap03OperatorTest2(PanelChange win){
+		
 		setLayout(null);
 		this.win = win;
 		
-		image = new ImageIcon("images/Operator_Quiz1.png").getImage();
+		image = new ImageIcon("images/Operator_Test2.png").getImage();
 		
 		JButton reset = new JButton("목차로");
 		reset.setSize(20,20);
@@ -86,17 +87,14 @@ public class Chap03OperatorQuiz1 extends JPanel{
 		answer.addActionListener(new Answer());
 		
 		memoTextField =  new JTextArea();
-		memoTextField.setBounds(50,520,280,100);
+		memoTextField.setBounds(50,450,280,300);
 		memoTextField.setOpaque(false);
 		memoTextField.setForeground(Color.WHITE);
 		//테스트 공간 테두리 숨기기 
 		memoTextField.setBorder(javax.swing.BorderFactory.createEmptyBorder());
 		
 		add(memoTextField);
-		
-		
-		
-	}
+		}
 	
 	@Override 
 	public void paint(Graphics g){
@@ -114,14 +112,14 @@ public class Chap03OperatorQuiz1 extends JPanel{
 		class Next implements ActionListener{
 			@Override
 			public void actionPerformed(ActionEvent e){
-				win.change("operator_quiz2");
+				win.change("operator_test2");
 			}
 		}
 		
 		class Back implements ActionListener{
 			@Override
 			public void actionPerformed(ActionEvent e){
-				win.change("operator_part5");
+				win.change("operator_test1");
 			}
 		}
 		
@@ -135,24 +133,28 @@ public class Chap03OperatorQuiz1 extends JPanel{
 		class Last implements ActionListener{
 			@Override
 			public void actionPerformed(ActionEvent e){
-				win.change("operator_quiz2");
+				win.change("operator_test2");
 			}
 		}
+		
 		class Answer implements ActionListener{
 			@Override
 			public void actionPerformed(ActionEvent e){
 				System.out.println(e.getActionCommand());
 				String str = memoTextField.getText();
-				str = str.trim();
+				str = str.toLowerCase();
+				//str = str.trim();
 				System.out.println(str);
-				if(str.equals("11,11\n10,11")){
+				if(str.equals("6\ntrue\n13\n5\nfalse\n2\n5\n66\nb")){
 					JOptionPane.showMessageDialog(null,"정답");
 					
 				}else{
 					JOptionPane.showMessageDialog(null,"땡");
 				}
-				win.change("operator_quizAnswer1");
+				win.change("operator_testAnswer2");
 				
 			}
 		}
 }
+	
+

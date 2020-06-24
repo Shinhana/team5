@@ -11,8 +11,8 @@ import javax.swing.JButton;
 import javax.swing.JPanel;
 import javax.swing.JTextArea;
 
-import miniProject.Run.PanelChange;
-import miniProject.chapter.chap03.Chap03OperatorMain;
+import team5.miniProject.run.PanelChange;
+import team5.miniProject.chapter.chap03.Chap03OperatorMain;
 
 
 

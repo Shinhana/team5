@@ -10,8 +10,8 @@ import javax.swing.ImageIcon;
 import javax.swing.JButton;
 import javax.swing.JPanel;
 
-import miniProject.Run.PanelChange;
-import miniProject.chapter.chap03.Chap03OperatorMain;
+import team5.miniProject.run.PanelChange;
+import team5.miniProject.chapter.chap03.Chap03OperatorMain;
 
 public class JPanel_Main extends JPanel{
 		Image image;

@@ -2,11 +2,26 @@ package team5.miniProject.run;
 
 import javax.swing.JFrame;
 
+import team5.miniProject.chapter.chap01.Chap01ProgramPart01;
+import team5.miniProject.chapter.chap01.Chap01ProgramPart02;
+import team5.miniProject.chapter.chap01.Chap01ProgramPart03;
+import team5.miniProject.chapter.chap01.Chap01ProgramPart04;
+import team5.miniProject.chapter.chap01.Chap01ProgramPart05;
+import team5.miniProject.chapter.chap01.Chap01ProgramPart06;
+import team5.miniProject.chapter.chap01.Chap01ProgramPart07;
 import team5.miniProject.chapter.chap03.Chap03OperatorPart01;
 import team5.miniProject.chapter.chap03.Chap03OperatorPart02;
 import team5.miniProject.chapter.chap03.Chap03OperatorPart03;
 import team5.miniProject.chapter.chap03.Chap03OperatorPart04;
 import team5.miniProject.chapter.chap03.Chap03OperatorPart05;
+import team5.miniProject.chapter.chap03.quiz.Chap03OperatorQuiz1;
+import team5.miniProject.chapter.chap03.quiz.Chap03OperatorQuiz2;
+import team5.miniProject.chapter.chap03.quiz.Chap03OperatorQuizAnswer1;
+import team5.miniProject.chapter.chap03.quiz.Chap03OperatorQuizAnswer2;
+import team5.miniProject.chapter.chap03.test.Chap03OperatorTest1;
+import team5.miniProject.chapter.chap03.test.Chap03OperatorTest2;
+import team5.miniProject.chapter.chap03.test.Chap03OperatorTestAnswer1;
+import team5.miniProject.chapter.chap03.test.Chap03OperatorTestAnswer2;
 import team5.miniProject.chapter.chap05.Chap05Array;
 import team5.miniProject.chapter.chap05.Chap05ArrayPart1;
 import team5.miniProject.chapter.chap05.Chap05ArrayPart2;
@@ -46,6 +61,7 @@ public class PanelChange extends JFrame{
 	public Chap03OperatorQuizAnswer1 operator_quizAnswer1 = null;
 	public Chap03OperatorQuizAnswer2 operator_quizAnswer2 = null;
 	public Chap03OperatorTestAnswer1 operator_testAnswer1 = null;
+	public Chap03OperatorTestAnswer2 operator_testAnswer2 = null;
 	public JPanel_Login jpanel_login = null;
 	public JPanel_Main jpanel_main = null;
 	public Chap01ProgramPart01 program_part1 = null;
@@ -142,6 +158,12 @@ public void change(String panelName){
 			getContentPane().add(operator_testAnswer1);
 			revalidate();
 			repaint();
+		}else if(panelName.equals("operator_testAnswer2")){
+				getContentPane().removeAll();
+				getContentPane().add(operator_testAnswer2);
+				revalidate();
+				repaint();
+			
 		}else if(panelName.equals("panellist")){
 			getContentPane().removeAll();
 			getContentPane().add(panellist);
