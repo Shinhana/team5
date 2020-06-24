@@ -27,7 +27,7 @@ public class Chap06Test2 extends JPanel{
 		setLayout(null);
 		this.win=win;
 	
-		image = new ImageIcon("images/½Â±Þ¹®Á¦2.png").getImage();
+		image = new ImageIcon("images/heap.png").getImage();
 		
 		JButton next = new JButton();
 		next.setSize(75,25);
@@ -66,10 +66,10 @@ public class Chap06Test2 extends JPanel{
 		public void actionPerformed(ActionEvent e){
 			String str = memoTextField.getText();
 			if(str.equals("HEAP")||str.equals("heap")) {
-				JOptionPane.showMessageDialog(null,"Á¤´äÀÔ´Ï´Ù.");
+				JOptionPane.showMessageDialog(null,"ì •ë‹µìž…ë‹ˆë‹¤.");
 				win.change("tss11");
 			}else {
-				JOptionPane.showMessageDialog(null,"Æ²·È½À´Ï´Ù.");
+				JOptionPane.showMessageDialog(null,"í‹€ë ¸ìŠµë‹ˆë‹¤.");
 				win.change("tss12"); 
 			}
 			

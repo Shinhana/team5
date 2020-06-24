@@ -24,7 +24,7 @@ public class Chap06AnsO extends JPanel{
 		setLayout(null);
 		this.win=win;
 	
-		image = new ImageIcon("images/연습문제1오답.png").getImage();
+		image = new ImageIcon("images/O.png").getImage();
 		
 		JButton next = new JButton();
 		next.setSize(120,30);

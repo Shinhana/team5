@@ -19,13 +19,13 @@ public class Chap02Test2 extends JPanel {
 	private PanelChange win;
 	Image imageMain;
 	
-	private JButton reset; //¸ñÂ÷
+	private JButton reset; 
 	private JButton next; // >
 	private JButton last; // >>
 	private JButton back; // <
 	private JButton start; // <<
-	private JButton check; // Á¤´äÈ®ÀÎ ¹öÆ°
-	private JTextArea answerField; //Á¤´ä¶õ
+	private JButton check; 
+	private JTextArea answerField;
 	
 	
 	public Chap02Test2() {}
@@ -41,7 +41,6 @@ public class Chap02Test2 extends JPanel {
 		back.setSize(20,20);
 		back.setLocation(180,620);
 		back.addActionListener(new MyActionListener3());
-		//¹öÆ° Åõ¸íÇÏ°Ô 3ÁÙ
 		back.setBorderPainted(false);
 		back.setFocusPainted(false);
 		back.setContentAreaFilled(false);
@@ -52,7 +51,6 @@ public class Chap02Test2 extends JPanel {
 		start.setSize(20,20);
 		start.setLocation(150,620);
 		start.addActionListener(new Start());
-		//¹öÆ° Åõ¸íÇÏ°Ô 3ÁÙ
 		start.setBorderPainted(false);
 		start.setFocusPainted(false);
 		start.setContentAreaFilled(false);
@@ -93,7 +91,7 @@ public class Chap02Test2 extends JPanel {
 	@Override 
 	public void paint(Graphics g){
 		g.drawImage(imageMain, 0, 0, getWidth(),getHeight(),this);
-		setOpaque(false);//Åõ¸íÇÏ°Ô
+		setOpaque(false);
 		super.paint(g);
 	}
 	
@@ -132,10 +130,10 @@ public class Chap02Test2 extends JPanel {
 			            
 			       
 			 if(str.equals("O,X,X,O,X,X")){
-				 JOptionPane.showMessageDialog(null,"Á¤´äÀÔ´Ï´Ù");
+				 JOptionPane.showMessageDialog(null,"ì •ë‹µìž…ë‹ˆë‹¤.");
 				 win.change("operator_testAnswer2");
 			 } else {
-				 JOptionPane.showMessageDialog(null,"Æ²·È½À´Ï´Ù.");
+				 JOptionPane.showMessageDialog(null,"í‹€ë ¸ìŠµë‹ˆë‹¤.");
 				 win.change("test1");
 			 }
 			           

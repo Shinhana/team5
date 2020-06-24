@@ -19,7 +19,7 @@ public class Chap05Array extends JPanel {
 	private JTextField textField;
 	Image imageMain;
 	
-	private JButton reset; //¸ñÂ÷
+	private JButton reset; //ï¿½ï¿½ï¿½ï¿½
 	private JButton next; // >
 	private JButton last; // >>
 	private JButton back; // <
@@ -42,7 +42,7 @@ public class Chap05Array extends JPanel {
 		
 		
 		
-		imageMain = new ImageIcon("images/¹è¿­Main.PNG").getImage();
+		imageMain = new ImageIcon("images/ArrayMain.PNG").getImage();
 		next.setBorderPainted(false);
 		next.setFocusPainted(false);
 		next.setContentAreaFilled(false);

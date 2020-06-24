@@ -10,8 +10,11 @@ import javax.swing.ImageIcon;
 import javax.swing.JButton;
 import javax.swing.JPanel;
 
-import team5.miniProject.run.*;
+// <<<<<<< 20200624_All_2
+// import team5.miniProject.run.*;
 
+// =======
+// >>>>>>> master
 public class Chap02Quiz11Ans extends JPanel {
 	
 	private PanelChange win;
@@ -35,7 +38,10 @@ public class Chap02Quiz11Ans extends JPanel {
 		back.setSize(20,20);
 		back.setLocation(180,620);
 		back.addActionListener(new Back());
-		//��ư �����ϰ� 3��
+// <<<<<<< 20200624_All_2
+// 		//��ư �����ϰ� 3��
+// =======
+// >>>>>>> master
 		back.setBorderPainted(false);
 		back.setFocusPainted(false);
 		back.setContentAreaFilled(false);
@@ -46,7 +52,10 @@ public class Chap02Quiz11Ans extends JPanel {
 		last.setSize(20,20);
 		last.setLocation(239,622);
 		last.addActionListener(new Last());
-		//��ư �����ϰ� 3��
+// <<<<<<< 20200624_All_2
+// 		//��ư �����ϰ� 3��
+// =======
+// >>>>>>> master
 		last.setBorderPainted(false);
 		last.setFocusPainted(false);
 		last.setContentAreaFilled(false);
@@ -57,7 +66,10 @@ public class Chap02Quiz11Ans extends JPanel {
 		next.setSize(20,20);
 		next.setLocation(100,100);
 		next.addActionListener(new Next());
-		//��ư �����ϰ� 3��
+// <<<<<<< 20200624_All_2
+// 		//��ư �����ϰ� 3��
+// =======
+//>>>>>>> master
 		next.setBorderPainted(false);
 		next.setFocusPainted(false);
 	    next.setContentAreaFilled(false);
@@ -81,7 +93,11 @@ public class Chap02Quiz11Ans extends JPanel {
 	@Override 
 	public void paint(Graphics g){
 		g.drawImage(imageMain, 0, 0, getWidth(),getHeight(),this);
-		setOpaque(false);//�����ϰ�
+// <<<<<<< 20200624_All_2
+// 		setOpaque(false);//�����ϰ�
+// =======
+// 		setOpaque(false);
+//>>>>>>> master
 		super.paint(g);
 	}
 	
