@@ -21,12 +21,12 @@ public class Chap05Test2 extends JPanel {
 	private JTextArea textField;
 	Image imageMain;
 
-	private JButton reset; //¸ñÂ÷
+	private JButton reset; //ï¿½ï¿½ï¿½ï¿½
 	private JButton next; // >
 	private JButton last; // >>
 	private JButton back; // <
 	private JButton start; // <<
-	private JButton ans;
+	
 	
 	public Chap05Test2(PanelChange win) {
 		this.win = win;
@@ -58,7 +58,7 @@ public class Chap05Test2 extends JPanel {
 		textField.setBounds(50,550,230,50);
 		textField.setOpaque(false);
 		textField.setForeground(Color.black);
-		//Å×½ºÆ® °ø°£ Å×µÎ¸® ¼û±â±â 
+		//ï¿½×½ï¿½Æ® ï¿½ï¿½ï¿½ï¿½ ï¿½×µÎ¸ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ 
 		textField.setBorder(javax.swing.BorderFactory.createEmptyBorder());	      
 		add(textField);
 
@@ -78,10 +78,10 @@ public class Chap05Test2 extends JPanel {
 		public void actionPerformed(ActionEvent e){
 			String str = textField.getText();
 			if(str.equals("char[ ] carr2 = carr1;")) {
-				JOptionPane.showMessageDialog(null,"Á¤´äÀÔ´Ï´Ù.");
+				JOptionPane.showMessageDialog(null,"ì •ë‹µìž…ë‹ˆë‹¤.");
 				win.change("panel17");
 			}else {
-				JOptionPane.showMessageDialog(null,"Æ²·È½À´Ï´Ù.");
+				JOptionPane.showMessageDialog(null,"í‹€ë ¸ìŠµë‹ˆë‹¤.");
 				win.change("panel17"); 
 			}
 
