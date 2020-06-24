@@ -1,17 +1,17 @@
-package miniProject.chap04;
+package team5.miniProject.chapter.chap04;
 
 import java.awt.Color;
 
 import javax.swing.JFrame;
 
-import miniProject.chap04.quiz.Chap04Quiz1;
-import miniProject.chap04.quiz.Chap04Quiz1Ans;
-import miniProject.chap04.quiz.Chap04Quiz2;
-import miniProject.chap04.test.Chap04Test1;
-import miniProject.chap04.test.Chap04Test1Ans1;
-import miniProject.chap04.test.Chap04Test1Ans2;
-import miniProject.chap04.test.Chap04Test2;
-import miniProject.chap04.test.Chap04Test2Ans;
+import team5.miniProject.chapter.chap04.quiz.Chap04Quiz1;
+import team5.miniProject.chapter.chap04.quiz.Chap04Quiz1Ans;
+import team5.miniProject.chapter.chap04.quiz.Chap04Quiz2;
+import team5.miniProject.chapter.chap04.test.Chap04Test1;
+import team5.miniProject.chapter.chap04.test.Chap04Test1Ans1;
+import team5.miniProject.chapter.chap04.test.Chap04Test1Ans2;
+import team5.miniProject.chapter.chap04.test.Chap04Test2;
+import team5.miniProject.chapter.chap04.test.Chap04Test2Ans;
 public class JPanelTest extends JFrame{
 	
 	public Chap04ControlStatement Chap04ControlStatement = null;
@@ -114,10 +114,10 @@ public class JPanelTest extends JFrame{
 			revalidate();
 			repaint();
 		}
-		else if(panelName.equals("Chap04Test2")) {
-			getContentPane().removeAll();
-			getContentPane().add();
-		}
+//		else if(panelName.equals("Chap04Test2")) {
+//			getContentPane().removeAll();
+//			getContentPane().add();
+//		}
 	}
 	
 	public static void main(String[]args){

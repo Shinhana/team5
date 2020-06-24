@@ -1,4 +1,4 @@
-package miniProject.chap04;
+package team5.miniProject.chapter.chap04;
 
 import java.awt.Graphics;
 import java.awt.Image;

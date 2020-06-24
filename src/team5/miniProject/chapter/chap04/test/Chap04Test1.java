@@ -1,4 +1,4 @@
-package miniProject.chap04.test;
+package team5.miniProject.chapter.chap04.test;
 
 import java.awt.Color;
 import java.awt.Graphics;
@@ -11,7 +11,7 @@ import javax.swing.JButton;
 import javax.swing.JPanel;
 import javax.swing.JTextArea;
 
-import miniProject.chap04.JPanelTest;
+import team5.miniProject.chapter.chap04.JPanelTest;
 
 public class Chap04Test1 extends JPanel {
 

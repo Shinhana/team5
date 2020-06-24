@@ -1,4 +1,4 @@
-package miniProject.chap04.test;
+package team5.miniProject.chapter.chap04.test;
 
 public class Chap04Test2Ans {
 

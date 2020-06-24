@@ -1,4 +1,4 @@
-package miniProject.chap04.quiz;
+package team5.miniProject.chapter.chap04.quiz;
 
 import java.awt.Color;
 import java.awt.Graphics;
@@ -11,8 +11,7 @@ import javax.swing.JButton;
 import javax.swing.JPanel;
 import javax.swing.JTextArea;
 
-import miniProject.chap04.JPanelTest;
-import miniProject.chap04.quiz.Chap04Quiz1.MyActionListener;
+import team5.miniProject.chapter.chap04.JPanelTest;
 
 public class Chap04Quiz2 extends JPanel{
 
