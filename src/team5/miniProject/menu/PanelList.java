@@ -11,8 +11,7 @@ import javax.swing.JButton;
 import javax.swing.JPanel;
 import javax.swing.JTextArea;
 
-import miniProject.Run.PanelChange;
-import miniProject.chapter.chap03.Chap03OperatorMain;
+import team5.miniProject.run.PanelChange;
 
 
 
@@ -28,49 +27,49 @@ public class PanelList extends JPanel{
 		
 		image = new ImageIcon("images/List.png").getImage();
 	
-		 //Ã³À½À¸·Î µ¹¾Æ°¡´Â ¹öÆ°
-		JButton program = new JButton("ÇÁ·Î±×·¥ ±âÃÊ&°³¹ßÈ¯°æ ±¸Ãà");
+		 //Ã³ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½Æ°ï¿½ï¿½ï¿½ ï¿½ï¿½Æ°
+		JButton program = new JButton("ï¿½ï¿½ï¿½Î±×·ï¿½ ï¿½ï¿½ï¿½ï¿½&ï¿½ï¿½ï¿½ï¿½È¯ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½");
 		program.setSize(240,30);
-		program.setBorderPainted(false); //Å×µÎ¸® ÆäÀÎÆÃ
+		program.setBorderPainted(false); //ï¿½×µÎ¸ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 		program.setFocusPainted(false);
-		program.setContentAreaFilled(true);//´©¸¦ ¶§ Ç¥½ÃµÊ
+		program.setContentAreaFilled(true);//ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ Ç¥ï¿½Ãµï¿½
 		program.setLocation(70,60);
 	
 		add(program);
 		program.addActionListener(new Program());
 		
-		JButton variable = new JButton("º¯¼ö");
+		JButton variable = new JButton("ï¿½ï¿½ï¿½ï¿½");
 		variable.setSize(240,30);
-		variable.setBorderPainted(false); //Å×µÎ¸® ÆäÀÎÆÃ
+		variable.setBorderPainted(false); //ï¿½×µÎ¸ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 		variable.setFocusPainted(false);
-		variable.setContentAreaFilled(true);//´©¸¦ ¶§ Ç¥½ÃµÊ
+		variable.setContentAreaFilled(true);//ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ Ç¥ï¿½Ãµï¿½
 		variable.setLocation(70,150);
 		add(variable);
 		//variable.addActionListener(new Variable());
 		
-		JButton operator = new JButton("¿¬»êÀÚ");
+		JButton operator = new JButton("ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½");
 		operator.setSize(240,30);
-		operator.setBorderPainted(false); //Å×µÎ¸® ÆäÀÎÆÃ
+		operator.setBorderPainted(false); //ï¿½×µÎ¸ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 		operator.setFocusPainted(false);
-		operator.setContentAreaFilled(true);//´©¸¦ ¶§ Ç¥½ÃµÊ
+		operator.setContentAreaFilled(true);//ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ Ç¥ï¿½Ãµï¿½
 		operator.setLocation(70,240);
 		add(operator);
 		operator.addActionListener(new Operator());
 		
-		JButton array = new JButton("¹è¿­");
+		JButton array = new JButton("ï¿½è¿­");
 		array.setSize(240,30);
-		array.setBorderPainted(false); //Å×µÎ¸® ÆäÀÎÆÃ
+		array.setBorderPainted(false); //ï¿½×µÎ¸ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 		array.setFocusPainted(false);
-		array.setContentAreaFilled(true);//´©¸¦ ¶§ Ç¥½ÃµÊ
+		array.setContentAreaFilled(true);//ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ Ç¥ï¿½Ãµï¿½
 		array.setLocation(70,430);
 		add(array);
 		array.addActionListener(new Array());
 		
-		JButton nloop = new JButton("ÁßÃ¸¹Ýº¹¹®");
+		JButton nloop = new JButton("ï¿½ï¿½Ã¸ï¿½Ýºï¿½ï¿½ï¿½");
 		nloop.setSize(240,30);
-		nloop.setBorderPainted(false); //Å×µÎ¸® ÆäÀÎÆÃ
+		nloop.setBorderPainted(false); //ï¿½×µÎ¸ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 		nloop.setFocusPainted(false);
-		nloop.setContentAreaFilled(true);//´©¸¦ ¶§ Ç¥½ÃµÊ
+		nloop.setContentAreaFilled(true);//ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ Ç¥ï¿½Ãµï¿½
 		nloop.setLocation(70,520);
 		add(nloop);
 		nloop.addActionListener(new Nloop());
@@ -79,7 +78,7 @@ public class PanelList extends JPanel{
 		memoTextField.setBounds(50,520,280,100);
 		memoTextField.setOpaque(false);
 		memoTextField.setForeground(Color.WHITE);
-		//Å×½ºÆ® °ø°£ Å×µÎ¸® ¼û±â±â 
+		//ï¿½×½ï¿½Æ® ï¿½ï¿½ï¿½ï¿½ ï¿½×µÎ¸ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ 
 		memoTextField.setBorder(javax.swing.BorderFactory.createEmptyBorder());
 		
 		add(memoTextField);
@@ -92,7 +91,7 @@ public class PanelList extends JPanel{
 	@Override 
 	public void paint(Graphics g){
 		g.drawImage(image, 0, 0, getWidth(),getHeight(),this);
-		setOpaque(false);//Åõ¸íÇÏ°Ô
+		setOpaque(false);//ï¿½ï¿½ï¿½ï¿½ï¿½Ï°ï¿½
 		super.paint(g);
 	}
 	

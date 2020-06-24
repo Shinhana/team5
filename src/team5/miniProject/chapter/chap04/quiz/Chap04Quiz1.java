@@ -1,5 +1,5 @@
-package miniProject.chap04.quiz;
-
+package team5.miniProject.chapter.chap04.quiz;
+import team5.miniProject.run.PanelChange;
 import java.awt.Color;
 import java.awt.Graphics;
 import java.awt.Image;
@@ -11,7 +11,7 @@ import javax.swing.JButton;
 import javax.swing.JPanel;
 import javax.swing.JTextArea;
 
-import miniProject.chap04.JPanelTest;
+import team5.miniProject.chapter.chap04.JPanelTest;
 
 	public class Chap04Quiz1 extends JPanel{
 		
@@ -22,13 +22,13 @@ import miniProject.chap04.JPanelTest;
 		private JButton start; // <<
 		private JButton back; // <
 		private JButton next; // >
-		private JButton Last; // >>
+		private JButton last; // >>
 		
 		public Chap04Quiz1(JPanelTest win) {
 			setLayout(null);
 			this.win=win;
 			
-			image = new ImageIcon("images/quiz1.png").getImage().getScaledInstance(360, 640, 0);
+			image = new ImageIcon("images/JP_quiz1.png").getImage().getScaledInstance(360, 640, 0);
 			
 			reset = new JButton("1");
 			reset.setSize(20,20);
@@ -37,44 +37,44 @@ import miniProject.chap04.JPanelTest;
 			reset.setFocusPainted(true);
 			reset.setContentAreaFilled(true);
 			add(reset);
-			reset.addActionListener(new MyActionListener());
+			reset.addActionListener(new Reset());
 
 			start = new JButton("2");
 			start.setSize(20,20);
 			start.setLocation(163,626);
-			start.setBorderPainted(true);
-			start.setFocusPainted(true);
-			start.setContentAreaFilled(true);
+			start.setBorderPainted(false);
+			start.setFocusPainted(false);
+			start.setContentAreaFilled(false);
 			add(start);
-			start.addActionListener(new MyActionListener2());
+			start.addActionListener(new Start());
 
 			back = new JButton("3");
 			back.setSize(20, 20);
 			back.setLocation(194, 626);
-			back.setBorderPainted(true);
-			back.setFocusPainted(true);
-			back.setContentAreaFilled(true);
+			back.setBorderPainted(false);
+			back.setFocusPainted(false);
+			back.setContentAreaFilled(false);
 			add(back);
-			back.addActionListener(new MyActionListener3());
+			back.addActionListener(new Back());
 
 			next = new JButton("4");
 			next.setSize(20, 20);
 			next.setLocation(225, 626);
-			next.setBorderPainted(true);
-			next.setFocusPainted(true);
-			next.setContentAreaFilled(true);
+			next.setBorderPainted(false);
+			next.setFocusPainted(false);
+			next.setContentAreaFilled(false);
 			add(next);
-			next.addActionListener(new MyActionListener4());
+			next.addActionListener(new Next());
 
 
-			Last = new JButton("5");
-			Last.setSize(20, 20);
-			Last.setLocation(255, 626);
-			add(Last);
-			Last.setBorderPainted(true);
-			Last.setFocusable(true);
-			Last.setContentAreaFilled(true);
-			Last.addActionListener(new MyActionListener5());
+			last = new JButton("5");
+			last.setSize(20, 20);
+			last.setLocation(255, 626);
+			add(last);
+			last.setBorderPainted(false);
+			last.setFocusable(false);
+			last.setContentAreaFilled(false);
+			last.addActionListener(new Last());
 
 
 			memoTextField =  new JTextArea();
@@ -94,32 +94,31 @@ import miniProject.chap04.JPanelTest;
 			super.paint(g);
 		
 		}
-		class MyActionListener implements ActionListener{
+		class Reset implements ActionListener{
 
 			@Override
 			public void actionPerformed(ActionEvent e) {
-				win.change("Chap04ControlStatement");
+				win.change("jpanelList");
 			}
 			
 		}
-		class MyActionListener2 implements ActionListener{
+		class Start implements ActionListener{
 
 			@Override
 			public void actionPerformed(ActionEvent e) {
-				// TODO Auto-generated method stub
-				
+				win.change("Chap04QuizTime");				
 			}
 			
 		}
-		class MyActionListener3 implements ActionListener{
+		class Back implements ActionListener{
 
 			@Override
 			public void actionPerformed(ActionEvent e) {
-				win.change("");
+				win.change("Chap04QuizTime");
 			}
 			
 		}
-		class MyActionListener4 implements ActionListener{
+		class Next implements ActionListener{
 
 			@Override
 			public void actionPerformed(ActionEvent e) {
@@ -127,12 +126,12 @@ import miniProject.chap04.JPanelTest;
 			}
 			
 		}
-		class MyActionListener5 implements ActionListener{
+		class Last implements ActionListener{
 
 			@Override
 			public void actionPerformed(ActionEvent e) {
 				// TODO Auto-generated method stub
-				
+				win.change("jpanelList");
 			}
 			
 		}
