@@ -14,6 +14,8 @@ import javax.swing.JPanel;
 import javax.swing.JScrollPane;
 import javax.swing.JTextArea;
 
+import team5.miniProject.run.PanelChange;
+
 
 
 public class Chap06Part1NLoop1 extends JPanel{
@@ -27,7 +29,7 @@ public class Chap06Part1NLoop1 extends JPanel{
 	private JButton reset;
 	private JScrollPane jScrollPane1;
 	private JTextArea jTextArea1;
-	private Chap06Run win;
+	private PanelChange win;
 	
 	
 	
@@ -39,7 +41,7 @@ public class Chap06Part1NLoop1 extends JPanel{
 //	 JPanel jp = new JPanel();
 //	
 	 
-	public Chap06Part1NLoop1(Chap06Run win){
+	public Chap06Part1NLoop1(PanelChange win){
 		win.add(this);
 		image = new ImageIcon("images/중첩1.png").getImage();
 		
@@ -58,9 +60,11 @@ public class Chap06Part1NLoop1 extends JPanel{
 	next.setContentAreaFilled(false);
 //	jButton1.setIcon(new ImageIcon("C:\\Users\\hojong\\eclipse-workspace\\SoloProject\\src\\game\\practice\\img\\Group88.png"));
 	next.setLocation(205,615);
+	add(next);
+	next .setBorderPainted(false);
+	next .setFocusPainted(false);
 	
 		
-	add(next);
 	
 //	jTextArea1 = new JTextArea();
 	
@@ -75,12 +79,19 @@ public class Chap06Part1NLoop1 extends JPanel{
 	back.setLocation(170,615);
 	back.setContentAreaFilled(false);
 	add(back);
+	back .setBorderPainted(false);
+	back .setFocusPainted(false);
+	
+	
 	
 	reset = new JButton();
 	reset.setSize(20,20);
 	reset.setLocation(115,615);
 	reset.setContentAreaFilled(false);
 	add(reset);
+	reset .setBorderPainted(false);
+	reset .setFocusPainted(false);
+
 	
 	next.addActionListener(new Next());
 	back.addActionListener(new Back());
@@ -118,7 +129,7 @@ public class Chap06Part1NLoop1 extends JPanel{
 	class Next implements ActionListener{
 		@Override
 		public void actionPerformed(ActionEvent e){
-			win.change("panel01");
+			win.change("panel02");
 		}
 	}
 	//'<' 클릭했을 때 넘어가는 클래스 오버라이딩
@@ -132,7 +143,7 @@ public class Chap06Part1NLoop1 extends JPanel{
 	class Reset implements ActionListener{
 		@Override
 		public void actionPerformed(ActionEvent e){
-			win.change("list");//
+			win.change("panellist");//
 		}
 	}
 	class Last implements ActionListener{

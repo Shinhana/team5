@@ -36,7 +36,7 @@ import miniProject.chapter.chap06.Chap06Part1NLoop1;
 import miniProject.chapter.chap06.Chap06Part1NLoop2;
 import miniProject.chapter.chap06.Chap06Part1NLoop3;
 import miniProject.chapter.chap06.Chap06Part1NLoop4;
-import miniProject.chapter.chap06.Chap06Part1NLoop5;
+//import team5.miniProject.chapter.chap06.Chap06Part1NLoop5;
 
 public class run {
 	

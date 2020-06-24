@@ -1,6 +1,5 @@
 package team5.miniProject.chapter.chap06.quiz;
 
-import java.awt.Color;
 import java.awt.Graphics;
 import java.awt.Image;
 import java.awt.event.ActionEvent;
@@ -11,7 +10,7 @@ import javax.swing.JButton;
 import javax.swing.JPanel;
 import javax.swing.JTextArea;
 
-import game.practice.chap06.Chap06Run;
+import team5.miniProject.run.PanelChange;
 
 
 
@@ -19,9 +18,9 @@ public class Chap06AnsX extends JPanel{
 
 	
 	Image image;
-	private Chap06Run win;
+	private PanelChange win;
 	private JTextArea memoTextField;
-	public Chap06AnsX(Chap06Run win) {
+	public Chap06AnsX(PanelChange win) {
 		setLayout(null);
 		this.win=win;
 	

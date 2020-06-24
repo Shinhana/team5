@@ -12,18 +12,17 @@ import javax.swing.JOptionPane;
 import javax.swing.JPanel;
 import javax.swing.JTextArea;
 
-import team5.miniProject.chapter.chap06.Chap06Run;
-
+import team5.miniProject.run.PanelChange;
 
 
 public class Chap06Quiz2 extends JPanel{
 
 	
 	Image image;
-	private Chap06Run win;
+	private PanelChange win;
 	private JTextArea memoTextField;
 	
-	public Chap06Quiz2(Chap06Run win) {
+	public Chap06Quiz2(PanelChange win) {
 		setLayout(null);
 		this.win=win;
 	
