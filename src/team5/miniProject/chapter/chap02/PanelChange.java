@@ -154,7 +154,7 @@ public class PanelChange extends JFrame {
 		PanelChange win = new PanelChange();
 
 		win.setSize(380,680);
-		win.setResizable(false); //창 크기 변경 불가
+		win.setResizable(false);
 		win.setLocationRelativeTo(null);
 		
 		

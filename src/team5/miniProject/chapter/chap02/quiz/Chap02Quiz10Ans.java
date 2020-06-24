@@ -16,11 +16,11 @@ public class Chap02Quiz10Ans extends JPanel {
 	private PanelChange win;
 	Image imageMain;
 	
-	private JButton next; // >, MyActionListener
-	private JButton last; // >>, MyActionListener2
-	private JButton back; // <, MyActionListener3
-	private JButton start; // <<, MyActionListener4
-	private JButton reset; //목차, MyActionListener5
+	private JButton next;
+	private JButton last;
+	private JButton back;
+	private JButton start;
+	private JButton reset;
 	
 	public Chap02Quiz10Ans(PanelChange win) {
 		
@@ -32,7 +32,6 @@ public class Chap02Quiz10Ans extends JPanel {
 		next.setSize(20,20);
 		next.setLocation(100,100);
 		next.addActionListener(new Next());
-		//버튼 투명하게 3줄
 		next.setBorderPainted(true);
 		next.setFocusPainted(true);
 	    next.setContentAreaFilled(true);
@@ -56,7 +55,7 @@ public class Chap02Quiz10Ans extends JPanel {
 	@Override 
 	public void paint(Graphics g){
 		g.drawImage(imageMain, 0, 0, getWidth(),getHeight(),this);
-		setOpaque(false);//투명하게
+		setOpaque(false);
 		super.paint(g);
 	}
 			

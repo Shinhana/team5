@@ -14,20 +14,18 @@ import javax.swing.JOptionPane;
 import javax.swing.JPanel;
 import javax.swing.JTextArea;
 
-import team5.miniProject.chapter.chap02.PanelChange;
-
 public class Chap02Quiz1 extends JPanel {
 
 	private PanelChange win;
 	Image imageMain;
 	
-	private JButton reset; //¸ñÂ÷
-	private JButton next; // >
-	private JButton last; // >>
-	private JButton back; // <
-	private JButton start; // <<
-	private JButton check; // Á¤´äÈ®ÀÎ ¹öÆ°
-	private JTextArea answerField; //Á¤´ä¶õ
+	private JButton reset;
+	private JButton next;
+	private JButton last;
+	private JButton back;
+	private JButton start;
+	private JButton check;
+	private JTextArea answerField;
 
 	
 	public Chap02Quiz1(PanelChange win) {
@@ -40,7 +38,6 @@ public class Chap02Quiz1 extends JPanel {
 		next.setSize(20,20);
 		next.setLocation(206,606);
 		next.addActionListener(new Next());
-		//¹öÆ° Åõ¸íÇÏ°Ô ¾Æ·¡ 3ÁÙ
 		next.setBorderPainted(true);
 		next.setFocusPainted(false);
 	    next.setContentAreaFilled(true);
@@ -62,7 +59,6 @@ public class Chap02Quiz1 extends JPanel {
 	    check.setSize(88,34);
 	    check.setLocation(248,489);
 	    check.addActionListener(new Answer());
-		//¹öÆ° Åõ¸íÇÏ°Ô ¾Æ·¡ 3ÁÙ
 	    check.setBorderPainted(false);
 	    check.setFocusPainted(false);
 	    check.setContentAreaFilled(false);
@@ -83,7 +79,7 @@ public class Chap02Quiz1 extends JPanel {
 	@Override 
 	public void paint(Graphics g){
 		g.drawImage(imageMain, 0, 0, getWidth(),getHeight(),this);
-		setOpaque(false);//Åõ¸íÇÏ°Ô
+		setOpaque(false);
 		super.paint(g);
 	}
 	
@@ -114,10 +110,10 @@ public class Chap02Quiz1 extends JPanel {
 	            
 	       
 	       if(str.equals("O,X,X,O,X,O,X")){
-	    	   JOptionPane.showMessageDialog(null,"Á¤´äÀÔ´Ï´Ù");
+	    	   JOptionPane.showMessageDialog(null,"ì •ë‹µìž…ë‹ˆë‹¤.");
 	    	   win.change("operator_quizAnswer1");
 	       } else {
-	    	   JOptionPane.showMessageDialog(null,"Æ²·È½À´Ï´Ù.");
+	    	   JOptionPane.showMessageDialog(null,"í‹€ë ¸ìŠµë‹ˆë‹¤.");
 	    	   win.change("quiz1");
 	       }
 	           

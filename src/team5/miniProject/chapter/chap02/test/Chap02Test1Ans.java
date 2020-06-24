@@ -16,11 +16,11 @@ public class Chap02Test1Ans extends JPanel {
 	private PanelChange win;
 	Image imageMain;
 	
-	private JButton next; // >, MyActionListener
-	private JButton last; // >>, MyActionListener2
-	private JButton back; // <, MyActionListener3
-	private JButton start; // <<, MyActionListener4
-	private JButton reset; //목차, MyActionListener5
+	private JButton next; // >
+	private JButton last; // >>
+	private JButton back; // <
+	private JButton start; // <<
+	private JButton reset;
 	
 	public Chap02Test1Ans() {}
 	
@@ -34,9 +34,9 @@ public class Chap02Test1Ans extends JPanel {
 		next.setSize(20,20);
 		next.setLocation(100,100);
 		next.addActionListener(new Next());
-//		next.setBorderPainted(false);
-//		next.setFocusPainted(false);
-//	    next.setContentAreaFilled(false);
+		next.setBorderPainted(false);
+		next.setFocusPainted(false);
+	    next.setContentAreaFilled(false);
 	    this.add(next);
 	    
 		ImageIcon lastImg= new ImageIcon("images/last.png");
@@ -44,7 +44,6 @@ public class Chap02Test1Ans extends JPanel {
 		last.setSize(20,20);
 		last.setLocation(239,622);
 		last.addActionListener(new Last());
-		//버튼 투명하게 3줄
 		last.setBorderPainted(false);
 		last.setFocusPainted(false);
 		last.setContentAreaFilled(false);
@@ -55,7 +54,6 @@ public class Chap02Test1Ans extends JPanel {
 		start.setSize(20,20);
 		start.setLocation(150,620);
 		start.addActionListener(new Start());
-		//버튼 투명하게 3줄
 		start.setBorderPainted(false);
 		start.setFocusPainted(false);
 		start.setContentAreaFilled(false);
@@ -79,7 +77,7 @@ public class Chap02Test1Ans extends JPanel {
 	@Override 
 	public void paint(Graphics g){
 		g.drawImage(imageMain, 0, 0, getWidth(),getHeight(),this);
-		setOpaque(false);//투명하게
+		setOpaque(false);
 		super.paint(g);
 	}
 	

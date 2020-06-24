@@ -59,13 +59,12 @@ public class Chap02VariableList extends JPanel {
 		add(test);
 		
 		imageMain = new ImageIcon("images/min.png").getImage();
-		
 	}
 	
 	@Override 
 	public void paint(Graphics g){
 		g.drawImage(imageMain, 0, 0, getWidth(),getHeight(),this);
-		setOpaque(false);//투명하게
+		setOpaque(false);
 		super.paint(g);
 	}
 	
