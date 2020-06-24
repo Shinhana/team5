@@ -9,7 +9,8 @@ import javax.swing.ImageIcon;
 import javax.swing.JButton;
 import javax.swing.JPanel;
 
-import team5.miniProject.chapter.chap02.PanelChange;
+import team5.miniProject.run.PanelChange;
+
 
 public class Chap02Quiz10Ans extends JPanel {
 	
@@ -63,7 +64,7 @@ public class Chap02Quiz10Ans extends JPanel {
 	class Next implements ActionListener{
 		@Override
 		public void actionPerformed(ActionEvent e) {
-			win.change("qans11");
+			win.change("variable_quizAnswer11");
 			
 		}
 	}
@@ -72,7 +73,7 @@ public class Chap02Quiz10Ans extends JPanel {
 	class Reset implements ActionListener{
 		@Override
 		public void actionPerformed(ActionEvent e){
-			win.change("list");
+			win.change("variable_part1");
 		}
 	}
 	
