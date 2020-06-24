@@ -1,4 +1,4 @@
-package miniProject.chapter.chap02.test;
+package team5.miniProject.chapter.chap02.test;
 
 import java.awt.Color;
 import java.awt.Graphics;
@@ -12,9 +12,11 @@ import javax.swing.JOptionPane;
 import javax.swing.JPanel;
 import javax.swing.JTextArea;
 
+import team5.miniProject.chapter.chap02.PanelChange;
+
 public class Chap02Test2 extends JPanel {
 	
-	private ChangePanel ch;
+	private PanelChange win;
 	Image imageMain;
 	
 	private JButton reset; //목차
@@ -28,9 +30,9 @@ public class Chap02Test2 extends JPanel {
 	
 	public Chap02Test2() {}
 	
-	public Chap02Test2(ChangePanel ch) {
+	public Chap02Test2(PanelChange win) {
 		
-		this.ch = ch;
+		this.win = win;
 		setLayout(null);
 
 		 
@@ -45,6 +47,27 @@ public class Chap02Test2 extends JPanel {
 		back.setContentAreaFilled(false);
 		this.add(back);
 		
+		ImageIcon startImg = new ImageIcon("images/start.png");
+		start = new JButton(startImg);
+		start.setSize(20,20);
+		start.setLocation(150,620);
+		start.addActionListener(new Start());
+		//버튼 투명하게 3줄
+		start.setBorderPainted(false);
+		start.setFocusPainted(false);
+		start.setContentAreaFilled(false);
+		this.add(start);
+		
+
+		ImageIcon resetImg= new ImageIcon("images/reset.png");
+		reset= new JButton(resetImg);
+		reset.setSize(20,20);
+		reset.setLocation(116,620);
+		reset.addActionListener(new Reset());
+		reset.setBorderPainted(false);
+		reset.setFocusPainted(false);
+		reset.setContentAreaFilled(false);
+		this.add(reset);
 		
 		ImageIcon checkImg = new ImageIcon("images/answerCheck.png");
 		check= new JButton(checkImg);
@@ -63,7 +86,7 @@ public class Chap02Test2 extends JPanel {
 		answerField.setBorder(javax.swing.BorderFactory.createEmptyBorder());
 		add(answerField);
 		
-		imageMain = new ImageIcon("images/chap2Level2.png").getImage();
+		imageMain = new ImageIcon("images/chap2Test2.png").getImage();
 			
 	}
 	
@@ -74,13 +97,30 @@ public class Chap02Test2 extends JPanel {
 		super.paint(g);
 	}
 	
+	//start
+	class Start implements ActionListener{
+		@Override
+		public void actionPerformed(ActionEvent e){
+			win.change("test1");
+		}
+	}
+	
 	//back
 	class MyActionListener3 implements ActionListener{
 		@Override
 		public void actionPerformed(ActionEvent e){
-			ch.change("test1");
+			win.change("tans1");
 		}
 	}
+	
+	//reset
+	class Reset implements ActionListener{
+		@Override
+		public void actionPerformed(ActionEvent e){
+			win.change("list");
+		}
+	}
+	
 	
 	class Answer implements ActionListener{
 	   @Override
@@ -91,12 +131,12 @@ public class Chap02Test2 extends JPanel {
 			 System.out.println(str);
 			            
 			       
-			 if(str.equals("-124")){
+			 if(str.equals("O,X,X,O,X,X")){
 				 JOptionPane.showMessageDialog(null,"정답입니다");
-				 ch.change("operator_testAnswer1");
+				 win.change("operator_testAnswer2");
 			 } else {
 				 JOptionPane.showMessageDialog(null,"틀렸습니다.");
-				 ch.change("test1");
+				 win.change("test1");
 			 }
 			           
 			            

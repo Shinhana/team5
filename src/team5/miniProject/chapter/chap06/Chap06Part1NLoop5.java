@@ -11,13 +11,15 @@ import javax.swing.JButton;
 import javax.swing.JPanel;
 import javax.swing.JTextArea;
 
+import team5.miniProject.run.PanelChange;
+
 public class Chap06Part1NLoop5 extends JPanel{
 
 	Image image;
-	private Chap06Run win;
+	private PanelChange win;
 	private JTextArea memoTextField;
 	
-	public Chap06Part1NLoop5(Chap06Run win) {
+	public Chap06Part1NLoop5(PanelChange win) {
 		setLayout(null);
 		this.win=win;
 		
@@ -103,7 +105,7 @@ public class Chap06Part1NLoop5 extends JPanel{
 	class Reset implements ActionListener{
 		@Override
 		public void actionPerformed(ActionEvent e){
-			win.change("list");//
+			win.change("panellist");//
 		}
 	}
 	

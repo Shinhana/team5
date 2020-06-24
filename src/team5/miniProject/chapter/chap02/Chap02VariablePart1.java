@@ -1,6 +1,7 @@
-package miniProject.chapter.chap02;
+package team5.miniProject.chapter.chap02;
 
 import java.awt.Color;
+import team5.miniProject.run.PanelChange;
 import java.awt.Graphics;
 import java.awt.Image;
 import java.awt.event.ActionEvent;
@@ -11,12 +12,9 @@ import javax.swing.JButton;
 import javax.swing.JPanel;
 import javax.swing.JTextArea;
 
-import miniProject.chapter.chap02.Chap02VariablePart3.MyActionListener;
-import miniProject.chapter.chap02.Chap02VariablePart3.MyActionListener2;
-
 public class Chap02VariablePart1 extends JPanel {
 	
-	private ChangePanel ch;
+	private PanelChange win;
 	Image imageMain;
 	
 	private JButton reset; //목차
@@ -28,16 +26,16 @@ public class Chap02VariablePart1 extends JPanel {
 	
 	public Chap02VariablePart1() {}
 	
-	public Chap02VariablePart1(ChangePanel ch) {
+	public Chap02VariablePart1(PanelChange win) {
 		
-		this.ch = ch;
+		this.win = win;
 		setLayout(null);
 	    
 		ImageIcon nextImg= new ImageIcon("images/next.png");
 		next= new JButton(nextImg);
 		next.setSize(20,20);
 		next.setLocation(210,620);
-		next.addActionListener(new MyActionListener());
+		next.addActionListener(new Next());
 		//버튼 투명하게 3줄
 		next.setBorderPainted(false);
 		next.setFocusPainted(false);
@@ -48,7 +46,7 @@ public class Chap02VariablePart1 extends JPanel {
 		last= new JButton(lastImg);
 		last.setSize(20,20);
 		last.setLocation(237,622);
-		last.addActionListener(new MyActionListener2());
+		last.addActionListener(new Last());
 		//버튼 투명하게 3줄
 		last.setBorderPainted(false);
 		last.setFocusPainted(false);
@@ -60,7 +58,7 @@ public class Chap02VariablePart1 extends JPanel {
 		reset= new JButton(resetImg);
 		reset.setSize(20,20);
 		reset.setLocation(116,620);
-		reset.addActionListener(new MyActionListener5());
+		reset.addActionListener(new Reset());
 		//버튼 투명하게 3줄
 		reset.setBorderPainted(false);
 		reset.setFocusPainted(false);
@@ -87,27 +85,27 @@ public class Chap02VariablePart1 extends JPanel {
 	}
 	
 	//next
-	class MyActionListener implements ActionListener{
+	class Next implements ActionListener{
 		@Override
 		public void actionPerformed(ActionEvent e) {
-			ch.change("var2");
+			win.change("var2");
 			
 		}
 	}
 	
 	//last
-	class MyActionListener2 implements ActionListener{
+	class Last implements ActionListener{
 		@Override
 		public void actionPerformed(ActionEvent e){
-			ch.change("var7");
+			win.change("var5");
 		}
 	}
 	
 	//reset
-	class MyActionListener5 implements ActionListener{
+	class Reset implements ActionListener{
 		@Override
 		public void actionPerformed(ActionEvent e){
-			ch.change("list");
+			win.change("list");
 		}
 	}
 	

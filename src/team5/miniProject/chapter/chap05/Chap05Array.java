@@ -1,4 +1,4 @@
-package com.kh.model.chap05;
+package team5.miniProject.chapter.chap05;
 
 import java.awt.Graphics;
 import java.awt.Image;
@@ -11,26 +11,26 @@ import javax.swing.JFrame;
 import javax.swing.JPanel;
 import javax.swing.JTextField;
 
-import com.kh.model.controller.ChangePanel;
+import team5.miniProject.run.PanelChange;
 
 public class Chap05Array extends JPanel {
 	JFrame f = new JFrame();
-	private ChangePanel ch;
+	private PanelChange win;
 	private JTextField textField;
 	Image imageMain;
 	
 	private JButton reset; //¸ñÂ÷
 	private JButton next; // >
-	private JButton Last; // >>
+	private JButton last; // >>
 	private JButton back; // <
 	private JButton start; // <<
 	
 	
 	public Chap05Array() {}
 	
-	public Chap05Array(ChangePanel ch) {
+	public Chap05Array(PanelChange win) {
 		
-		this.ch = ch;
+		this.win = win;
 		setLayout(null);
 		
 		
@@ -38,7 +38,7 @@ public class Chap05Array extends JPanel {
 		next= new JButton();
 		next.setSize(282,95);
 		next.setLocation(25,275);
-		next.addActionListener(new MyActionListener());
+		next.addActionListener(new Next());
 		
 		
 		
@@ -61,20 +61,20 @@ public class Chap05Array extends JPanel {
 	}
 	
 	
-	class MyActionListener implements ActionListener{
+	class Next implements ActionListener{
 
 		@Override
 		public void actionPerformed(ActionEvent e) {
-			ch.change("panel2");
+			win.change("panel2");
 			
 		}
 	}
 
-	class MyActionListener2 implements ActionListener{
-		@Override
-		public void actionPerformed(ActionEvent e){
-			ch.change("panel2");
-		}
-	}
+//	class MyActionListener2 implements ActionListener{
+//		@Override
+//		public void actionPerformed(ActionEvent e){
+//			ch.change("panel2");
+//		}
+//	}
 
 }

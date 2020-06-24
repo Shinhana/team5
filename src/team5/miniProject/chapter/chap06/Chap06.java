@@ -10,14 +10,16 @@ import javax.swing.ImageIcon;
 import javax.swing.JButton;
 import javax.swing.JPanel;
 
-import game.practice.chap06.Chap06Run;
+import team5.miniProject.run.PanelChange;
+
+//import game.practice.chap06.Chap06Run;
 
 public class Chap06 extends JPanel{
       Image image;
-      private Chap06Run win;
+      private PanelChange win;
    
    
-   public Chap06(Chap06Run win) {
+   public Chap06(PanelChange win) {
       setLayout(null);
       this.win=win;
      

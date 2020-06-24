@@ -10,14 +10,14 @@ import javax.swing.ImageIcon;
 import javax.swing.JButton;
 import javax.swing.JPanel;
 
-import team5.miniProject.chapter.chap06.Chap06Run;
+import team5.miniProject.run.PanelChange;
 
 public class Chap06Choice extends JPanel{
       Image image;
-      private Chap06Run win;
+      private PanelChange win;
    
    
-   public Chap06Choice(Chap06Run win) {
+   public Chap06Choice(PanelChange win) {
       setLayout(null);
       this.win=win;
      
@@ -70,7 +70,7 @@ public class Chap06Choice extends JPanel{
    class Btn implements ActionListener{
       @Override
       public void actionPerformed(ActionEvent e){
-         win.change("list");  //자바 환경구축 ->헬로우, 바보 -> 아이디,암호
+         win.change("panellist");  //자바 환경구축 ->헬로우, 바보 -> 아이디,암호
          //win.change("panel02"); // 자바 환경구축->헬로우 ,바보 
       }
    }
