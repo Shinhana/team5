@@ -11,6 +11,8 @@ import javax.swing.JButton;
 import javax.swing.JPanel;
 import javax.swing.JTextArea;
 
+import team5.miniProject.run.PanelChange;
+
 //import game.practice.chap06.Chap06Part1NLoop4.MyActionListener5;
 //import game.practice.chap06.Chap06Part1NLoop4.MyActionListener6;
 //import game.practice.chap06.Chap06Part1NLoop4.MyActionListener7;
@@ -20,9 +22,9 @@ public class Chap06Part2DArray1 extends JPanel{
 
 	
 	Image image;
-	private Chap06Run win;
+	private PanelChange win;
 	private JTextArea memoTextField;
-	public Chap06Part2DArray1(Chap06Run win) {
+	public Chap06Part2DArray1(PanelChange win) {
 		setLayout(null);
 		this.win=win;
 	
@@ -101,7 +103,7 @@ public class Chap06Part2DArray1 extends JPanel{
 	class Reset implements ActionListener{
 		@Override
 		public void actionPerformed(ActionEvent e){
-			win.change("list");//
+			win.change("panellist");//
 		}
 	}
 	class Last implements ActionListener{

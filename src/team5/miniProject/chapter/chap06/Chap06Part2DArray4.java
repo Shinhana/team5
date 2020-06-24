@@ -5,23 +5,26 @@ import java.awt.Graphics;
 import java.awt.Image;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+
 import javax.swing.ImageIcon;
 import javax.swing.JButton;
 import javax.swing.JPanel;
 import javax.swing.JTextArea;
 
+import team5.miniProject.run.PanelChange;
+
 //import game.practice.chap06.Chap06Part2DArray2.MyActionListener5;
 //import game.practice.chap06.Chap06Part2DArray2.MyActionListener6;
 //import game.practice.chap06.Chap06Part2DArray2.MyActionListener7;
-import game.practice.chap06.Chap06.MyActionListener3;
+//import game.practice.chap06.Chap06.MyActionListener3;
 
 public class Chap06Part2DArray4 extends JPanel{
 
 
 	Image image;
-	private Chap06Run win;
+	private PanelChange win;
 	private JTextArea memoTextField;
-	public Chap06Part2DArray4(Chap06Run win) {
+	public Chap06Part2DArray4(PanelChange win) {
 		setLayout(null);
 		this.win=win;
 
@@ -100,7 +103,7 @@ public class Chap06Part2DArray4 extends JPanel{
 	class Reset implements ActionListener{
 		@Override
 		public void actionPerformed(ActionEvent e){
-			win.change("list");//
+			win.change("panellist");//
 		}
 	}
 	class Start implements ActionListener{

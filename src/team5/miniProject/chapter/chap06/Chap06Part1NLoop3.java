@@ -11,6 +11,8 @@ import javax.swing.JButton;
 import javax.swing.JPanel;
 import javax.swing.JTextArea;
 
+import team5.miniProject.run.PanelChange;
+
 
 //import game.practice.chap06.Chap06Part1NLoop5.MyActionListener3;
 
@@ -18,9 +20,9 @@ public class Chap06Part1NLoop3 extends JPanel{
 
 	
 	Image image;
-	private Chap06Run win;
+	private PanelChange win;
 	private JTextArea memoTextField;
-	public Chap06Part1NLoop3(Chap06Run win) {
+	public Chap06Part1NLoop3(PanelChange win) {
 		setLayout(null);
 		this.win=win;
 		// TODO Auto-generated constructor stub
@@ -126,7 +128,7 @@ public class Chap06Part1NLoop3 extends JPanel{
 	class Reset implements ActionListener{
 		@Override
 		public void actionPerformed(ActionEvent e){
-			win.change("list");//
+			win.change("panellist");//
 		}
 	}
 	

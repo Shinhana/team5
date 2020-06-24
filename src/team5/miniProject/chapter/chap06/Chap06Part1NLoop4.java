@@ -1,7 +1,6 @@
 package team5.miniProject.chapter.chap06;
 
 import java.awt.Color;
-import java.awt.Dimension;
 import java.awt.Graphics;
 import java.awt.Image;
 import java.awt.event.ActionEvent;
@@ -9,22 +8,22 @@ import java.awt.event.ActionListener;
 
 import javax.swing.ImageIcon;
 import javax.swing.JButton;
-import javax.swing.JFrame;
-import javax.swing.JLabel;
 import javax.swing.JPanel;
 import javax.swing.JPasswordField;
 import javax.swing.JTextArea;
 import javax.swing.JTextField;
+
+import team5.miniProject.run.PanelChange;
 
 
 
 public class Chap06Part1NLoop4 extends JPanel{
 	private JTextField textField;
 	private JPasswordField passwordField;
-	private Chap06Run win;
+	private PanelChange win;
 	Image image;
 	private JTextArea memoTextField;
-	public Chap06Part1NLoop4(Chap06Run win){
+	public Chap06Part1NLoop4(PanelChange win){
 		
 		setLayout(null);
 		this.win = win;
@@ -131,7 +130,7 @@ public class Chap06Part1NLoop4 extends JPanel{
 		class Reset implements ActionListener{
 			@Override
 			public void actionPerformed(ActionEvent e){
-				win.change("list");//
+				win.change("panellist");//
 			}
 		}
 	
