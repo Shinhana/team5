@@ -1,6 +1,7 @@
-package miniProject.chapter.chap02;
+package team5.miniProject.chapter.chap02;
 
 import java.awt.Color;
+import team5.miniProject.run.PanelChange;
 import java.awt.Graphics;
 import java.awt.Image;
 import java.awt.event.ActionEvent;
@@ -15,7 +16,7 @@ import javax.swing.JTextField;
 
 public class Chap02VariablePart2 extends JPanel {
 	
-	private ChangePanel ch;
+	private PanelChange win;
 	Image imageMain;
 	
 	private JButton reset; //목차
@@ -27,15 +28,15 @@ public class Chap02VariablePart2 extends JPanel {
 	
 	public Chap02VariablePart2() {}
 	
-	public Chap02VariablePart2(ChangePanel ch) {
-		this.ch = ch;
+	public Chap02VariablePart2(PanelChange win) {
+		this.win = win;
 		setLayout(null);
 		
 		ImageIcon nextImg = new ImageIcon("images/next.png");
 		next= new JButton(nextImg);
 		next.setSize(20,20);
 		next.setLocation(210,620);
-		next.addActionListener(new MyActionListener());
+		next.addActionListener(new Next());
 		//버튼 투명하게 아래 3줄
 		next.setBorderPainted(false);
 		next.setFocusPainted(false);
@@ -43,10 +44,10 @@ public class Chap02VariablePart2 extends JPanel {
 	    this.add(next);
 	    
 		ImageIcon lastImg= new ImageIcon("images/last.png");
-		last= new JButton(nextImg);
+		last= new JButton(lastImg);
 		last.setSize(20,20);
 		last.setLocation(239,622);
-		last.addActionListener(new MyActionListener2());
+		last.addActionListener(new Last());
 		//버튼 투명하게 3줄
 		last.setBorderPainted(false);
 		last.setFocusPainted(false);
@@ -57,7 +58,7 @@ public class Chap02VariablePart2 extends JPanel {
 		back= new JButton(backImg);
 		back.setSize(20,20);
 		back.setLocation(180,620);
-		back.addActionListener(new MyActionListener3());
+		back.addActionListener(new Back());
 		//버튼 투명하게 3줄
 		back.setBorderPainted(false);
 		back.setFocusPainted(false);
@@ -68,7 +69,7 @@ public class Chap02VariablePart2 extends JPanel {
 		start = new JButton(startImg);
 		start.setSize(20,20);
 		start.setLocation(150,620);
-		start.addActionListener(new MyActionListener4());
+		start.addActionListener(new Start());
 		//버튼 투명하게 3줄
 		start.setBorderPainted(false);
 		start.setFocusPainted(false);
@@ -94,35 +95,35 @@ public class Chap02VariablePart2 extends JPanel {
 	}
 	
 	//next
-	class MyActionListener implements ActionListener{
+	class Next implements ActionListener{
 		@Override
 		public void actionPerformed(ActionEvent e) {
-			ch.change("var3");
+			win.change("var3");
 			
 		}
 	}
 
 	//last
-	class MyActionListener2 implements ActionListener{
+	class Last implements ActionListener{
 		@Override
 		public void actionPerformed(ActionEvent e){
-			ch.change("var7");
+			win.change("var5");
 		}
 	}
 	
 	//back
-	class MyActionListener3 implements ActionListener{
+	class Back implements ActionListener{
 		@Override
 		public void actionPerformed(ActionEvent e){
-			ch.change("var1");
+			win.change("var1");
 		}
 	}
 	
 	//start
-	class MyActionListener4 implements ActionListener{
+	class Start implements ActionListener{
 		@Override
 		public void actionPerformed(ActionEvent e){
-			ch.change("panel1");
+			win.change("panel1");
 		}
 	}
 

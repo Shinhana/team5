@@ -1,6 +1,7 @@
-package miniProject.chapter.chap02.quiz;
+package team5.miniProject.chapter.chap02.quiz;
 
 import java.awt.Graphics;
+import team5.miniProject.run.PanelChange;
 import java.awt.Image;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
@@ -9,9 +10,10 @@ import javax.swing.ImageIcon;
 import javax.swing.JButton;
 import javax.swing.JPanel;
 
+
 public class Chap02Quiz20Ans extends JPanel {
 	
-	private ChangePanel ch;
+	private PanelChange win;
 	Image imageMain;
 	
 	private JButton next; // >, MyActionListener
@@ -20,36 +22,34 @@ public class Chap02Quiz20Ans extends JPanel {
 	private JButton start; // <<, MyActionListener4
 	private JButton reset; //목차, MyActionListener5
 	
-	public Chap02Quiz20Ans() {}
 	
-	public Chap02Quiz20Ans(ChangePanel ch) {
+	public Chap02Quiz20Ans(PanelChange win) {
 		
-		this.ch = ch;
-		
-		ImageIcon nextImg= new ImageIcon("images/next.png");
-		next= new JButton(nextImg);
-		next.setSize(20,20);
-		next.setLocation(100,100);
-		next.addActionListener(new MyActionListener());
-		//버튼 투명하게 3줄
-		next.setBorderPainted(false);
-		next.setFocusPainted(false);
-	    next.setContentAreaFilled(false);
-	    this.add(next);
+		this.win = win;
+		setLayout(null);
 	    
 	    ImageIcon backImg= new ImageIcon("images/back.png");
 		back= new JButton(backImg);
 		back.setSize(20,20);
 		back.setLocation(180,620);
-		back.addActionListener(new MyActionListener3());
+		back.addActionListener(new Back());
 		//버튼 투명하게 3줄
 		back.setBorderPainted(false);
 		back.setFocusPainted(false);
 		back.setContentAreaFilled(false);
 		this.add(back);
 	    
-	    imageMain = new ImageIcon("images/chap2Level21ans.png").getImage();
+		ImageIcon resetImg= new ImageIcon("images/reset.png");
+		reset= new JButton(resetImg);
+		reset.setSize(20,20);
+		reset.setLocation(116,620);
+		reset.addActionListener(new Reset());
+		reset.setBorderPainted(false);
+		reset.setFocusPainted(false);
+		reset.setContentAreaFilled(false);
+		this.add(reset);
 		
+	    imageMain = new ImageIcon("images/chap2Quiz2ans.png").getImage();
 	}
 	
 	@Override 
@@ -58,23 +58,21 @@ public class Chap02Quiz20Ans extends JPanel {
 		setOpaque(false);//투명하게
 		super.paint(g);
 	}
-	
-	//next
-	class MyActionListener implements ActionListener{
-		@Override
-		public void actionPerformed(ActionEvent e) {
-			ch.change("quiz2");
-			
-		}
-	}
 
 	//back
-	class MyActionListener3 implements ActionListener{
+	class Back implements ActionListener{
 		@Override
 		public void actionPerformed(ActionEvent e){
-			ch.change("ans10");
+			win.change("quiz2");
 		}
 	}
 	
+	//reset
+	class Reset implements ActionListener{
+		@Override
+		public void actionPerformed(ActionEvent e){
+			win.change("list");
+		}
+	}
 	
 }

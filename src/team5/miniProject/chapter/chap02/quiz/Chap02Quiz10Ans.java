@@ -1,4 +1,4 @@
-package miniProject.chapter.chap02.quiz;
+package team5.miniProject.chapter.chap02.quiz;
 
 import java.awt.Graphics;
 import java.awt.Image;
@@ -9,11 +9,11 @@ import javax.swing.ImageIcon;
 import javax.swing.JButton;
 import javax.swing.JPanel;
 
-import miniProject.chapter.chap02.quiz.Chap02Quiz1.MyActionListener;
+import team5.miniProject.chapter.chap02.PanelChange;
 
 public class Chap02Quiz10Ans extends JPanel {
 	
-	private ChangePanel ch;
+	private PanelChange win;
 	Image imageMain;
 	
 	private JButton next; // >, MyActionListener
@@ -22,25 +22,34 @@ public class Chap02Quiz10Ans extends JPanel {
 	private JButton start; // <<, MyActionListener4
 	private JButton reset; //목차, MyActionListener5
 	
-	public Chap02Quiz10Ans() {}
-	
-	public Chap02Quiz10Ans(ChangePanel ch) {
+	public Chap02Quiz10Ans(PanelChange win) {
 		
-		this.ch = ch;
+		this.win = win;
 		setLayout(null);
 		
 		ImageIcon nextImg= new ImageIcon("images/next.png");
 		next= new JButton(nextImg);
 		next.setSize(20,20);
 		next.setLocation(100,100);
-		next.addActionListener(new MyActionListener());
+		next.addActionListener(new Next());
 		//버튼 투명하게 3줄
-//		next.setBorderPainted(false);
-//		next.setFocusPainted(false);
-//	    next.setContentAreaFilled(false);
+		next.setBorderPainted(true);
+		next.setFocusPainted(true);
+	    next.setContentAreaFilled(true);
 	    this.add(next);
 	    
-	    imageMain = new ImageIcon("images/chapter2-dap1.png").getImage();
+	    ImageIcon resetImg= new ImageIcon("images/reset.png");
+	    reset= new JButton(resetImg);
+	    reset.setSize(20,20);
+	    reset.setLocation(116,620);
+	    reset.addActionListener(new Reset());
+	    reset.setBorderPainted(false);
+	    reset.setFocusPainted(false);
+	    reset.setContentAreaFilled(false);
+	    this.add(reset);
+	    
+	    
+	    imageMain = new ImageIcon("images/chap2Quiz1ans1.png").getImage();
 		
 	}
 	
@@ -52,15 +61,21 @@ public class Chap02Quiz10Ans extends JPanel {
 	}
 			
 	//next
-	class MyActionListener implements ActionListener{
+	class Next implements ActionListener{
 		@Override
 		public void actionPerformed(ActionEvent e) {
-			ch.change("ans11");
+			win.change("qans11");
 			
 		}
 	}
 	
-	
+	//reset
+	class Reset implements ActionListener{
+		@Override
+		public void actionPerformed(ActionEvent e){
+			win.change("list");
+		}
+	}
 	
 	
 }
