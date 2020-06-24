@@ -20,7 +20,7 @@ public class Chap05ArrayPart2 extends JPanel {
 	private JTextArea textField;
 	Image imageMain;
 
-	private JButton reset; //¸ñÂ÷
+	private JButton reset; //ï¿½ï¿½ï¿½ï¿½
 	private JButton next; // >
 	private JButton last; // >>
 	private JButton back; // <
@@ -58,7 +58,7 @@ public class Chap05ArrayPart2 extends JPanel {
 		reset.setLocation(100,610);
 		reset.addActionListener(new Reset());
 		
-		imageMain = new ImageIcon("images/¹è¿­-2.PNG").getImage();
+		imageMain = new ImageIcon("images/Array2.PNG").getImage();
 
 		next.setBorderPainted(false);
 		next.setFocusPainted(false);
@@ -89,7 +89,7 @@ public class Chap05ArrayPart2 extends JPanel {
 	      textField.setBounds(50,550,230,50);
 	      textField.setOpaque(false);
 	      textField.setForeground(Color.black);
-	      //Å×½ºÆ® °ø°£ Å×µÎ¸® ¼û±â±â 
+	      //ï¿½×½ï¿½Æ® ï¿½ï¿½ï¿½ï¿½ ï¿½×µÎ¸ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ 
 	      textField.setBorder(javax.swing.BorderFactory.createEmptyBorder());
 	      
 	      add(textField);
