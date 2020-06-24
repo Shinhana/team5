@@ -10,17 +10,12 @@ import javax.swing.ImageIcon;
 import javax.swing.JButton;
 import javax.swing.JPanel;
 
-// <<<<<<< 20200624_All_2
-// import team5.miniProject.run.*;
-
-// =======
-// >>>>>>> master
 public class Chap02Quiz11Ans extends JPanel {
 	
 	private PanelChange win;
 	Image imageMain;
 	
-	private JButton reset; //����
+	private JButton reset; 
 	private JButton next; // >
 	private JButton last; // >>
 	private JButton back; // <
@@ -38,10 +33,7 @@ public class Chap02Quiz11Ans extends JPanel {
 		back.setSize(20,20);
 		back.setLocation(180,620);
 		back.addActionListener(new Back());
-// <<<<<<< 20200624_All_2
-// 		//��ư �����ϰ� 3��
-// =======
-// >>>>>>> master
+
 		back.setBorderPainted(false);
 		back.setFocusPainted(false);
 		back.setContentAreaFilled(false);
@@ -52,10 +44,7 @@ public class Chap02Quiz11Ans extends JPanel {
 		last.setSize(20,20);
 		last.setLocation(239,622);
 		last.addActionListener(new Last());
-// <<<<<<< 20200624_All_2
-// 		//��ư �����ϰ� 3��
-// =======
-// >>>>>>> master
+
 		last.setBorderPainted(false);
 		last.setFocusPainted(false);
 		last.setContentAreaFilled(false);
@@ -66,10 +55,7 @@ public class Chap02Quiz11Ans extends JPanel {
 		next.setSize(20,20);
 		next.setLocation(100,100);
 		next.addActionListener(new Next());
-// <<<<<<< 20200624_All_2
-// 		//��ư �����ϰ� 3��
-// =======
-//>>>>>>> master
+
 		next.setBorderPainted(false);
 		next.setFocusPainted(false);
 	    next.setContentAreaFilled(false);
@@ -89,15 +75,10 @@ public class Chap02Quiz11Ans extends JPanel {
 			
 	}
 
-
 	@Override 
 	public void paint(Graphics g){
 		g.drawImage(imageMain, 0, 0, getWidth(),getHeight(),this);
-// <<<<<<< 20200624_All_2
-// 		setOpaque(false);//�����ϰ�
-// =======
-// 		setOpaque(false);
-//>>>>>>> master
+		setOpaque(false);
 		super.paint(g);
 	}
 	
@@ -105,8 +86,7 @@ public class Chap02Quiz11Ans extends JPanel {
 		class Next implements ActionListener{
 			@Override
 			public void actionPerformed(ActionEvent e) {
-				win.change("quiz2");
-				
+				win.change("variable_quiz2 ");
 			}
 		}
 	
@@ -114,7 +94,7 @@ public class Chap02Quiz11Ans extends JPanel {
 	class Back implements ActionListener{
 		@Override
 		public void actionPerformed(ActionEvent e){
-			win.change("qans10");
+			win.change("variable_quizAnswer10 ");
 		}
 	}
 		
@@ -122,7 +102,7 @@ public class Chap02Quiz11Ans extends JPanel {
 	class Last implements ActionListener{
 		@Override
 		public void actionPerformed(ActionEvent e){
-			win.change("quiz2");
+			win.change("variable_quiz2 ");
 		}
 	}
 	
@@ -130,7 +110,7 @@ public class Chap02Quiz11Ans extends JPanel {
 	class Reset implements ActionListener{
 		@Override
 		public void actionPerformed(ActionEvent e){
-			win.change("list");
+			win.change("variable_part1 ");
 		}
 	}
 	

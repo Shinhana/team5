@@ -10,6 +10,21 @@ import team5.miniProject.chapter.chap01.Chap01ProgramPart05;
 import team5.miniProject.chapter.chap01.Chap01ProgramPart06;
 import team5.miniProject.chapter.chap01.Chap01ProgramPart07;
 import team5.miniProject.chapter.chap02.Chap02VariableList;
+import team5.miniProject.chapter.chap02.Chap02VariablePart1;
+import team5.miniProject.chapter.chap02.Chap02VariablePart2;
+import team5.miniProject.chapter.chap02.Chap02VariablePart3;
+import team5.miniProject.chapter.chap02.Chap02VariablePart4;
+import team5.miniProject.chapter.chap02.Chap02VariablePart5;
+import team5.miniProject.chapter.chap02.quiz.Chap02Quiz1;
+import team5.miniProject.chapter.chap02.quiz.Chap02Quiz10Ans;
+import team5.miniProject.chapter.chap02.quiz.Chap02Quiz11Ans;
+import team5.miniProject.chapter.chap02.quiz.Chap02Quiz2;
+import team5.miniProject.chapter.chap02.quiz.Chap02Quiz20Ans;
+import team5.miniProject.chapter.chap02.test.Chap02Test1;
+import team5.miniProject.chapter.chap02.test.Chap02Test1Ans;
+import team5.miniProject.chapter.chap02.test.Chap02Test2;
+import team5.miniProject.chapter.chap02.test.Chap02Test20Ans;
+import team5.miniProject.chapter.chap02.test.Chap02Test21Ans;
 import team5.miniProject.chapter.chap03.Chap03OperatorPart01;
 import team5.miniProject.chapter.chap03.Chap03OperatorPart02;
 import team5.miniProject.chapter.chap03.Chap03OperatorPart03;
@@ -124,6 +139,21 @@ public class run {
 	win.nloop_part4 = new Chap06Part1NLoop4(win);
 	win.nloop_part5 = new Chap06Part1NLoop5(win);
 	win.variable_part1 = new Chap02VariableList(win);
+	win.variable_part2 = new Chap02VariablePart1(win);
+	win.variable_part3 = new Chap02VariablePart2(win);
+	win.variable_part4 = new Chap02VariablePart3(win);
+	win.variable_part5 = new Chap02VariablePart4(win);
+	win.variable_part6 = new Chap02VariablePart5(win);
+	win.variable_quiz1  = new Chap02Quiz1(win);
+	win.variable_quiz2  = new Chap02Quiz2(win);
+	win.variable_quizAnswer10 = new Chap02Quiz10Ans(win);
+	win.variable_quizAnswer11= new Chap02Quiz11Ans (win);
+	win.variable_quizAnswer2 = new Chap02Quiz20Ans(win);
+	win.variable_test1 = new Chap02Test1(win);
+	win.variable_test2 = new Chap02Test2(win);
+	win.variable_test1Answer1 = new Chap02Test1Ans(win);
+	win.variable_test1Answer20 = new Chap02Test20Ans (win);
+	win.variable_test1Answer21 = new Chap02Test21Ans (win);
 	
 	
 	

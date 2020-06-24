@@ -13,6 +13,7 @@ import javax.swing.JTextArea;
 import javax.swing.JTextField;
 
 import team5.miniProject.run.PanelChange;
+
 public class Chap02VariablePart5 extends JPanel {
 	
 	private PanelChange win;
@@ -51,6 +52,16 @@ public class Chap02VariablePart5 extends JPanel {
 		start.setContentAreaFilled(false);
 		this.add(start);
 		
+		ImageIcon resetImg= new ImageIcon("images/reset.png");
+		reset= new JButton(resetImg);
+		reset.setSize(20,20);
+		reset.setLocation(116,620);
+		reset.addActionListener(new Reset());
+		reset.setBorderPainted(false);
+		reset.setFocusPainted(false);
+		reset.setContentAreaFilled(false);
+		this.add(reset);
+		
 		memoTextField =  new JTextArea();
 		memoTextField.setBounds(50,520,280,100);
 		memoTextField.setOpaque(false);
@@ -76,7 +87,7 @@ public class Chap02VariablePart5 extends JPanel {
 	class Back implements ActionListener{
 		@Override
 		public void actionPerformed(ActionEvent e){
-			win.change("var4");
+			win.change("variable_part5 ");
 		}
 	}
 			
@@ -85,8 +96,16 @@ public class Chap02VariablePart5 extends JPanel {
 		
 		@Override
 		public void actionPerformed(ActionEvent e) {
-			win.change("var1");
+			win.change("variable_part2 ");
 			
+		}
+	}
+	
+	//reset
+	class Reset implements ActionListener{
+		@Override
+		public void actionPerformed(ActionEvent e){
+			win.change("variable_part1");
 		}
 	}
 

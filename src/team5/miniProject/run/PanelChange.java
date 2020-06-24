@@ -10,6 +10,21 @@ import team5.miniProject.chapter.chap01.Chap01ProgramPart05;
 import team5.miniProject.chapter.chap01.Chap01ProgramPart06;
 import team5.miniProject.chapter.chap01.Chap01ProgramPart07;
 import team5.miniProject.chapter.chap02.Chap02VariableList;
+import team5.miniProject.chapter.chap02.Chap02VariablePart1;
+import team5.miniProject.chapter.chap02.Chap02VariablePart2;
+import team5.miniProject.chapter.chap02.Chap02VariablePart3;
+import team5.miniProject.chapter.chap02.Chap02VariablePart4;
+import team5.miniProject.chapter.chap02.Chap02VariablePart5;
+import team5.miniProject.chapter.chap02.quiz.Chap02Quiz1;
+import team5.miniProject.chapter.chap02.quiz.Chap02Quiz10Ans;
+import team5.miniProject.chapter.chap02.quiz.Chap02Quiz11Ans;
+import team5.miniProject.chapter.chap02.quiz.Chap02Quiz2;
+import team5.miniProject.chapter.chap02.quiz.Chap02Quiz20Ans;
+import team5.miniProject.chapter.chap02.test.Chap02Test1;
+import team5.miniProject.chapter.chap02.test.Chap02Test1Ans;
+import team5.miniProject.chapter.chap02.test.Chap02Test2;
+import team5.miniProject.chapter.chap02.test.Chap02Test20Ans;
+import team5.miniProject.chapter.chap02.test.Chap02Test21Ans;
 import team5.miniProject.chapter.chap03.Chap03OperatorPart01;
 import team5.miniProject.chapter.chap03.Chap03OperatorPart02;
 import team5.miniProject.chapter.chap03.Chap03OperatorPart03;
@@ -43,9 +58,6 @@ import team5.miniProject.chapter.chap06.Chap06Part2DArray4;
 import team5.miniProject.menu.JPanel_Login;
 import team5.miniProject.menu.JPanel_Main;
 import team5.miniProject.menu.PanelList;
-
-
-
 
 public class PanelChange extends JFrame{
 
@@ -90,8 +102,25 @@ public class PanelChange extends JFrame{
 	public Chap06Part2DArray2 darray_part2= null;
 	public Chap06Part2DArray3 darray_part3= null;
 	public Chap06Part2DArray4 darray_part4= null;
-	public Chap02VariableList variable_part1 = null;
 	
+	public Chap02VariableList variable_part1 = null;
+	public Chap02VariablePart1 variable_part2 = null;
+	public Chap02VariablePart2 variable_part3 = null;
+	public Chap02VariablePart3 variable_part4 = null;
+	public Chap02VariablePart4 variable_part5 = null;
+	public Chap02VariablePart5 variable_part6 = null;
+
+	public Chap02Quiz1 variable_quiz1 = null; //퀴즈
+	public Chap02Quiz2 variable_quiz2 = null; //퀴즈
+	public Chap02Test1 variable_test1 = null;//테스트
+	public Chap02Test2 variable_test2 = null;//테스트
+	
+	public Chap02Quiz10Ans variable_quizAnswer10 = null; //퀴즈답안
+	public Chap02Quiz11Ans variable_quizAnswer11 = null; //퀴즈답안
+	public Chap02Quiz20Ans variable_quizAnswer2 = null; //퀴즈답안
+	public Chap02Test1Ans variable_test1Answer1 = null;//테스트답안
+	public Chap02Test20Ans variable_test1Answer20 = null;//테스트답안
+	public Chap02Test21Ans variable_test1Answer21 = null;//테스트답안
 	
 	
 public void change(String panelName){
@@ -265,16 +294,92 @@ public void change(String panelName){
 			getContentPane().add(nloop_part5);
 			revalidate();
 			repaint();
-		}else if(panelName.equals("variable_part1")){
+		} else if(panelName.equals("variable_part1")){
 			getContentPane().removeAll();
 			getContentPane().add(variable_part1);
 			revalidate();
 			repaint();
+		} else if(panelName.equals("variable_part2")){
+			getContentPane().removeAll();
+			getContentPane().add(variable_part2);
+			revalidate();
+			repaint();
+		} else if(panelName.equals("variable_part3")){
+			getContentPane().removeAll();
+			getContentPane().add(variable_part3);
+			revalidate();
+			repaint();
+		} else if(panelName.equals("variable_part4")){
+			getContentPane().removeAll();
+			getContentPane().add(variable_part4);
+			revalidate();
+			repaint();
+		} else if(panelName.equals("variable_part5")){
+			getContentPane().removeAll();
+			getContentPane().add(variable_part5);
+			revalidate();
+			repaint();
+		} else if(panelName.equals("variable_part6")){
+			getContentPane().removeAll();
+			getContentPane().add(variable_part6);
+			revalidate();
+			repaint();
+		} else if(panelName.equals("variable_quiz1 ")){
+			getContentPane().removeAll();
+			getContentPane().add(variable_quiz1);
+			revalidate();
+			repaint();
+		} else if(panelName.equals("variable_quiz2")){
+			getContentPane().removeAll();
+			getContentPane().add(variable_quiz2);
+			revalidate();
+			repaint();
+		} else if(panelName.equals("variable_quiz2")){
+			getContentPane().removeAll();
+			getContentPane().add(variable_quiz2);
+			revalidate();
+			repaint();
+		} else if(panelName.equals("variable_quizAnswer10 ")){
+			getContentPane().removeAll();
+			getContentPane().add(variable_quizAnswer10);
+			revalidate();
+			repaint();
+		} else if(panelName.equals("variable_quizAnswer11")){
+			getContentPane().removeAll();
+			getContentPane().add(variable_quizAnswer11);
+			revalidate();
+			repaint();
+		} else if(panelName.equals("variable_quizAnswer2 ")){
+			getContentPane().removeAll();
+			getContentPane().add(variable_quizAnswer2 );
+			revalidate();
+			repaint();
+		} else if(panelName.equals("variable_test1")){
+			getContentPane().removeAll();
+			getContentPane().add(variable_test1);
+			revalidate();
+			repaint();
+		} else if(panelName.equals("variable_test2")){
+			getContentPane().removeAll();
+			getContentPane().add(variable_test2);
+			revalidate();
+			repaint();
+		} else if(panelName.equals("variable_test1Answer1")){
+			getContentPane().removeAll();
+			getContentPane().add(variable_test1Answer1);
+			revalidate();
+			repaint();
+		} else if(panelName.equals("variable_test1Answer20")){
+			getContentPane().removeAll();
+			getContentPane().add(variable_test1Answer20);
+			revalidate();
+			repaint();
+		} else if(panelName.equals("variable_test1Answer21")){
+			getContentPane().removeAll();
+			getContentPane().add(variable_test1Answer21);
+			revalidate();
+			repaint();
 		}
-		
-		
-		
-		
 		
 
 		
