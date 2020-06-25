@@ -19,7 +19,7 @@ public class Chap05Quiz2AnsX extends JPanel {
 	private JTextField textField;
 	Image imageMain;
 
-	private JButton reset; //¸ñÂ÷
+	private JButton reset; //ï¿½ï¿½ï¿½ï¿½
 	private JButton next; // >
 	private JButton last; // >>
 	private JButton back; // <
@@ -97,7 +97,7 @@ public class Chap05Quiz2AnsX extends JPanel {
 
 		@Override
 		public void actionPerformed(ActionEvent e) {
-			win.change("panel19");
+			win.change("array_part6");
 
 		}
 	}
@@ -106,14 +106,14 @@ public class Chap05Quiz2AnsX extends JPanel {
 	class Back implements ActionListener{
 		@Override
 		public void actionPerformed(ActionEvent e){
-			win.change("panel10");
+			win.change("array_quiz2");
 		}
 	}
 	class Last implements ActionListener{
 
 		@Override
 		public void actionPerformed(ActionEvent e) {
-			win.change("panel19");
+			win.change("array_part6");
 
 		}
 	}
@@ -121,7 +121,7 @@ public class Chap05Quiz2AnsX extends JPanel {
 
 		@Override
 		public void actionPerformed(ActionEvent e) {
-			win.change("panel1");
+			win.change("array_main");
 
 		}
 	}
@@ -129,7 +129,7 @@ public class Chap05Quiz2AnsX extends JPanel {
 
 		@Override
 		public void actionPerformed(ActionEvent e) {
-			win.change("panel1");
+			win.change("panellist");
 
 		}
 	}
