@@ -118,26 +118,26 @@ public class Chap06Part1NLoop2 extends JPanel{
 		class Back implements ActionListener{
 		@Override
 		public void actionPerformed(ActionEvent e){
-			win.change("panel01");
+			win.change("nloop_part1");
 		}
 	}
 		class Next implements ActionListener{
 			@Override
 			public void actionPerformed(ActionEvent e){
-				win.change("panel02_2");
+				win.change("nloop_part3");
 			}
 		}
 		class Last implements ActionListener{
 			@Override
 			public void actionPerformed(ActionEvent e){
-				win.change("panel04");//
+				win.change("nloop_part4");//
 			}
 		
 		}
 		class Start implements ActionListener{
 			@Override
 			public void actionPerformed(ActionEvent e){
-				win.change("panel01");//
+				win.change("nloop_part1");//
 			}
 		
 		}

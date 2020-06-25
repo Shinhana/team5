@@ -89,14 +89,14 @@ public class Chap06Part2DArray1 extends JPanel{
 	class Next implements ActionListener{
 		@Override
 		public void actionPerformed(ActionEvent e){
-			win.change("jpanel22"); 
+			win.change("darray_part2"); 
 		
 		}
 	}
 	class Back implements ActionListener{
 		@Override
 		public void actionPerformed(ActionEvent e){
-			win.change("jpanel_main"); 
+			win.change("nloop_part4"); //호종한테 확인
 			
 		}
 	}
@@ -109,7 +109,7 @@ public class Chap06Part2DArray1 extends JPanel{
 	class Last implements ActionListener{
 		@Override
 		public void actionPerformed(ActionEvent e){
-			win.change("jpanel24");//
+			win.change("darray_part4");//
 		}
 	
 	}

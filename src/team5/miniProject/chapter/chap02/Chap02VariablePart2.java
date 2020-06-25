@@ -1,6 +1,7 @@
 package team5.miniProject.chapter.chap02;
 
 import java.awt.Color;
+
 import team5.miniProject.run.PanelChange;
 import java.awt.Graphics;
 import java.awt.Image;
@@ -72,6 +73,16 @@ public class Chap02VariablePart2 extends JPanel {
 		start.setContentAreaFilled(false);
 		this.add(start);
 		
+		ImageIcon resetImg= new ImageIcon("images/reset.png");
+		reset= new JButton(resetImg);
+		reset.setSize(20,20);
+		reset.setLocation(116,620);
+		reset.addActionListener(new Reset());
+		reset.setBorderPainted(false);
+		reset.setFocusPainted(false);
+		reset.setContentAreaFilled(false);
+		this.add(reset);
+		
 	    memoTextField =  new JTextArea();
 	    memoTextField.setBounds(50,520,280,100);
 	    memoTextField.setOpaque(false);
@@ -94,7 +105,7 @@ public class Chap02VariablePart2 extends JPanel {
 	class Next implements ActionListener{
 		@Override
 		public void actionPerformed(ActionEvent e) {
-			win.change("var3");
+			win.change("variable_part4");
 			
 		}
 	}
@@ -103,7 +114,7 @@ public class Chap02VariablePart2 extends JPanel {
 	class Last implements ActionListener{
 		@Override
 		public void actionPerformed(ActionEvent e){
-			win.change("var5");
+			win.change("variable_part6");
 		}
 	}
 	
@@ -111,7 +122,7 @@ public class Chap02VariablePart2 extends JPanel {
 	class Back implements ActionListener{
 		@Override
 		public void actionPerformed(ActionEvent e){
-			win.change("var1");
+			win.change("variable_part2");
 		}
 	}
 	
@@ -119,8 +130,16 @@ public class Chap02VariablePart2 extends JPanel {
 	class Start implements ActionListener{
 		@Override
 		public void actionPerformed(ActionEvent e){
-			win.change("panel1");
+			win.change("variable_part1 ");
 		}
 	}
 
+	//reset
+	class Reset implements ActionListener{
+		@Override
+		public void actionPerformed(ActionEvent e){
+			win.change("variable_part1");
+		}
+	}
+	
 }

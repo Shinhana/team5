@@ -11,6 +11,11 @@ import javax.swing.JFrame;
 import javax.swing.JPanel;
 import javax.swing.JTextField;
 
+import team5.miniProject.chapter.chap05.Chap05ArrayPart1.Back;
+import team5.miniProject.chapter.chap05.Chap05ArrayPart1.Last;
+import team5.miniProject.chapter.chap05.Chap05ArrayPart1.Next;
+import team5.miniProject.chapter.chap05.Chap05ArrayPart1.Reset;
+import team5.miniProject.chapter.chap05.Chap05ArrayPart1.Start;
 import team5.miniProject.run.PanelChange;
 
 public class Chap05ArrayPart6 extends JPanel {
@@ -53,22 +58,47 @@ public class Chap05ArrayPart6 extends JPanel {
 		last.setSize(150,60);
 		last.setLocation(90,390);
 		last.addActionListener(new Last());
+//		next= new JButton();
+//		next.setSize(20,20);
+//		next.setLocation(210,610);
+//		next.addActionListener(new Next());
+//
+//		back = new JButton();
+//		back.setSize(20,20);
+//		back.setLocation(170,610);
+//		back.addActionListener(new Back());
+//
+//		last= new JButton();
+//		last.setSize(20,20);
+//		last.setLocation(235,610);
+//		last.addActionListener(new Last());
+//
+//		start= new JButton();
+//		start.setSize(20,20);
+//		start.setLocation(150,610);
+//		start.addActionListener(new Start());
+//
+//		reset = new JButton();
+//		reset.setSize(20,20);
+//		reset.setLocation(115,610);
+//		reset.addActionListener(new Reset());
+
 		
 		imageMain = new ImageIcon("images/Arraytest.PNG").getImage();
 
-		back.setBorderPainted(false);
+		back.setBorderPainted(true);
 		back.setFocusPainted(false);
-		back.setContentAreaFilled(false);
+		back.setContentAreaFilled(true);
 		this.add(back);
 		
-		start.setBorderPainted(false);
+		start.setBorderPainted(true);
 		start.setFocusPainted(false);
-		start.setContentAreaFilled(false);
+		start.setContentAreaFilled(true);
 		this.add(start);
 		
-		reset.setBorderPainted(false);
+		reset.setBorderPainted(true);
 		reset.setFocusPainted(false);
-		reset.setContentAreaFilled(false);
+		reset.setContentAreaFilled(true);
 		this.add(reset);
 		
 		next.setBorderPainted(false);
@@ -95,7 +125,7 @@ public class Chap05ArrayPart6 extends JPanel {
 
 		@Override
 		public void actionPerformed(ActionEvent e) {
-			win.change("panel6");
+			win.change("array_part5");
 
 		}
 	}
@@ -104,14 +134,14 @@ public class Chap05ArrayPart6 extends JPanel {
 	class Start implements ActionListener{
 		@Override
 		public void actionPerformed(ActionEvent e){
-			win.change("panel1");
+			win.change("array_main");
 		}
 	}
 	class Reset implements ActionListener{
 
 		@Override
 		public void actionPerformed(ActionEvent e) {
-			win.change("panel1");
+			win.change("panellist");
 
 		}
 	}
@@ -125,7 +155,7 @@ public class Chap05ArrayPart6 extends JPanel {
 
 		@Override
 		public void actionPerformed(ActionEvent e) {
-			win.change("panel13");
+			win.change("array_part6");
 
 		}
 	}

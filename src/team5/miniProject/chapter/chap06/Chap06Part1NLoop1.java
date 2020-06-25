@@ -129,14 +129,14 @@ public class Chap06Part1NLoop1 extends JPanel{
 	class Next implements ActionListener{
 		@Override
 		public void actionPerformed(ActionEvent e){
-			win.change("panel02");
+			win.change("nloop_part2");
 		}
 	}
 	//'<' Ŭ������ �� �Ѿ�� Ŭ���� �������̵�
 	class Back implements ActionListener{
 		@Override
 		public void actionPerformed(ActionEvent e){
-			win.change("jpanel_main"); // �ڷΰ���(����ȭ������)
+			win.change("nloop_main"); // �ڷΰ���(����ȭ������)
 		}
 	}
 	//������ Ŭ������ �� �Ѿ�� Ŭ���� �������̵�
@@ -149,7 +149,7 @@ public class Chap06Part1NLoop1 extends JPanel{
 	class Last implements ActionListener{
 		@Override
 		public void actionPerformed(ActionEvent e){
-			win.change("panel04");//
+			win.change("nloop_part4");//
 		}
 	
 	}

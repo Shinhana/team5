@@ -85,7 +85,7 @@ public class Chap02VariablePart1 extends JPanel {
 	class Next implements ActionListener{
 		@Override
 		public void actionPerformed(ActionEvent e) {
-			win.change("var2");
+			win.change("variable_part3");
 			
 		}
 	}
@@ -94,7 +94,7 @@ public class Chap02VariablePart1 extends JPanel {
 	class Last implements ActionListener{
 		@Override
 		public void actionPerformed(ActionEvent e){
-			win.change("var5");
+			win.change("variable_part6");
 		}
 	}
 	
@@ -102,7 +102,7 @@ public class Chap02VariablePart1 extends JPanel {
 	class Reset implements ActionListener{
 		@Override
 		public void actionPerformed(ActionEvent e){
-			win.change("list");
+			win.change("variable_part1");
 		}
 	}
 	

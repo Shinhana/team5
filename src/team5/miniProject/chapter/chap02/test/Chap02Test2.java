@@ -12,7 +12,8 @@ import javax.swing.JOptionPane;
 import javax.swing.JPanel;
 import javax.swing.JTextArea;
 
-import team5.miniProject.chapter.chap02.PanelChange;
+import team5.miniProject.run.PanelChange;
+
 
 public class Chap02Test2 extends JPanel {
 	
@@ -99,7 +100,7 @@ public class Chap02Test2 extends JPanel {
 	class Start implements ActionListener{
 		@Override
 		public void actionPerformed(ActionEvent e){
-			win.change("test1");
+			win.change("variable_test1 ");
 		}
 	}
 	
@@ -107,7 +108,7 @@ public class Chap02Test2 extends JPanel {
 	class MyActionListener3 implements ActionListener{
 		@Override
 		public void actionPerformed(ActionEvent e){
-			win.change("tans1");
+			win.change("variable_test1Answer1 ");
 		}
 	}
 	
@@ -115,7 +116,7 @@ public class Chap02Test2 extends JPanel {
 	class Reset implements ActionListener{
 		@Override
 		public void actionPerformed(ActionEvent e){
-			win.change("list");
+			win.change("variable_part1 ");
 		}
 	}
 	
@@ -134,7 +135,7 @@ public class Chap02Test2 extends JPanel {
 				 win.change("operator_testAnswer2");
 			 } else {
 				 JOptionPane.showMessageDialog(null,"틀렸습니다.");
-				 win.change("test1");
+				 win.change("variable_test1 ");
 			 }
 			           
 			            
