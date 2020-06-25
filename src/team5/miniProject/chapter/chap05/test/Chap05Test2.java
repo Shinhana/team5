@@ -79,10 +79,10 @@ public class Chap05Test2 extends JPanel {
 			String str = textField.getText();
 			if(str.equals("char[ ] carr2 = carr1;")) {
 				JOptionPane.showMessageDialog(null,"정답입니다.");
-				win.change("panel17");
+				win.change("array_test2Ans1");
 			}else {
 				JOptionPane.showMessageDialog(null,"틀렸습니다.");
-				win.change("panel17"); 
+				win.change("array_test2Ans1"); 
 			}
 
 		}
@@ -92,7 +92,7 @@ public class Chap05Test2 extends JPanel {
 	class Back implements ActionListener{
 		@Override
 		public void actionPerformed(ActionEvent e){
-			win.change("panel19");
+			win.change("array_part6");
 		}
 	}
 }

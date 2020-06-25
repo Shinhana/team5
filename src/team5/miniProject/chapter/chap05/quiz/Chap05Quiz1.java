@@ -75,7 +75,7 @@ public class Chap05Quiz1 extends JPanel {
 
 		@Override
 		public void actionPerformed(ActionEvent e) {
-			win.change("panel8");
+			win.change("array_quiz1AnsO");
 
 		}
 	}
@@ -84,7 +84,7 @@ public class Chap05Quiz1 extends JPanel {
 	class Back implements ActionListener{
 		@Override
 		public void actionPerformed(ActionEvent e){
-			win.change("panel9");
+			win.change("array_quiz1AnsX");
 		}
 	}
 

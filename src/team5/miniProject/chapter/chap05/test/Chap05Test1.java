@@ -73,7 +73,7 @@ public class Chap05Test1 extends JPanel {
 	class Back implements ActionListener{
 		@Override
 		public void actionPerformed(ActionEvent e){
-			win.change("panel19");
+			win.change("array_part6");
 		}
 	}
 
@@ -83,10 +83,10 @@ public class Chap05Test1 extends JPanel {
 			String str = textField.getText();
 			if(str.equals("for(int i = 0; i < carr1.length; i++) { carr2[i] = carr1[i] }")) {
 				JOptionPane.showMessageDialog(null,"정답입니다.");
-				win.change("panel14");
+				win.change("array_test1Ans1");
 			}else {
 				JOptionPane.showMessageDialog(null,"틀렸습니다.");
-				win.change("panel14"); 
+				win.change("array_test1Ans1"); 
 			}
 
 		}

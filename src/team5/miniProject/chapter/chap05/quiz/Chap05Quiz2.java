@@ -20,7 +20,7 @@ public class Chap05Quiz2 extends JPanel {
 	private JTextArea textField;
 	Image imageMain;
 
-	private JButton reset; //¸ñÂ÷
+	private JButton reset; //ï¿½ï¿½ï¿½ï¿½
 	private JButton next; // >
 	private JButton last; // >>
 	private JButton back; // <
@@ -78,7 +78,7 @@ public class Chap05Quiz2 extends JPanel {
 		textField.setBounds(50,550,230,50);
 		textField.setOpaque(false);
 		textField.setForeground(Color.black);
-		//Å×½ºÆ® °ø°£ Å×µÎ¸® ¼û±â±â 
+		//ï¿½×½ï¿½Æ® ï¿½ï¿½ï¿½ï¿½ ï¿½×µÎ¸ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ 
 		textField.setBorder(javax.swing.BorderFactory.createEmptyBorder());	      
 		add(textField);
 		
@@ -96,7 +96,7 @@ public class Chap05Quiz2 extends JPanel {
 
 		@Override
 		public void actionPerformed(ActionEvent e) {
-			win.change("panel11");
+			win.change("array_quiz2AnsO");
 
 		}
 	}
@@ -105,21 +105,21 @@ public class Chap05Quiz2 extends JPanel {
 	class Back implements ActionListener{
 		@Override
 		public void actionPerformed(ActionEvent e){
-			win.change("panel12");
+			win.change("array_quiz2AnsX");
 		}
 	}
 	
 	class Start implements ActionListener{
 		@Override
 		public void actionPerformed(ActionEvent e){
-			win.change("panel12");
+			win.change("array_quiz2AnsX");
 		}
 	}
 	
 	class Last implements ActionListener{
 		@Override
 		public void actionPerformed(ActionEvent e){
-			win.change("panel12");
+			win.change("array_quiz2AnsX");
 		}
 	}
 
