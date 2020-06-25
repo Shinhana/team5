@@ -58,14 +58,14 @@ public class Chap06Quiz1 extends JPanel{
 	class O implements ActionListener{
 		@Override
 		public void actionPerformed(ActionEvent e){
-			win.change("jeao"); 
+			win.change("nloop_quiz1Answer2"); 
 		
 		}
 	}
 	class X implements ActionListener{
 		@Override
 		public void actionPerformed(ActionEvent e){
-			win.change("jeax"); 
+			win.change("nloop_quiz1Answer1"); 
 			
 		}
 	
