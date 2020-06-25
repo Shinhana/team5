@@ -36,6 +36,7 @@ import team5.miniProject.chapter.chap06.Chap06Part1NLoop2;
 import team5.miniProject.chapter.chap06.Chap06Part1NLoop3;
 import team5.miniProject.chapter.chap06.Chap06Part1NLoop4;
 import team5.miniProject.chapter.chap06.Chap06Part1NLoop5;
+import team5.miniProject.menu.JPanelSignUp;
 import team5.miniProject.menu.JPanel_Login;
 import team5.miniProject.menu.JPanel_Main;
 import team5.miniProject.menu.PanelList;
@@ -124,15 +125,15 @@ public class run {
 	win.nloop_part4 = new Chap06Part1NLoop4(win);
 	win.nloop_part5 = new Chap06Part1NLoop5(win);
 	win.variable_part1 = new Chap02VariableList(win);
+	win.signup = new JPanelSignUp(win);
 	
 	
 	
-	
-	
+	win.add(win.jpanel_main2);
 	win.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 	win.setSize(380,680);
 	win.setVisible(true);
-	win.add(win.jpanel_main2);
+	
 
 	}
 }

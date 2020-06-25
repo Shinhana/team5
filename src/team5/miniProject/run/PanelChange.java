@@ -40,6 +40,7 @@ import team5.miniProject.chapter.chap06.Chap06Part2DArray1;
 import team5.miniProject.chapter.chap06.Chap06Part2DArray2;
 import team5.miniProject.chapter.chap06.Chap06Part2DArray3;
 import team5.miniProject.chapter.chap06.Chap06Part2DArray4;
+import team5.miniProject.menu.JPanelSignUp;
 import team5.miniProject.menu.JPanel_Login;
 import team5.miniProject.menu.JPanel_Main;
 import team5.miniProject.menu.PanelList;
@@ -50,6 +51,7 @@ import team5.miniProject.menu.PanelList;
 public class PanelChange extends JFrame{
 
 	public PanelList panellist =null;
+	public JPanelSignUp signup =null;
 	public Chap03OperatorPart01 operator_part1 = null;
 	public Chap03OperatorPart02 operator_part2 = null;
 	public Chap03OperatorPart03 operator_part3 = null;
@@ -121,6 +123,11 @@ public void change(String panelName){
 		}else if(panelName.equals("operator_part5")){
 			getContentPane().removeAll();
 			getContentPane().add(operator_part5);
+			revalidate();
+			repaint();
+		}else if(panelName.equals("signup")){
+			getContentPane().removeAll();
+			getContentPane().add(signup);
 			revalidate();
 			repaint();
 		}else if(panelName.equals("operator_quiz1")){
