@@ -72,14 +72,14 @@ public class Chap06 extends JPanel{
    class MyActionListener3 implements ActionListener{
       @Override
       public void actionPerformed(ActionEvent e){
-         win.change("panel01");  //��ø�ݺ������� �̵�
+         win.change("nloop_part1");  //��ø�ݺ������� �̵�
 
       }
    }
       class MyActionListener4 implements ActionListener{
           @Override
           public void actionPerformed(ActionEvent e){
-             win.change("jpanel21");  //2�����迭������ �̵�
+             win.change("darray_part1");  //2�����迭������ �̵�
             
           }
    }

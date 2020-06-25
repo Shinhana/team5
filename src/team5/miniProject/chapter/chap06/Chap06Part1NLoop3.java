@@ -100,28 +100,28 @@ public class Chap06Part1NLoop3 extends JPanel{
 	class Next implements ActionListener{
 		@Override
 		public void actionPerformed(ActionEvent e){
-			win.change("panel03");  //�ڹ� ȯ�汸�� ->��ο�, �ٺ� -> ���̵�,��ȣ
+			win.change("nloop_part4");  //�ڹ� ȯ�汸�� ->��ο�, �ٺ� -> ���̵�,��ȣ
 			//win.change("panel02"); // �ڹ� ȯ�汸��->��ο� ,�ٺ� 
 		}
 	}
 	class Back implements ActionListener{
 		@Override
 		public void actionPerformed(ActionEvent e){
-			win.change("panel02");  //�ڹ� ȯ�汸�� ->��ο�, �ٺ� -> ���̵�,��ȣ
+			win.change("nloop_part2");  //�ڹ� ȯ�汸�� ->��ο�, �ٺ� -> ���̵�,��ȣ
 			//win.change("panel02"); // �ڹ� ȯ�汸��->��ο� ,�ٺ� 
 		}	
 	}
 	class Last implements ActionListener{
 		@Override
 		public void actionPerformed(ActionEvent e){
-			win.change("panel04");//
+			win.change("nloop_part4");//
 		}
 	
 	}
 	class Start implements ActionListener{
 		@Override
 		public void actionPerformed(ActionEvent e){
-			win.change("panel01");//
+			win.change("nloop_part1");//
 		}
 	
 	}

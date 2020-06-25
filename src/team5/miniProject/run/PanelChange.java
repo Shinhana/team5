@@ -17,14 +17,19 @@ import team5.miniProject.chapter.chap02.Chap02VariablePart4;
 import team5.miniProject.chapter.chap02.Chap02VariablePart5;
 import team5.miniProject.chapter.chap02.quiz.Chap02Quiz1;
 import team5.miniProject.chapter.chap02.quiz.Chap02Quiz10Ans;
-import team5.miniProject.chapter.chap02.quiz.Chap02Quiz11Ans;
-import team5.miniProject.chapter.chap02.quiz.Chap02Quiz2;
-import team5.miniProject.chapter.chap02.quiz.Chap02Quiz20Ans;
-import team5.miniProject.chapter.chap02.test.Chap02Test1;
-import team5.miniProject.chapter.chap02.test.Chap02Test1Ans;
-import team5.miniProject.chapter.chap02.test.Chap02Test2;
-import team5.miniProject.chapter.chap02.test.Chap02Test20Ans;
-import team5.miniProject.chapter.chap02.test.Chap02Test21Ans;
+// <<<<<<< 20200624_2_김재민
+// import team5.miniProject.chapter.chap02.test.Chap02Test1;
+// import team5.miniProject.chapter.chap02.test.Chap02Test1Ans;
+// =======
+// import team5.miniProject.chapter.chap02.quiz.Chap02Quiz11Ans;
+// import team5.miniProject.chapter.chap02.quiz.Chap02Quiz2;
+// import team5.miniProject.chapter.chap02.quiz.Chap02Quiz20Ans;
+// import team5.miniProject.chapter.chap02.test.Chap02Test1;
+// import team5.miniProject.chapter.chap02.test.Chap02Test1Ans;
+// import team5.miniProject.chapter.chap02.test.Chap02Test2;
+// import team5.miniProject.chapter.chap02.test.Chap02Test20Ans;
+// import team5.miniProject.chapter.chap02.test.Chap02Test21Ans;
+// >>>>>>> master
 import team5.miniProject.chapter.chap03.Chap03OperatorPart01;
 import team5.miniProject.chapter.chap03.Chap03OperatorPart02;
 import team5.miniProject.chapter.chap03.Chap03OperatorPart03;
@@ -60,8 +65,32 @@ import team5.miniProject.menu.JPanel_Main;
 import team5.miniProject.menu.PanelList;
 
 public class PanelChange extends JFrame{
-
+	
+	//-----------------------------main---------------------------
+	public JPanel_Login jpanel_login = null;
+	public JPanel_Main jpanel_main = null;
 	public PanelList panellist =null;
+	//----------------------------1.자바프로그램----------------------
+	public Chap01ProgramPart01 program_part1 = null;
+	public Chap01ProgramPart02 program_part2 = null;
+	public Chap01ProgramPart03 program_part3 = null;
+	public Chap01ProgramPart04 program_part4 = null;
+	public Chap01ProgramPart05 program_part5 = null;
+	public Chap01ProgramPart06 program_part6 = null;
+	public Chap01ProgramPart07 program_part7 = null;
+	//----------------------------2.변수----------------------------
+	public Chap02VariableList variable_main = null;
+	public Chap02VariablePart1 variable_part1 = null;
+	public Chap02VariablePart2 variable_part2 = null;
+	public Chap02VariablePart3 variable_part3 = null;
+	public Chap02VariablePart4 variable_part4 = null;
+	public Chap02VariablePart5 variable_part5 = null;
+	public Chap02Quiz1 variable_quiz1 = null; //퀴즈
+	public Chap02Test1 variable_test1 = null;//테스트
+	public Chap02Quiz10Ans variable_quizAnswer1 = null; //퀴즈
+	public Chap02Test1Ans variable_test1Answer1 = null;//테스트
+	
+	//---------------------------3.퀴즈-------------------------------
 	public Chap03OperatorPart01 operator_part1 = null;
 	public Chap03OperatorPart02 operator_part2 = null;
 	public Chap03OperatorPart03 operator_part3 = null;
@@ -75,16 +104,9 @@ public class PanelChange extends JFrame{
 	public Chap03OperatorQuizAnswer2 operator_quizAnswer2 = null;
 	public Chap03OperatorTestAnswer1 operator_testAnswer1 = null;
 	public Chap03OperatorTestAnswer2 operator_testAnswer2 = null;
-	public JPanel_Login jpanel_login = null;
-	public JPanel_Main jpanel_main = null;
-	public JPanel_Main jpanel_main2 = null;
-	public Chap01ProgramPart01 program_part1 = null;
-	public Chap01ProgramPart02 program_part2 = null;
-	public Chap01ProgramPart03 program_part3 = null;
-	public Chap01ProgramPart04 program_part4 = null;
-	public Chap01ProgramPart05 program_part5 = null;
-	public Chap01ProgramPart06 program_part6 = null;
-	public Chap01ProgramPart07 program_part7 = null;
+	
+	//--------------------------5.배열--------------------------------
+	//public JPanel_Main jpanel_main2 = null;
 	public Chap05Array array_main = null;
 	public Chap05ArrayPart1 array_part1 = null;
 	public Chap05ArrayPart2 array_part2 = null;
@@ -92,6 +114,8 @@ public class PanelChange extends JFrame{
 	public Chap05ArrayPart4 array_part4 = null;
 	public Chap05ArrayPart5 array_part5 = null;
 	public Chap05ArrayPart6 array_part6 = null;
+	
+	//---------------------------6.중첩반복문 이차원배열--------------------
 	public Chap06  nloop_main= null;
 	public Chap06Part1NLoop1  nloop_part1= null;
 	public Chap06Part1NLoop2  nloop_part2= null;
@@ -102,18 +126,21 @@ public class PanelChange extends JFrame{
 	public Chap06Part2DArray2 darray_part2= null;
 	public Chap06Part2DArray3 darray_part3= null;
 	public Chap06Part2DArray4 darray_part4= null;
+// <<<<<<< 20200624_2_김재민
+// =======
 	
-	public Chap02VariableList variable_part1 = null;
-	public Chap02VariablePart1 variable_part2 = null;
-	public Chap02VariablePart2 variable_part3 = null;
-	public Chap02VariablePart3 variable_part4 = null;
-	public Chap02VariablePart4 variable_part5 = null;
-	public Chap02VariablePart5 variable_part6 = null;
+// 	public Chap02VariableList variable_part1 = null;
+// 	public Chap02VariablePart1 variable_part2 = null;
+// 	public Chap02VariablePart2 variable_part3 = null;
+// 	public Chap02VariablePart3 variable_part4 = null;
+// 	public Chap02VariablePart4 variable_part5 = null;
+// 	public Chap02VariablePart5 variable_part6 = null;
 
-	public Chap02Quiz1 variable_quiz1 = null; //퀴즈
-	public Chap02Quiz2 variable_quiz2 = null; //퀴즈
-	public Chap02Test1 variable_test1 = null;//테스트
-	public Chap02Test2 variable_test2 = null;//테스트
+// 	public Chap02Quiz1 variable_quiz1 = null; //퀴즈
+// 	public Chap02Quiz2 variable_quiz2 = null; //퀴즈
+// 	public Chap02Test1 variable_test1 = null;//테스트
+// 	public Chap02Test2 variable_test2 = null;//테스트
+// >>>>>>> master
 	
 	public Chap02Quiz10Ans variable_quizAnswer10 = null; //퀴즈답안
 	public Chap02Quiz11Ans variable_quizAnswer11 = null; //퀴즈답안
@@ -124,7 +151,8 @@ public class PanelChange extends JFrame{
 	
 	
 public void change(String panelName){
-		
+	
+	//---------------------------------------------------3.연산자---------------------------------------------------
 		if(panelName.equals("operator_part1")){
 			getContentPane().removeAll();
 			getContentPane().add(operator_part1);
@@ -193,7 +221,7 @@ public void change(String panelName){
 				getContentPane().add(operator_testAnswer2);
 				revalidate();
 				repaint();
-			
+//------------------------------------------------main-----------------------------------------------------			
 		}else if(panelName.equals("panellist")){
 			getContentPane().removeAll();
 			getContentPane().add(panellist);
@@ -209,7 +237,9 @@ public void change(String panelName){
 			getContentPane().add(jpanel_login);
 			revalidate();
 			repaint();
-		}else if(panelName.equals("program_part1")){
+		}
+//----------------------------------------1.자바--------------------------------------------------------------------		
+		else if(panelName.equals("program_part1")){
 			getContentPane().removeAll();
 			getContentPane().add(program_part1);
 			revalidate();
@@ -243,8 +273,10 @@ public void change(String panelName){
 			getContentPane().removeAll();
 			getContentPane().add(program_part7);
 			revalidate();
-			repaint();
-		}else if(panelName.equals("array_main")){
+			repaint();	
+		}
+//---------------------------------------5.배열-------------------------------------------------------------------------------		
+		else if(panelName.equals("array_main")){
 			getContentPane().removeAll();
 			getContentPane().add(array_main);
 			revalidate();
@@ -264,7 +296,28 @@ public void change(String panelName){
 			getContentPane().add(array_part3);
 			revalidate();
 			repaint();
-		}else if(panelName.equals("nloop_main")){
+		}else if(panelName.equals("array_part4")){
+			getContentPane().removeAll();
+			getContentPane().add(array_part4);
+			revalidate();
+			repaint();
+		}else if(panelName.equals("array_part5")){
+			getContentPane().removeAll();
+			getContentPane().add(array_part5);
+			revalidate();
+			repaint();
+		}else if(panelName.equals("array_part6")){
+			getContentPane().removeAll();
+			getContentPane().add(array_part6);
+			revalidate();
+			repaint();
+		}
+		
+		
+		
+		
+		//---------------------------------------6.중첩반복문-------------------------------------------------------------------------------
+		else if(panelName.equals("nloop_main")){
 			getContentPane().removeAll();
 			getContentPane().add(nloop_main);
 			revalidate();
@@ -287,6 +340,26 @@ public void change(String panelName){
 		}else if(panelName.equals("nloop_part4")){
 			getContentPane().removeAll();
 			getContentPane().add(nloop_part4);
+			revalidate();
+			repaint();
+		}else if(panelName.equals("darray_part1")){
+			getContentPane().removeAll();
+			getContentPane().add(darray_part1);
+			revalidate();
+			repaint();
+		}else if(panelName.equals("darray_part2")){
+			getContentPane().removeAll();
+			getContentPane().add(darray_part2);
+			revalidate();
+			repaint();
+		}else if(panelName.equals("darray_part3")){
+			getContentPane().removeAll();
+			getContentPane().add(darray_part3);
+			revalidate();
+			repaint();
+		}else if(panelName.equals("darray_part4")){
+			getContentPane().removeAll();
+			getContentPane().add(darray_part4);
 			revalidate();
 			repaint();
 		}else if(panelName.equals("nloop_part5")){

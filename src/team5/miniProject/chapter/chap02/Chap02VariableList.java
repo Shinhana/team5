@@ -72,7 +72,11 @@ public class Chap02VariableList extends JPanel {
 	class Study implements ActionListener{
 		@Override
 		public void actionPerformed(ActionEvent e) {
-			win.change("variable_part2 ");
+// <<<<<<< 20200624_2_김재민
+// 			win.change("variable_part1");
+// =======
+// 			win.change("variable_part2 ");
+// >>>>>>> master
 			
 		}
 	}

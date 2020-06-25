@@ -78,6 +78,15 @@ public class PanelList extends JPanel{
 		add(nloop);
 		nloop.addActionListener(new Nloop());
 		
+		JButton main = new JButton("뒤로");
+		main.setSize(240,30);
+		main.setBorderPainted(true); //�뀒�몢由� �럹�씤�똿
+		main.setFocusPainted(false);
+		main.setContentAreaFilled(true);//�늻瑜� �븣 �몴�떆�맖
+		main.setLocation(300,300);
+		add(main);
+		main.addActionListener(new Main());
+		
 		memoTextField =  new JTextArea();
 		memoTextField.setBounds(50,520,280,100);
 		memoTextField.setOpaque(false);
@@ -108,7 +117,7 @@ public class PanelList extends JPanel{
 	class Variable implements ActionListener{
 		@Override
 		public void actionPerformed(ActionEvent e){
-			win.change("variable_part1");
+			win.change("variable_main");
 		}
 }
 	
@@ -130,6 +139,11 @@ public class PanelList extends JPanel{
 		win.change("nloop_main");
 	}
 }	
-	
+	class Main implements ActionListener{
+		@Override
+		public void actionPerformed(ActionEvent e){
+			win.change("main");
+		}
+	}	
 	
 }
