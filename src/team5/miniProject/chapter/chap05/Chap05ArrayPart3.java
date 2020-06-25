@@ -12,6 +12,11 @@ import javax.swing.JFrame;
 import javax.swing.JPanel;
 import javax.swing.JTextArea;
 
+import team5.miniProject.chapter.chap05.Chap05ArrayPart1.Back;
+import team5.miniProject.chapter.chap05.Chap05ArrayPart1.Last;
+import team5.miniProject.chapter.chap05.Chap05ArrayPart1.Next;
+import team5.miniProject.chapter.chap05.Chap05ArrayPart1.Reset;
+import team5.miniProject.chapter.chap05.Chap05ArrayPart1.Start;
 import team5.miniProject.run.PanelChange;
 
 public class Chap05ArrayPart3 extends JPanel {
@@ -32,31 +37,56 @@ public class Chap05ArrayPart3 extends JPanel {
 		setLayout(null);
 		
 		
-		
+//		
+//		next= new JButton();
+//		next.setSize(20,20);
+//		next.setLocation(180,610);
+//		next.addActionListener(new Next());
+//		
+//		back = new JButton();
+//		back.setSize(20,20);
+//		back.setLocation(155,610);
+//		back.addActionListener(new Back());
+//		
+//		last= new JButton();
+//		last.setSize(20,20);
+//		last.setLocation(200,610);
+//		last.addActionListener(new Last());
+//		
+//		start= new JButton();
+//		start.setSize(20,20);
+//		start.setLocation(130,610);
+//		start.addActionListener(new Start());
+//		
+//		reset = new JButton();
+//		reset.setSize(20,20);
+//		reset.setLocation(100,610);
+//		reset.addActionListener(new Reset());
 		next= new JButton();
 		next.setSize(20,20);
-		next.setLocation(180,610);
+		next.setLocation(210,610);
 		next.addActionListener(new Next());
-		
+
 		back = new JButton();
 		back.setSize(20,20);
-		back.setLocation(155,610);
+		back.setLocation(170,610);
 		back.addActionListener(new Back());
-		
+
 		last= new JButton();
 		last.setSize(20,20);
-		last.setLocation(200,610);
+		last.setLocation(235,610);
 		last.addActionListener(new Last());
-		
+
 		start= new JButton();
 		start.setSize(20,20);
-		start.setLocation(130,610);
+		start.setLocation(150,610);
 		start.addActionListener(new Start());
-		
+
 		reset = new JButton();
 		reset.setSize(20,20);
-		reset.setLocation(100,610);
+		reset.setLocation(115,610);
 		reset.addActionListener(new Reset());
+
 		
 		imageMain = new ImageIcon("images/Array3.PNG").getImage();
 
@@ -107,32 +137,32 @@ public class Chap05ArrayPart3 extends JPanel {
 
 		@Override
 		public void actionPerformed(ActionEvent e) {
-			win.change("panel5");
+			win.change("array_part4");
 			
 		}
 	}
 	class Back implements ActionListener{
 		@Override
 		public void actionPerformed(ActionEvent e){
-			win.change("panel3");
+			win.change("array_part2");
 		}
 	}
 	class Last implements ActionListener{
 		@Override
 		public void actionPerformed(ActionEvent e){
-			win.change("panel19");
+			win.change("array_part6");
 		}
 	}
 	class Start implements ActionListener{
 		@Override
 		public void actionPerformed(ActionEvent e){
-			win.change("panel1");
+			win.change("array_main");
 		}
 	}
 	class Reset implements ActionListener{
 		@Override
 		public void actionPerformed(ActionEvent e){
-			win.change("panel1");
+			win.change("panellist");
 		}
 	}
 

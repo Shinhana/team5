@@ -65,7 +65,7 @@ public class Chap05Array extends JPanel {
 
 		@Override
 		public void actionPerformed(ActionEvent e) {
-			win.change("panel2");
+			win.change("array_part1");
 			
 		}
 	}

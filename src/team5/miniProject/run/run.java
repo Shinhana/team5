@@ -10,6 +10,9 @@ import team5.miniProject.chapter.chap01.Chap01ProgramPart05;
 import team5.miniProject.chapter.chap01.Chap01ProgramPart06;
 import team5.miniProject.chapter.chap01.Chap01ProgramPart07;
 import team5.miniProject.chapter.chap02.Chap02VariableList;
+import team5.miniProject.chapter.chap02.Chap02VariablePart1;
+import team5.miniProject.chapter.chap02.quiz.Chap02Quiz1;
+import team5.miniProject.chapter.chap02.test.Chap02Test1;
 import team5.miniProject.chapter.chap03.Chap03OperatorPart01;
 import team5.miniProject.chapter.chap03.Chap03OperatorPart02;
 import team5.miniProject.chapter.chap03.Chap03OperatorPart03;
@@ -36,6 +39,10 @@ import team5.miniProject.chapter.chap06.Chap06Part1NLoop2;
 import team5.miniProject.chapter.chap06.Chap06Part1NLoop3;
 import team5.miniProject.chapter.chap06.Chap06Part1NLoop4;
 import team5.miniProject.chapter.chap06.Chap06Part1NLoop5;
+import team5.miniProject.chapter.chap06.Chap06Part2DArray1;
+import team5.miniProject.chapter.chap06.Chap06Part2DArray2;
+import team5.miniProject.chapter.chap06.Chap06Part2DArray3;
+import team5.miniProject.chapter.chap06.Chap06Part2DArray4;
 import team5.miniProject.menu.JPanel_Login;
 import team5.miniProject.menu.JPanel_Main;
 import team5.miniProject.menu.PanelList;
@@ -87,7 +94,26 @@ public class run {
 		PanelChange win = new PanelChange();
 	
 	win.setTitle("Operator");
+	
+	
+	//----------------------------main(완)--------------------------------
 	win.panellist = new PanelList(win);
+	win.jpanel_login = new JPanel_Login(win);
+	win.jpanel_main = new JPanel_Main(win);
+	//----------------------------1.자바프로그램(완)---------------------------
+	win.program_part1 = new Chap01ProgramPart01(win);
+	win.program_part2 = new Chap01ProgramPart02(win);
+	win.program_part3 = new Chap01ProgramPart03(win);
+	win.program_part4 = new Chap01ProgramPart04(win);
+	win.program_part5 = new Chap01ProgramPart05(win);
+	win.program_part6 = new Chap01ProgramPart06(win);
+	win.program_part7 = new Chap01ProgramPart07(win);
+	//------------------------2.변수(미완)--------------------------------------
+	win.variable_main = new Chap02VariableList(win);
+	win.variable_part1 = new Chap02VariablePart1(win);
+	win.variable_quiz1 = new Chap02Quiz1(win);//퀴즈
+	win.variable_test1 = new Chap02Test1(win);//테스트
+	//----------------------------3.연산자(완)-------------------------------
 	win.operator_part1 = new Chap03OperatorPart01(win);
 	win.operator_part2 = new Chap03OperatorPart02(win);
 	win.operator_part3 = new Chap03OperatorPart03(win);
@@ -101,15 +127,7 @@ public class run {
 	win.operator_quizAnswer2 = new Chap03OperatorQuizAnswer2(win);
 	win.operator_testAnswer1 = new Chap03OperatorTestAnswer1(win);
 	win.operator_testAnswer2 = new Chap03OperatorTestAnswer2(win);
-	win.jpanel_login = new JPanel_Login(win);
-	win.jpanel_main2 = new JPanel_Main(win);
-	win.program_part1 = new Chap01ProgramPart01(win);
-	win.program_part2 = new Chap01ProgramPart02(win);
-	win.program_part3 = new Chap01ProgramPart03(win);
-	win.program_part4 = new Chap01ProgramPart04(win);
-	win.program_part5 = new Chap01ProgramPart05(win);
-	win.program_part6 = new Chap01ProgramPart06(win);
-	win.program_part7 = new Chap01ProgramPart07(win);
+	//------------------------5.배열(미완)-----------------------------------
 	win.array_main = new  Chap05Array(win); 
 	win.array_part1 = new  Chap05ArrayPart1(win);
 	win.array_part2 = new  Chap05ArrayPart2(win);
@@ -117,22 +135,23 @@ public class run {
 	win.array_part4 = new  Chap05ArrayPart4(win);
 	win.array_part5 = new  Chap05ArrayPart5(win);
 	win.array_part6 = new  Chap05ArrayPart6(win);
+	//------------------------6.중첩반복문(미완)-----------------------------------
 	win.nloop_main = new Chap06(win);
 	win.nloop_part1 = new Chap06Part1NLoop1(win);
 	win.nloop_part2 = new Chap06Part1NLoop2(win);
 	win.nloop_part3 = new Chap06Part1NLoop3(win);
 	win.nloop_part4 = new Chap06Part1NLoop4(win);
 	win.nloop_part5 = new Chap06Part1NLoop5(win);
-	win.variable_part1 = new Chap02VariableList(win);
-	
-	
-	
-	
-	
+	win.darray_part1 = new Chap06Part2DArray1(win);
+	win.darray_part2 = new Chap06Part2DArray2(win);
+	win.darray_part3 = new Chap06Part2DArray3(win);
+	win.darray_part4 = new Chap06Part2DArray4(win);
+
+	win.add(win.jpanel_main);
 	win.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 	win.setSize(380,680);
 	win.setVisible(true);
-	win.add(win.jpanel_main2);
+	
 
 	}
 }
