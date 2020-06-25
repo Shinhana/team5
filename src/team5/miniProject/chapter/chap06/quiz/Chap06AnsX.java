@@ -50,7 +50,7 @@ public class Chap06AnsX extends JPanel{
 	class Next implements ActionListener{
 		@Override
 		public void actionPerformed(ActionEvent e){
-			win.change("jea1"); 
+			win.change("darray_quiz2"); 
 		
 		}
 	}

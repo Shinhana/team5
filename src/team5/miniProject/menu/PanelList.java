@@ -142,12 +142,12 @@ public class PanelList extends JPanel{
 // <<<<<<< 20200624chap01_1번쨰
 
 // =======
-// 	class Main implements ActionListener{
-// 		@Override
-// 		public void actionPerformed(ActionEvent e){
-// 			win.change("main");
-// 		}
-// 	}	
+ 	class Main implements ActionListener{
+ 		@Override
+ 		public void actionPerformed(ActionEvent e){
+ 			win.change("main");
+ 		}
+ 	}	
 // >>>>>>> master
 	
 }

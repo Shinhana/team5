@@ -77,7 +77,7 @@ public class Chap06Choice extends JPanel{
       class Btn1 implements ActionListener{
           @Override
           public void actionPerformed(ActionEvent e){
-             win.change("ts1");  //�ڹ� ȯ�汸�� ->��ο�, �ٺ� -> ���̵�,��ȣ
+             win.change("nloop_test1");  //�ڹ� ȯ�汸�� ->��ο�, �ٺ� -> ���̵�,��ȣ
              //win.change("panel02"); // �ڹ� ȯ�汸��->��ο� ,�ٺ� 
           }
    }

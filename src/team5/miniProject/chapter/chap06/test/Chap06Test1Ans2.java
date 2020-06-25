@@ -52,7 +52,7 @@ public class Chap06Test1Ans2 extends JPanel{
 	class Next implements ActionListener{
 		@Override
 		public void actionPerformed(ActionEvent e){
-			win.change("tss1"); 
+			win.change("darray_test2"); 
 		
 
 		}
