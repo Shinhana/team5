@@ -66,7 +66,7 @@ public class Chap02Test1 extends JPanel {
 	    answerField = new JTextArea();
 	    answerField.setBounds(50,520,280,100);
 	    answerField.setOpaque(false);
-	    answerField.setForeground(Color.WHITE);
+	    answerField.setForeground(Color.black);
 	    answerField.setBorder(javax.swing.BorderFactory.createEmptyBorder());
 	    add(answerField);
 		
@@ -85,7 +85,7 @@ public class Chap02Test1 extends JPanel {
 	class Next implements ActionListener{
 		@Override
 		public void actionPerformed(ActionEvent e) {
-			win.change("variable_test2 ");
+			win.change("variable_test2");
 			
 		}
 	}
@@ -94,7 +94,7 @@ public class Chap02Test1 extends JPanel {
 	class Last implements ActionListener{
 		@Override
 		public void actionPerformed(ActionEvent e){
-			win.change("variable_test2 ");
+			win.change("variable_test2");
 		}
 	}
 
@@ -102,7 +102,7 @@ public class Chap02Test1 extends JPanel {
 	class Reset implements ActionListener{
 		@Override
 		public void actionPerformed(ActionEvent e){
-			win.change("variable_part1 ");
+			win.change("panellist");
 		}
 	}
 	
@@ -117,9 +117,10 @@ public class Chap02Test1 extends JPanel {
 		       
 		       if(str.equals("-124")){
 		    	   JOptionPane.showMessageDialog(null,"정답입니다.");
+		    	   win.change("variable_test1Answer1");
 		       } else {
 		    	   JOptionPane.showMessageDialog(null,"틀렸습니다.");
-		    	   win.change("variable_test1 ");
+		    	   win.change("variable_test1");
 		       }
 		           
 		            

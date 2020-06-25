@@ -68,7 +68,7 @@ public class Chap02Quiz1 extends JPanel {
 	    answerField = new JTextArea();
 	    answerField.setBounds(50,520,280,100);
 	    answerField.setOpaque(false);
-	    answerField.setForeground(Color.WHITE);
+	    answerField.setForeground(Color.black);
 	    answerField.setBorder(javax.swing.BorderFactory.createEmptyBorder());
 	    add(answerField);
 		
@@ -96,7 +96,7 @@ public class Chap02Quiz1 extends JPanel {
 	class Reset implements ActionListener{
 		@Override
 		public void actionPerformed(ActionEvent e){
-			win.change("variable_part1");
+			win.change("panellist");
 		}
 	}
 	
@@ -111,10 +111,10 @@ public class Chap02Quiz1 extends JPanel {
 	       
 	       if(str.equals("O,X,X,O,X,O,X")){
 	    	   JOptionPane.showMessageDialog(null,"정답입니다.");
-	    	   win.change("variable_quizAnswer10 ");
+	    	   win.change("variable_quizAnswer10");
 	       } else {
 	    	   JOptionPane.showMessageDialog(null,"틀렸습니다.");
-	    	   win.change("variable_quiz1 ");
+	    	   win.change("variable_quiz1");
 	       }
 	           
 	            

@@ -31,7 +31,7 @@ public class Chap02Quiz10Ans extends JPanel {
 		ImageIcon nextImg= new ImageIcon("images/next.png");
 		next= new JButton(nextImg);
 		next.setSize(20,20);
-		next.setLocation(100,100);
+		next.setLocation(200,615);
 		next.addActionListener(new Next());
 		next.setBorderPainted(true);
 		next.setFocusPainted(true);
@@ -41,7 +41,7 @@ public class Chap02Quiz10Ans extends JPanel {
 	    ImageIcon resetImg= new ImageIcon("images/reset.png");
 	    reset= new JButton(resetImg);
 	    reset.setSize(20,20);
-	    reset.setLocation(116,620);
+	    reset.setLocation(116,615);
 	    reset.addActionListener(new Reset());
 	    reset.setBorderPainted(false);
 	    reset.setFocusPainted(false);
@@ -73,7 +73,7 @@ public class Chap02Quiz10Ans extends JPanel {
 	class Reset implements ActionListener{
 		@Override
 		public void actionPerformed(ActionEvent e){
-			win.change("variable_part1");
+			win.change("panellist");
 		}
 	}
 	

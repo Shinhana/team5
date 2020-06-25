@@ -130,7 +130,7 @@ public class Chap06Part1NLoop2 extends JPanel{
 		class Last implements ActionListener{
 			@Override
 			public void actionPerformed(ActionEvent e){
-				win.change("nloop_part4");//
+				win.change("nloop_part5");//
 			}
 		
 		}

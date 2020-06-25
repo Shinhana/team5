@@ -38,9 +38,9 @@ public class Chap02Quiz2 extends JPanel {
 		back.setSize(20,20);
 		back.setLocation(174,611);
 		back.addActionListener(new Back());
-		back.setBorderPainted(false);
+		back.setBorderPainted(true);
 		back.setFocusPainted(false);
-		back.setContentAreaFilled(false);
+		back.setContentAreaFilled(true);
 		this.add(back);
 		
 		ImageIcon startImg = new ImageIcon("images/start.png");
@@ -76,7 +76,7 @@ public class Chap02Quiz2 extends JPanel {
 		answerField = new JTextArea();
 		answerField.setBounds(50,450,280,100);
 		answerField.setOpaque(false);
-		answerField.setForeground(Color.WHITE);
+		answerField.setForeground(Color.BLACK);
 		answerField.setBorder(javax.swing.BorderFactory.createEmptyBorder());
 		add(answerField);
 			
@@ -95,7 +95,7 @@ public class Chap02Quiz2 extends JPanel {
 	class Back implements ActionListener{
 		@Override
 		public void actionPerformed(ActionEvent e) {
-			win.change("variable_quizAnswer11 ");
+			win.change("variable_quiz1");
 			
 		}
 	}
@@ -104,7 +104,7 @@ public class Chap02Quiz2 extends JPanel {
 	class Start implements ActionListener{
 		@Override
 		public void actionPerformed(ActionEvent e){
-			win.change("variable_quiz1 ");
+			win.change("variable_main");
 		}
 	}
 
@@ -112,7 +112,7 @@ public class Chap02Quiz2 extends JPanel {
 	class Reset implements ActionListener{
 		@Override
 		public void actionPerformed(ActionEvent e){
-			win.change("variable_part1 ");
+			win.change("panellist");
 		}
 	}
 
@@ -128,7 +128,7 @@ public class Chap02Quiz2 extends JPanel {
 	      
 	       if(str.equals("byte,short,int,long\nfloat,double\ndouble")){
 	    	   JOptionPane.showMessageDialog(null,"정답입니다.");
-	    	   win.change("variable_quizAnswer2 ");
+	    	   win.change("variable_quizAnswer2");
 	       } else {
 	    	   JOptionPane.showMessageDialog(null,"틀렸습니다.");
 	    	   win.change("variable_quiz2 ");

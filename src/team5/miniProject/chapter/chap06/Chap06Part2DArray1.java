@@ -96,7 +96,7 @@ public class Chap06Part2DArray1 extends JPanel{
 	class Back implements ActionListener{
 		@Override
 		public void actionPerformed(ActionEvent e){
-			win.change("nloop_part4"); //호종한테 확인
+			win.change("nloop_main"); //호종한테 확인
 			
 		}
 	}
