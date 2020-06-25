@@ -67,10 +67,10 @@ public class Chap06Test1 extends JPanel{
 			String str = memoTextField.getText();
 			if(str.contentEquals("break")) {
 				JOptionPane.showMessageDialog(null,"정답입니다.");
-				win.change("ts11");
+				win.change("nloop_test1Answer1");
 			}else {
 				JOptionPane.showMessageDialog(null,"틀렸습니다.");
-				win.change("ts12"); 
+				win.change("nloop_test1Answer2"); 
 			}
 			
 		

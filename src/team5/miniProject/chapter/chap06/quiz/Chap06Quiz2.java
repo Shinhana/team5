@@ -26,7 +26,7 @@ public class Chap06Quiz2 extends JPanel{
 		setLayout(null);
 		this.win=win;
 	
-		image = new ImageIcon("7.png").getImage();
+		image = new ImageIcon("images/7.png").getImage();
 		
 		JButton next = new JButton();
 		next.setSize(75,25);
@@ -75,10 +75,10 @@ public class Chap06Quiz2 extends JPanel{
 			String str = memoTextField.getText();
 			if(str.contentEquals("7")) {
 				JOptionPane.showMessageDialog(null,"정답입니다.");
-				win.change("jea21");
+				win.change("darray_quiz2Answer1");
 			}else {
 				JOptionPane.showMessageDialog(null,"틀렸습니다.");
-				win.change("jea22"); 
+				win.change("darray_quiz2Answer2"); 
 			}
 			
 		

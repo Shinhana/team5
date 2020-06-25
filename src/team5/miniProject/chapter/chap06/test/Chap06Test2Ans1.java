@@ -32,7 +32,7 @@ public class Chap06Test2Ans1 extends JPanel{
 		add(next);
 		next.addActionListener(new Next());
 		next .setBorderPainted(false);
-		next .set.FocusPainted(false);
+		next .setFocusPainted(false);
 		next .setContentAreaFilled(false);
 		
 		

@@ -67,10 +67,10 @@ public class Chap06Test2 extends JPanel{
 			String str = memoTextField.getText();
 			if(str.equals("HEAP")||str.equals("heap")) {
 				JOptionPane.showMessageDialog(null,"정답입니다.");
-				win.change("tss11");
+				win.change("darray_test2Answer1");
 			}else {
 				JOptionPane.showMessageDialog(null,"틀렸습니다.");
-				win.change("tss12"); 
+				win.change("darray_test2Answer2"); 
 			}
 			
 		

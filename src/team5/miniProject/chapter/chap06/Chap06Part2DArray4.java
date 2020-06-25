@@ -89,7 +89,7 @@ public class Chap06Part2DArray4 extends JPanel{
 	class Next implements ActionListener{
 		@Override
 		public void actionPerformed(ActionEvent e){
-			win.change("jea"); 
+			win.change("nloop_quiz1"); 
 
 		}
 	}
