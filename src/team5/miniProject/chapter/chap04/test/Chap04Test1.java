@@ -16,7 +16,7 @@ import team5.miniProject.chapter.chap04.JPanelTest;
 public class Chap04Test1 extends JPanel {
 
 	Image image;
-	private JPanelTest win;
+	private PanelChange win;
 	private JTextArea memoTextField;
 	private JButton reset; //목차
 	private JButton next; // >
@@ -24,7 +24,7 @@ public class Chap04Test1 extends JPanel {
 	private JButton back; // <
 	private JButton start; // <<
 
-	public Chap04Test1(JPanelTest win) {
+	public Chap04Test1(PanelChange win) {
 		setLayout(null);
 		this.win = win;
 		
@@ -98,7 +98,7 @@ public class Chap04Test1 extends JPanel {
 
 		@Override
 		public void actionPerformed(ActionEvent e) {
-			win.change("jpanelList");
+			win.change("panellist");
 		}
 		
 	}
@@ -107,7 +107,7 @@ public class Chap04Test1 extends JPanel {
 
 		@Override
 		public void actionPerformed(ActionEvent e) {
-			win.change("Chap04ControlStatement");
+			win.change("control_main");
 		}
 		
 	}
@@ -115,7 +115,7 @@ public class Chap04Test1 extends JPanel {
 
 		@Override
 		public void actionPerformed(ActionEvent e) {
-			win.change("Chap04ControlStatement");
+			win.change("branch_part1");
 		}
 		
 	}
@@ -123,7 +123,7 @@ public class Chap04Test1 extends JPanel {
 
 		@Override
 		public void actionPerformed(ActionEvent e) {
-			win.change("Chap04Test2");
+			win.change("control_test1Answer1");
 		}
 		
 	}
@@ -131,7 +131,7 @@ public class Chap04Test1 extends JPanel {
 
 		@Override
 		public void actionPerformed(ActionEvent e) {
-			win.change("jpanelList");
+			win.change("panellist");
 		}
 		
 	}

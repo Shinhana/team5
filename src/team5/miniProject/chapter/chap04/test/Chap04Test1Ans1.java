@@ -22,7 +22,7 @@ public class Chap04Test1Ans1 extends JPanel {
 
 
 	Image image;
-	private JPanelTest win;
+	private PanelChange win;
 	private JTextArea memoTextField;
 	private JButton reset; //목차
 	private JButton next; // >
@@ -31,7 +31,7 @@ public class Chap04Test1Ans1 extends JPanel {
 	private JButton start; // <<
 
 	
-	public Chap04Test1Ans1 (JPanelTest win) {
+	public Chap04Test1Ans1 (PanelChange win) {
 		
 		setLayout(null);
 		this.win = win;
@@ -41,9 +41,9 @@ public class Chap04Test1Ans1 extends JPanel {
 		reset = new JButton("1");
 		reset.setSize(20,20);
 		reset.setLocation(115,626);
-		reset.setBorderPainted(false);
+		reset.setBorderPainted(true);
 		reset.setFocusPainted(false);
-		reset.setContentAreaFilled(false);
+		reset.setContentAreaFilled(true);
 		add(reset);
 		reset.addActionListener(new Reset());
 
@@ -68,9 +68,9 @@ public class Chap04Test1Ans1 extends JPanel {
 		next = new JButton("4");
 		next.setSize(20, 20);
 		next.setLocation(215, 626);
-		next.setBorderPainted(false);
+		next.setBorderPainted(true);
 		next.setFocusPainted(false);
-		next.setContentAreaFilled(false);
+		next.setContentAreaFilled(true);
 		add(next);
 		next.addActionListener(new Next());
 
@@ -107,7 +107,7 @@ public class Chap04Test1Ans1 extends JPanel {
 
 		@Override
 		public void actionPerformed(ActionEvent e) {
-			win.change("jpanelList");
+			win.change("panellist");
 		}
 		
 	}
@@ -116,7 +116,7 @@ public class Chap04Test1Ans1 extends JPanel {
 
 		@Override
 		public void actionPerformed(ActionEvent e) {
-			win.change("Chap04QuizTime");
+			win.change("control_main");
 		}
 		
 	}
@@ -124,7 +124,7 @@ public class Chap04Test1Ans1 extends JPanel {
 
 		@Override
 		public void actionPerformed(ActionEvent e) {
-			win.change("Chap04Test2");
+			win.change("control_test1");
 		}
 		
 	}
@@ -132,7 +132,7 @@ public class Chap04Test1Ans1 extends JPanel {
 
 		@Override
 		public void actionPerformed(ActionEvent e) {
-			win.change("Chap04Test1Ans2");
+			win.change("control_test2");
 		}
 		
 	}
@@ -140,7 +140,7 @@ public class Chap04Test1Ans1 extends JPanel {
 
 		@Override
 		public void actionPerformed(ActionEvent e) {
-			win.change("jpanelList");
+			win.change("panellist");
 		}
 		
 	}

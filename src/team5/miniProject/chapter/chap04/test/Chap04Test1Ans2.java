@@ -20,7 +20,7 @@ import team5.miniProject.chapter.chap04.test.Chap04Test1.Start;
 public class Chap04Test1Ans2 extends JPanel {
 	
 	Image image;
-	private JPanelTest win;
+	private PanelChange win;
 	private JTextArea memoTextField;
 	private JButton reset; //목차
 	private JButton next; // >
@@ -28,7 +28,7 @@ public class Chap04Test1Ans2 extends JPanel {
 	private JButton back; // <
 	private JButton start; // <<
 
-	public Chap04Test1Ans2 (JPanelTest win) {
+	public Chap04Test1Ans2 (PanelChange win) {
 		
 		setLayout(null);
 		this.win = win;

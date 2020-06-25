@@ -11,12 +11,12 @@ import javax.swing.JPanel;
 
 public class Chap04QuizTime extends JPanel{
 
-	private JPanelTest win ;
+	private PanelChange win ;
 	private JButton practice;
 	private JButton test;
 	Image image;
 	
-	public Chap04QuizTime(JPanelTest win) {
+	public Chap04QuizTime(PanelChange win) {
 		setLayout(null);
 		this.win = win;
 		
@@ -30,7 +30,7 @@ public class Chap04QuizTime extends JPanel{
 		practice.setFocusPainted(false);
 		practice.setContentAreaFilled(false);
 		add(practice);
-		practice.addActionListener(new MyActionListener());
+		practice.addActionListener(new Practice());
 		
 		test = new JButton();
 		test.setSize(280, 50);
@@ -39,7 +39,7 @@ public class Chap04QuizTime extends JPanel{
 		test.setFocusPainted(false);
 		test.setContentAreaFilled(false);
 		add(test);
-		test.addActionListener(new MyActionListener2());
+		test.addActionListener(new Test());
 		
 	}
 	@Override
@@ -49,19 +49,19 @@ public class Chap04QuizTime extends JPanel{
 		super.paint(g);
 		
 	}
-	class MyActionListener implements ActionListener{
+	class Practice implements ActionListener{
 
 		@Override
 		public void actionPerformed(ActionEvent e) {
-			win.change("Chap04Quiz1");
+			win.change("control_quiz1");
 		}
 		
 	}
-	class MyActionListener2 implements ActionListener{
+	class Test implements ActionListener{
 
 		@Override
 		public void actionPerformed(ActionEvent e) {
-			win.change("Chap04Test1");
+			win.change("control_test1");
 		}
 		
 	}

@@ -14,7 +14,7 @@ import javax.swing.JTextArea;
 public class Chap04LoopPart1 extends JPanel {
 
 	
-	private JPanelTest win;
+	private PanelChange win;
 	Image image;
 	private JTextArea memoTextField;
 	private JButton reset; //목차
@@ -23,7 +23,7 @@ public class Chap04LoopPart1 extends JPanel {
 	private JButton next; // >
 	private JButton last; // >>
 
-	public Chap04LoopPart1(JPanelTest win) {
+	public Chap04LoopPart1(PanelChange win) {
 		
 		setLayout(null);
 		this.win = win;
@@ -96,7 +96,7 @@ public class Chap04LoopPart1 extends JPanel {
 
 		@Override
 		public void actionPerformed(ActionEvent e) {
-			win.change("jpanelList");
+			win.change("panellist");
 		}
 		
 	}
@@ -104,7 +104,7 @@ public class Chap04LoopPart1 extends JPanel {
 
 		@Override
 		public void actionPerformed(ActionEvent e) {
-			win.change("Chap04ControlStatement");
+			win.change("control_main");
 		}
 		
 	}
@@ -112,7 +112,7 @@ public class Chap04LoopPart1 extends JPanel {
 
 		@Override
 		public void actionPerformed(ActionEvent e) {
-			win.change("Chap04ConditionalPart2");
+			win.change("conditional_part1");
 		}
 		
 	}
@@ -120,7 +120,7 @@ public class Chap04LoopPart1 extends JPanel {
 
 		@Override
 		public void actionPerformed(ActionEvent e) {
-			win.change("Chap04LoopPart2");
+			win.change("loop_part2");
 		}
 		
 	}
@@ -129,7 +129,7 @@ public class Chap04LoopPart1 extends JPanel {
 		@Override
 		public void actionPerformed(ActionEvent e) {
 			// TODO Auto-generated method stub
-			win.change("Chap04QuizTime");
+			win.change("control_quiz");
 			
 		}
 		

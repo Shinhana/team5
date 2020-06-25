@@ -140,24 +140,31 @@ public class JPanel_Login extends JPanel{
 					String s;
 					String[]array;
 					BufferedReader bos = new BufferedReader(new FileReader("member.txt"));
+					boolean flag = false;
 					while((s=bos.readLine())!=null) {
 						array= s.split("/");
 						if(loginTextField.getText().equals(array[1])&&new String(passwordField.getPassword()).equals(array[2]))	
 							{
-								JOptionPane.showMessageDialog(null, "You have logged in successfully!!");
-								win.change("panellist");
+
+								flag = true;
 								break;
 							}
 						else
 							{	
-							
-								JOptionPane.showMessageDialog(null, "You falled to  log in.");
-							
 								
+//								JOptionPane.showMessageDialog(null, "You falled to  log in.");
 							}
-	//						
-						//
 					}
+					if(flag==true){
+						JOptionPane.showMessageDialog(null, "You have logged in successfully!!");
+						win.change("panellist");
+					}else{
+						JOptionPane.showMessageDialog(null, "You falled to  log in.");
+					}
+					
+					
+						
+						
 					bos.close();
 					
 				}catch(IOException E10) {

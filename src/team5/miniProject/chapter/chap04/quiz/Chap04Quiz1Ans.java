@@ -14,7 +14,7 @@ import team5.miniProject.chapter.chap04.JPanelTest;
 
 public class Chap04Quiz1Ans extends JPanel{
 
-	private JPanelTest win;
+	private PanelChange win;
 	Image image;
 	private JTextArea memoTextField;
 	private JButton reset; //목차
@@ -23,7 +23,7 @@ public class Chap04Quiz1Ans extends JPanel{
 	private JButton next; // >
 	private JButton last; // >>
 	
-	public Chap04Quiz1Ans(JPanelTest win) {
+	public Chap04Quiz1Ans(PanelChange win) {
 		
 		setLayout(null);
 		this.win = win;
@@ -89,7 +89,7 @@ public class Chap04Quiz1Ans extends JPanel{
 
 		@Override
 		public void actionPerformed(ActionEvent e) {
-			win.change("jpanelList");
+			win.change("panellist");
 		}
 		
 	}
@@ -97,7 +97,7 @@ public class Chap04Quiz1Ans extends JPanel{
 
 		@Override
 		public void actionPerformed(ActionEvent e) {
-			win.change("");
+			win.change("control_main");
 		}
 		
 	}
@@ -105,7 +105,7 @@ public class Chap04Quiz1Ans extends JPanel{
 
 		@Override
 		public void actionPerformed(ActionEvent e) {
-			win.change("Chap04Quiz2");
+			win.change("control_quiz2");
 		}
 		
 	}
@@ -113,7 +113,7 @@ public class Chap04Quiz1Ans extends JPanel{
 
 		@Override
 		public void actionPerformed(ActionEvent e) {
-			win.change("jpanelList");
+			win.change("panellist");
 		}
 		
 	}
@@ -121,7 +121,7 @@ public class Chap04Quiz1Ans extends JPanel{
 
 		@Override
 		public void actionPerformed(ActionEvent e) {
-			win.change("jpanelList");
+			win.change("panellist");
 		}
 		
 	}

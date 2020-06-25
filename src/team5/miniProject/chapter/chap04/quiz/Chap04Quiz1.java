@@ -15,7 +15,7 @@ import team5.miniProject.chapter.chap04.JPanelTest;
 
 	public class Chap04Quiz1 extends JPanel{
 		
-		private JPanelTest win;
+		private PanelChange win;
 		Image image;
 		private JTextArea memoTextField;
 		private JButton reset; //목차
@@ -24,7 +24,7 @@ import team5.miniProject.chapter.chap04.JPanelTest;
 		private JButton next; // >
 		private JButton last; // >>
 		
-		public Chap04Quiz1(JPanelTest win) {
+		public Chap04Quiz1(PanelChange win) {
 			setLayout(null);
 			this.win=win;
 			
@@ -98,7 +98,7 @@ import team5.miniProject.chapter.chap04.JPanelTest;
 
 			@Override
 			public void actionPerformed(ActionEvent e) {
-				win.change("jpanelList");
+				win.change("panellist");
 			}
 			
 		}
@@ -106,7 +106,7 @@ import team5.miniProject.chapter.chap04.JPanelTest;
 
 			@Override
 			public void actionPerformed(ActionEvent e) {
-				win.change("Chap04QuizTime");				
+				win.change("control_main");				
 			}
 			
 		}
@@ -114,7 +114,7 @@ import team5.miniProject.chapter.chap04.JPanelTest;
 
 			@Override
 			public void actionPerformed(ActionEvent e) {
-				win.change("Chap04QuizTime");
+				win.change("control_quiz");
 			}
 			
 		}
@@ -122,7 +122,7 @@ import team5.miniProject.chapter.chap04.JPanelTest;
 
 			@Override
 			public void actionPerformed(ActionEvent e) {
-				win.change("Chap04Quiz2");
+				win.change("control_quiz2");
 			}
 			
 		}
@@ -131,7 +131,7 @@ import team5.miniProject.chapter.chap04.JPanelTest;
 			@Override
 			public void actionPerformed(ActionEvent e) {
 				// TODO Auto-generated method stub
-				win.change("jpanelList");
+				win.change("panellist");
 			}
 			
 		}

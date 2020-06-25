@@ -13,7 +13,7 @@ import javax.swing.JTextArea;
 
 public class Chap04LoopPart2 extends JPanel {
 
-	private JPanelTest win;
+	private PanelChange win;
 	Image image;
 	private JTextArea memoTextField;
 	private JButton reset; //목차
@@ -22,7 +22,7 @@ public class Chap04LoopPart2 extends JPanel {
 	private JButton next; // >
 	private JButton last; // >>
 
-	public Chap04LoopPart2(JPanelTest win) {
+	public Chap04LoopPart2(PanelChange win) {
 
 		setLayout(null);
 		this.win = win;
@@ -31,7 +31,7 @@ public class Chap04LoopPart2 extends JPanel {
 
 		reset = new JButton("1");
 		reset.setSize(20, 20);
-		reset.setLocation(123, 626);
+		reset.setLocation(120, 624);
 		reset.setBorderPainted(false);
 		reset.setFocusPainted(false);
 		reset.setContentAreaFilled(false);
@@ -40,7 +40,7 @@ public class Chap04LoopPart2 extends JPanel {
 
 		start = new JButton("2");
 		start.setSize(20,20);
-		start.setLocation(158,626);
+		start.setLocation(150,624);
 		start.setBorderPainted(false);
 		start.setFocusPainted(false);
 		start.setContentAreaFilled(false);
@@ -50,7 +50,7 @@ public class Chap04LoopPart2 extends JPanel {
 
 		back = new JButton();
 		back.setSize(20, 20);
-		back.setLocation(190, 626);
+		back.setLocation(181, 624);
 		back.setBorderPainted(false);
 		back.setFocusPainted(false);
 		back.setContentAreaFilled(false);
@@ -60,7 +60,7 @@ public class Chap04LoopPart2 extends JPanel {
 
 		next = new JButton();
 		next.setSize(20, 20);
-		next.setLocation(220, 626);
+		next.setLocation(212, 624);
 		next.setBorderPainted(false);
 		next.setFocusPainted(false);
 		next.setContentAreaFilled(false);
@@ -69,7 +69,7 @@ public class Chap04LoopPart2 extends JPanel {
 
 		last = new JButton();
 		last.setSize(20, 20);
-		last.setLocation(246, 626);
+		last.setLocation(243, 624);
 		last.setBorderPainted(false);
 		last.setFocusPainted(false);
 		last.setContentAreaFilled(false);
@@ -95,7 +95,7 @@ public class Chap04LoopPart2 extends JPanel {
 
 		@Override
 		public void actionPerformed(ActionEvent e) {
-			win.change("jpanelList");
+			win.change("panellist");
 		}
 		
 	}
@@ -103,7 +103,7 @@ public class Chap04LoopPart2 extends JPanel {
 
 		@Override
 		public void actionPerformed(ActionEvent e) {
-			win.change("jpanelList");
+			win.change("control_main");
 		}
 		
 	}
@@ -112,7 +112,7 @@ public class Chap04LoopPart2 extends JPanel {
 
 		@Override
 		public void actionPerformed(ActionEvent e) {
-			win.change("Chap04LoopPart1");
+			win.change("loop_part1");
 		}
 		
 	}
@@ -120,7 +120,7 @@ public class Chap04LoopPart2 extends JPanel {
 
 		@Override
 		public void actionPerformed(ActionEvent e) {
-			win.change("Chap04BranchPart1");
+			win.change("branch_part1");
 		}
 		
 	}
@@ -128,7 +128,7 @@ public class Chap04LoopPart2 extends JPanel {
 
 		@Override
 		public void actionPerformed(ActionEvent e) {
-			win.change("Chap04QuizTime");
+			win.change("control_quiz");
 		}
 		
 	}
