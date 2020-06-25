@@ -14,7 +14,7 @@ import javax.swing.JTextArea;
 public class Chap04ConditionalPart1 extends JPanel{
 	
 	Image image;
-	private JPanelTest win;
+	private PanelChange win;
 	private JTextArea memoTextField;
 	private JButton reset; //목차
 	private JButton next; // >
@@ -22,7 +22,7 @@ public class Chap04ConditionalPart1 extends JPanel{
 	private JButton back; // <
 	private JButton start; // <<
 
-	public Chap04ConditionalPart1(JPanelTest win){
+	public Chap04ConditionalPart1(PanelChange win){
 		//기초설
 		setLayout(null);
 		//
@@ -35,9 +35,9 @@ public class Chap04ConditionalPart1 extends JPanel{
 		reset = new JButton("1");
 		reset.setSize(20,20);
 		reset.setLocation(115,626);
-		reset.setBorderPainted(false);
+		reset.setBorderPainted(true);
 		reset.setFocusPainted(false);
-		reset.setContentAreaFilled(false);
+		reset.setContentAreaFilled(true);
 		add(reset);
 		reset.addActionListener(new Reset());
 
@@ -100,20 +100,20 @@ public class Chap04ConditionalPart1 extends JPanel{
 	class Reset implements ActionListener{
 		@Override
 		public void actionPerformed(ActionEvent e){
-			win.change("jpanelList");
+			win.change("panellist");
 		}
 	}
 	class Start implements ActionListener{
 		@Override
 		public void actionPerformed(ActionEvent e){
-			win.change("Chap04ControlStatement");
+			win.change("control_main");
 		}
 	}
 	class Back  implements ActionListener{
 
 		@Override
 		public void actionPerformed(ActionEvent e) {
-			win.change("Chap04ControlStatement");
+			win.change("control_main");
 		}
 
 	}
@@ -121,7 +121,7 @@ public class Chap04ConditionalPart1 extends JPanel{
 
 		@Override
 		public void actionPerformed(ActionEvent e) {
-			win.change("Chap04ConditionalPart2");
+			win.change("conditional_part2");
 		}
 
 	}
@@ -129,7 +129,7 @@ public class Chap04ConditionalPart1 extends JPanel{
 
 		@Override
 		public void actionPerformed(ActionEvent e) {
-			win.change("Chap04QuizTime");//조건문
+			win.change("control_quiz");//조건문
  		}
 
 	}

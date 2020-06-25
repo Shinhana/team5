@@ -14,7 +14,7 @@ import javax.swing.JTextArea;
 
 public class Chap04ConditionalPart2 extends JPanel{
 
-	private JPanelTest win;
+	private PanelChange win;
 	Image image;
 	private JTextArea memoTextField;
 	private JButton reset; //목차
@@ -24,7 +24,7 @@ public class Chap04ConditionalPart2 extends JPanel{
 	private JButton last; // >>
 
 	
-	public Chap04ConditionalPart2(JPanelTest win){
+	public Chap04ConditionalPart2(PanelChange win){
 
 		setLayout(null);
 		this.win = win;
@@ -104,14 +104,14 @@ public class Chap04ConditionalPart2 extends JPanel{
 		
 		@Override
 		public void actionPerformed(ActionEvent e) {
-			win.change("jpanelList");
+			win.change("panellist");
 		}
 	}
 	
 	class Start implements ActionListener{
 		@Override
 		public void actionPerformed(ActionEvent e){
-			win.change("Chap04ControlStatement");  //자바 환경구축 ->헬로우, 바보 -> 아이디,암호
+			win.change("control_main");  //자바 환경구축 ->헬로우, 바보 -> 아이디,암호
 			//win.change("panel02"); // 자바 환경구축->헬로우 ,바보 
 		}
 
@@ -123,7 +123,7 @@ public class Chap04ConditionalPart2 extends JPanel{
 		@Override
 		public void actionPerformed(ActionEvent e) {
 			// TODO Auto-generated method stub
-			win.change("Chap04ConditionalPart1");
+			win.change("conditional_part1");
 			
 		}
 		
@@ -132,7 +132,7 @@ public class Chap04ConditionalPart2 extends JPanel{
 
 		@Override
 		public void actionPerformed(ActionEvent e) {
-			win.change("Chap04LoopPart1");
+			win.change("loop_part1");
 		}
 		
 	}
@@ -141,7 +141,7 @@ public class Chap04ConditionalPart2 extends JPanel{
 		@Override
 		public void actionPerformed(ActionEvent e) {
 			// TODO Auto-generated method stub
-			win.change("Chap04QuizTime"); //맨
+			win.change("control_quiz"); //맨
 		}
 		
 	}

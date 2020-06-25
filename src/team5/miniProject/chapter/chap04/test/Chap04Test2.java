@@ -21,7 +21,7 @@ import team5.miniProject.chapter.chap04.test.Chap04Test1.Start;
 public class Chap04Test2 extends JPanel{
 
 	Image image;
-	private JPanelTest win;
+	private PanelChange win;
 	private JTextArea memoTextField;
 	private JButton reset; //목차
 	private JButton next; // >
@@ -29,7 +29,7 @@ public class Chap04Test2 extends JPanel{
 	private JButton back; // <
 	private JButton start; // <<
 	
-	public Chap04Test2 (JPanelTest win) {
+	public Chap04Test2 (PanelChange win) {
 		
 		setLayout(null);
 		this.win = win;
@@ -66,9 +66,9 @@ public class Chap04Test2 extends JPanel{
 		next = new JButton("4");
 		next.setSize(20, 20);
 		next.setLocation(215, 626);
-		next.setBorderPainted(false);
+		next.setBorderPainted(true);
 		next.setFocusPainted(false);
-		next.setContentAreaFilled(false);
+		next.setContentAreaFilled(true);
 		add(next);
 		next.addActionListener(new Next());
 
@@ -107,7 +107,7 @@ public class Chap04Test2 extends JPanel{
 
 		@Override
 		public void actionPerformed(ActionEvent e) {
-			win.change("jpanelList");
+			win.change("panellist");
 		}
 		
 	}
@@ -116,7 +116,7 @@ public class Chap04Test2 extends JPanel{
 
 		@Override
 		public void actionPerformed(ActionEvent e) {
-			win.change("Chap04QuizTime");
+			win.change("control_main");
 		}
 		
 	}
@@ -124,7 +124,7 @@ public class Chap04Test2 extends JPanel{
 
 		@Override
 		public void actionPerformed(ActionEvent e) {
-			win.change("Chap04Test1");
+			win.change("control_test1");
 		}
 		
 	}
@@ -132,7 +132,7 @@ public class Chap04Test2 extends JPanel{
 
 		@Override
 		public void actionPerformed(ActionEvent e) {
-			win.change("Chap04Test1Ans1");
+			win.change("control_test2Answer");
 		}
 		
 	}
@@ -140,7 +140,7 @@ public class Chap04Test2 extends JPanel{
 
 		@Override
 		public void actionPerformed(ActionEvent e) {
-			win.change("jpanelList");
+			win.change("panellist");
 		}
 		
 	}

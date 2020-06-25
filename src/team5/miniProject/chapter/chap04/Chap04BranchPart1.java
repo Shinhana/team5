@@ -12,7 +12,7 @@ import javax.swing.JPanel;
 import javax.swing.JTextArea;
 
 public class Chap04BranchPart1 extends JPanel {
-	private JPanelTest win;
+	private PanelChange win;
 	Image image;
 	private JTextArea memoTextField;
 	private JButton reset; //목차
@@ -20,8 +20,10 @@ public class Chap04BranchPart1 extends JPanel {
 	private JButton back; // <
 	private JButton next; // >
 	private JButton last; // >>
-
-	public Chap04BranchPart1(JPanelTest win) {
+	
+	
+	
+	public Chap04BranchPart1(PanelChange win) {
 		setLayout(null);
 		this.win = win;
 		
@@ -94,7 +96,7 @@ public class Chap04BranchPart1 extends JPanel {
 
 		@Override
 		public void actionPerformed(ActionEvent e) {
-			win.change("jpanelList");
+			win.change("panellist");
 			
 			
 		}
@@ -104,7 +106,7 @@ public class Chap04BranchPart1 extends JPanel {
 
 		@Override
 		public void actionPerformed(ActionEvent e) {
-			win.change("Chap04ControlStatement");
+			win.change("control_main");
 		}
 		
 	}
@@ -112,7 +114,7 @@ public class Chap04BranchPart1 extends JPanel {
 
 		@Override
 		public void actionPerformed(ActionEvent e) {
-			win.change("Chap04LoopPart2");
+			win.change("loop_part2");
 			
 		}
 		
@@ -121,7 +123,7 @@ public class Chap04BranchPart1 extends JPanel {
 
 		@Override
 		public void actionPerformed(ActionEvent e) {
-			win.change("Chap04QuizTime");
+			win.change("control_quiz");
 		}
 		
 	}
@@ -129,7 +131,7 @@ public class Chap04BranchPart1 extends JPanel {
 
 		@Override
 		public void actionPerformed(ActionEvent e) {
-			win.change("Chap04QuizTime");
+			win.change("control_quiz");
 		
 		}
 		
