@@ -17,46 +17,47 @@ import team5.miniProject.run.PanelChange;
 // >>>>>>> master
 
 public class JPanel_Main extends JPanel{
-		Image image;
-		private PanelChange win;
+	Image image;
+	private PanelChange win;
+
+
+public JPanel_Main(PanelChange win) {
+	setLayout(null);
+	this.win=win;
+	// TODO Auto-generated constructor stub
+	image = new ImageIcon("images/main.png").getImage();
+
+	JButton btn = new JButton();
+	btn.setSize(800,800);
+	btn.setLocation(10,10);
 	
 	
-	public JPanel_Main(PanelChange win) {
-		setLayout(null);
-		this.win=win;
-		// TODO Auto-generated constructor stub
-		image = new ImageIcon("images/main.png").getImage();
+	//버튼 안보이게 숨김
+	btn.setBackground(Color.WHITE);
+	btn.setOpaque(false);
+	btn.setBorderPainted(false); //테두리 페인팅
+	btn.setFocusPainted(false);
+	btn.setContentAreaFilled(false);//누를 때 표시됨
 	
-		JButton btn = new JButton();
-		btn.setSize(100,180);
-		btn.setLocation(250,600);
-		
-		
-		//占쏙옙튼 占싫븝옙占싱곤옙 占쏙옙占쏙옙
-		btn.setBackground(Color.WHITE);
-		btn.setOpaque(false);
-		btn.setBorderPainted(false); //占쌓두몌옙 占쏙옙占쏙옙占쏙옙
-		btn.setFocusPainted(false);
-		btn.setContentAreaFilled(true);//占쏙옙占쏙옙 占쏙옙 표占시듸옙
-		
-		add(btn);
-		btn.addActionListener(new MyActionListener3());
-		
-	}
-	@Override 
-	public void paint(Graphics g){
-		g.drawImage(image, 0, 0, getWidth(),getHeight(),this);
-		setOpaque(false);//占쏙옙占쏙옙占싹곤옙
-		super.paint(g);
-	}
-	
-	class MyActionListener3 implements ActionListener{
-		@Override
-		public void actionPerformed(ActionEvent e){
-			win.change("jpanel_login");  //占쌘뱄옙 환占썸구占쏙옙 ->占쏙옙恝占�, 占쌕븝옙 -> 占쏙옙占싱듸옙,占쏙옙호
-			//win.change("panel02"); // 占쌘뱄옙 환占썸구占쏙옙->占쏙옙恝占� ,占쌕븝옙 
-		}
-	}
-	
+	add(btn);
+	btn.addActionListener(new MyActionListener3());
 	
 }
+@Override 
+public void paint(Graphics g){
+	g.drawImage(image, 0, 0, getWidth(),getHeight(),this);
+	setOpaque(false);//투명하게
+	super.paint(g);
+}
+
+class MyActionListener3 implements ActionListener{
+	@Override
+	public void actionPerformed(ActionEvent e){
+		win.change("jpanel_login");  //자바 환경구축 ->헬로우, 바보 -> 아이디,암호
+		//win.change("panel02"); // 자바 환경구축->헬로우 ,바보 
+	}
+}
+
+	
+}
+//메인이다

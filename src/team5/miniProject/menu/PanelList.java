@@ -12,7 +12,7 @@ import javax.swing.JPanel;
 import javax.swing.JTextArea;
 
 import team5.miniProject.run.PanelChange;
-// <<<<<<< 20200624_chap03_1_(繹먲옙占쎌삺沃섓옙)
+// <<<<<<< 20200624_chap03_1_(濚밸㉡�삕�뜝�럩�궨亦껋꼻�삕)
 // import team5.miniProject.chapter.chap03.Chap03OperatorMain;
 // =======
 // >>>>>>> master
@@ -31,49 +31,49 @@ public class PanelList extends JPanel{
 		
 		image = new ImageIcon("images/List.png").getImage();
 		
-		 //泥섏쓬�쑝濡� �룎�븘媛��뒗 踰꾪듉
-		JButton program = new JButton("프로그램 기초&개발환경 구축");
+		 //筌ｌ꼷�벉占쎌몵嚥∽옙 占쎈즼占쎈툡揶쏉옙占쎈뮉 甕곌쑵�뱣
+		JButton program = new JButton("�봽濡쒓렇�옩 湲곗큹&媛쒕컻�솚寃� 援ъ텞");
 		program.setSize(240,30);
-		program.setBorderPainted(false); //�뀒�몢由� �럹�씤�똿
+		program.setBorderPainted(false); //占쎈�믭옙紐®뵳占� 占쎈읂占쎌뵥占쎈샒
 		program.setFocusPainted(false);
-		program.setContentAreaFilled(true);//�늻瑜� �븣 �몴�떆�맖
+		program.setContentAreaFilled(true);//占쎈듇�몴占� 占쎈르 占쎈ご占쎈뻻占쎈쭡
 		program.setLocation(70,60);
 	
 		add(program);
 		program.addActionListener(new Program());
 		
-		JButton variable = new JButton("변수");
+		JButton variable = new JButton("蹂��닔");
 		variable.setSize(240,30);
-		variable.setBorderPainted(false); //�뀒�몢由� �럹�씤�똿
+		variable.setBorderPainted(false); //占쎈�믭옙紐®뵳占� 占쎈읂占쎌뵥占쎈샒
 		variable.setFocusPainted(false);
-		variable.setContentAreaFilled(true);//�늻瑜� �븣 �몴�떆�맖
+		variable.setContentAreaFilled(true);//占쎈듇�몴占� 占쎈르 占쎈ご占쎈뻻占쎈쭡
 		variable.setLocation(70,150);
 		add(variable);
 		variable.addActionListener(new Variable());
 		
-		JButton operator = new JButton("연산자");
+		JButton operator = new JButton("�뿰�궛�옄");
 		operator.setSize(240,30);
-		operator.setBorderPainted(false); //�뀒�몢由� �럹�씤�똿
+		operator.setBorderPainted(false); //占쎈�믭옙紐®뵳占� 占쎈읂占쎌뵥占쎈샒
 		operator.setFocusPainted(false);
-		operator.setContentAreaFilled(true);//�늻瑜� �븣 �몴�떆�맖
+		operator.setContentAreaFilled(true);//占쎈듇�몴占� 占쎈르 占쎈ご占쎈뻻占쎈쭡
 		operator.setLocation(70,240);
 		add(operator);
 		operator.addActionListener(new Operator());
 		
-		JButton array = new JButton("배열");
+		JButton array = new JButton("諛곗뿴");
 		array.setSize(240,30);
-		array.setBorderPainted(false); //�뀒�몢由� �럹�씤�똿
+		array.setBorderPainted(false); //占쎈�믭옙紐®뵳占� 占쎈읂占쎌뵥占쎈샒
 		array.setFocusPainted(false);
-		array.setContentAreaFilled(true);//�늻瑜� �븣 �몴�떆�맖
+		array.setContentAreaFilled(true);//占쎈듇�몴占� 占쎈르 占쎈ご占쎈뻻占쎈쭡
 		array.setLocation(70,430);
 		add(array);
 		array.addActionListener(new Array());
 		
-		JButton nloop = new JButton("중첩반복문");
+		JButton nloop = new JButton("以묒꺽諛섎났臾�");
 		nloop.setSize(240,30);
-		nloop.setBorderPainted(false); //�뀒�몢由� �럹�씤�똿
+		nloop.setBorderPainted(false); //占쎈�믭옙紐®뵳占� 占쎈읂占쎌뵥占쎈샒
 		nloop.setFocusPainted(false);
-		nloop.setContentAreaFilled(true);//�늻瑜� �븣 �몴�떆�맖
+		nloop.setContentAreaFilled(true);//占쎈듇�몴占� 占쎈르 占쎈ご占쎈뻻占쎈쭡
 		nloop.setLocation(70,520);
 		add(nloop);
 		nloop.addActionListener(new Nloop());
@@ -91,7 +91,7 @@ public class PanelList extends JPanel{
 		memoTextField.setBounds(50,520,280,100);
 		memoTextField.setOpaque(false);
 		memoTextField.setForeground(Color.WHITE);
-		//�뀒�뒪�듃 怨듦컙 �뀒�몢由� �닲湲곌린 
+		//占쎈�믭옙�뮞占쎈뱜 �⑤벀而� 占쎈�믭옙紐®뵳占� 占쎈떜疫꿸퀗由� 
 		memoTextField.setBorder(javax.swing.BorderFactory.createEmptyBorder());
 		
 		add(memoTextField);
@@ -104,7 +104,7 @@ public class PanelList extends JPanel{
 	@Override 
 	public void paint(Graphics g){
 		g.drawImage(image, 0, 0, getWidth(),getHeight(),this);
-		setOpaque(false);//�뜝�룞�삕�뜝�룞�삕�뜝�떦怨ㅼ삕
+		setOpaque(false);//占쎈쐻占쎈짗占쎌굲占쎈쐻占쎈짗占쎌굲占쎈쐻占쎈뼣�ⓦ끉�굲
 		super.paint(g);
 	}
 	
@@ -139,11 +139,15 @@ public class PanelList extends JPanel{
 		win.change("nloop_main");
 	}
 }	
-	class Main implements ActionListener{
-		@Override
-		public void actionPerformed(ActionEvent e){
-			win.change("main");
-		}
-	}	
+// <<<<<<< 20200624chap01_1번쨰
+
+// =======
+// 	class Main implements ActionListener{
+// 		@Override
+// 		public void actionPerformed(ActionEvent e){
+// 			win.change("main");
+// 		}
+// 	}	
+// >>>>>>> master
 	
 }
