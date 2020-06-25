@@ -130,6 +130,6 @@ public class PanelList extends JPanel{
 		win.change("nloop_main");
 	}
 }	
-	
+
 	
 }
