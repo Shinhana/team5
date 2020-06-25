@@ -146,7 +146,7 @@ public class JPanel_Login extends JPanel{
 							{
 								JOptionPane.showMessageDialog(null, "You have logged in successfully!!");
 								win.change("panellist");
-								
+								break;
 							}
 						else
 							{	
@@ -156,7 +156,7 @@ public class JPanel_Login extends JPanel{
 								
 							}
 	//						
-						
+						//
 					}
 					bos.close();
 					
@@ -168,6 +168,7 @@ public class JPanel_Login extends JPanel{
 //				finally {
 //					JOptionPane.showMessageDialog(null, "You falled to  log in.");
 //				}
+				//로그인 다 출려됨
 				
 			}
 		}

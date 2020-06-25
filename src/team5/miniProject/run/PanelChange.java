@@ -280,7 +280,7 @@ public void change(String panelName){
 		}
 		
 		
-		
+		//이거
 		
 		
 

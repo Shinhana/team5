@@ -122,7 +122,7 @@ public class JPanelSignUp extends JPanel {
 		}
 	}
 	
-	
+	//고객수를 늘리자
 	
 	
 	
