@@ -41,7 +41,7 @@ public class Chap02Test2 extends JPanel {
 		back= new JButton(backImg);
 		back.setSize(20,20);
 		back.setLocation(180,620);
-		back.addActionListener(new MyActionListener3());
+		back.addActionListener(new Back());
 		back.setBorderPainted(false);
 		back.setFocusPainted(false);
 		back.setContentAreaFilled(false);
@@ -81,7 +81,7 @@ public class Chap02Test2 extends JPanel {
 		answerField = new JTextArea();
 		answerField.setBounds(50,520,280,100);
 		answerField.setOpaque(false);
-		answerField.setForeground(Color.WHITE);
+		answerField.setForeground(Color.black);
 		answerField.setBorder(javax.swing.BorderFactory.createEmptyBorder());
 		add(answerField);
 		
@@ -100,15 +100,15 @@ public class Chap02Test2 extends JPanel {
 	class Start implements ActionListener{
 		@Override
 		public void actionPerformed(ActionEvent e){
-			win.change("variable_test1 ");
+			win.change("variable_test1");
 		}
 	}
 	
 	//back
-	class MyActionListener3 implements ActionListener{
+	class Back implements ActionListener{
 		@Override
 		public void actionPerformed(ActionEvent e){
-			win.change("variable_test1Answer1 ");
+			win.change("variable_test1Answer1");
 		}
 	}
 	
@@ -116,7 +116,7 @@ public class Chap02Test2 extends JPanel {
 	class Reset implements ActionListener{
 		@Override
 		public void actionPerformed(ActionEvent e){
-			win.change("variable_part1 ");
+			win.change("panellist");
 		}
 	}
 	
@@ -132,10 +132,10 @@ public class Chap02Test2 extends JPanel {
 			       
 			 if(str.equals("O,X,X,O,X,X")){
 				 JOptionPane.showMessageDialog(null,"정답입니다.");
-				 win.change("operator_testAnswer2");
+				 win.change("variable_test2Answer20");
 			 } else {
 				 JOptionPane.showMessageDialog(null,"틀렸습니다.");
-				 win.change("variable_test1 ");
+				 win.change("variable_test1");
 			 }
 			           
 			            

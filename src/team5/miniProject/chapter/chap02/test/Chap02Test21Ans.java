@@ -11,6 +11,8 @@ import javax.swing.ImageIcon;
 import javax.swing.JButton;
 import javax.swing.JPanel;
 
+import team5.miniProject.chapter.chap02.test.Chap02Test1Ans.Reset;
+import team5.miniProject.chapter.chap02.test.Chap02Test2.MyActionListener3;
 import team5.miniProject.chapter.chap02.test.Chap02Test20Ans.Start;
 
 public class Chap02Test21Ans extends JPanel {
@@ -31,30 +33,39 @@ public class Chap02Test21Ans extends JPanel {
 		
 		this.win = win;
 		setLayout(null);
-	    
-		ImageIcon startImg = new ImageIcon("images/start.png");
-		start = new JButton(startImg);
+		imageMain = new ImageIcon("images/chap2Test2ans2.png").getImage();
+			
+		//ImageIcon startImg = new ImageIcon("images/start.png");
+		start = new JButton();
 		start.setSize(20,20);
 		start.setLocation(150,620);
 		start.addActionListener(new Start());
-		start.setBorderPainted(false);
+		start.setBorderPainted(true);
 		start.setFocusPainted(false);
-		start.setContentAreaFilled(false);
+		start.setContentAreaFilled(true);
 		this.add(start);
 		
-	    
-	    ImageIcon resetImg= new ImageIcon("images/reset.png");
-	    reset= new JButton(resetImg);
+		//ImageIcon backImg= new ImageIcon("images/back.png");
+		back= new JButton();
+		back.setSize(20,20);
+		back.setLocation(180,620);
+		back.addActionListener(new Back());
+		back.setBorderPainted(true);
+		back.setFocusPainted(false);
+		back.setContentAreaFilled(true);
+		this.add(back);
+		
+	   // ImageIcon resetImg= new ImageIcon("images/reset.png");
+	    reset= new JButton();
 	    reset.setSize(20,20);
 	    reset.setLocation(116,620);
 	    reset.addActionListener(new Reset());
-	    reset.setBorderPainted(false);
+	    reset.setBorderPainted(true);
 	    reset.setFocusPainted(false);
-	    reset.setContentAreaFilled(false);
+	    reset.setContentAreaFilled(true);
 	    this.add(reset);
 	    
-	    imageMain = new ImageIcon("images/chap2Test2ans2.png").getImage();
-		
+	   
 	}
 	
 	@Override 
@@ -68,7 +79,7 @@ public class Chap02Test21Ans extends JPanel {
 	class Start implements ActionListener{
 		@Override
 		public void actionPerformed(ActionEvent e){
-			win.change("variable_test1 ");
+			win.change("variable_test1");
 		}
 	}
 
@@ -77,7 +88,7 @@ public class Chap02Test21Ans extends JPanel {
 	class Back implements ActionListener{
 		@Override
 		public void actionPerformed(ActionEvent e) {
-			win.change("variable_test1Answer20 ");
+			win.change("variable_test2Answer20");
 			
 		}
 	}
@@ -86,7 +97,7 @@ public class Chap02Test21Ans extends JPanel {
 	class Reset implements ActionListener{
 		@Override
 		public void actionPerformed(ActionEvent e){
-			win.change("variable_part1 ");
+			win.change("panellist");
 		}
 	}
 	
