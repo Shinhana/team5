@@ -68,7 +68,7 @@ public class Chap02Test21Ans extends JPanel {
 	class Start implements ActionListener{
 		@Override
 		public void actionPerformed(ActionEvent e){
-			win.change("test1");
+			win.change("variable_test1 ");
 		}
 	}
 
@@ -77,7 +77,7 @@ public class Chap02Test21Ans extends JPanel {
 	class Back implements ActionListener{
 		@Override
 		public void actionPerformed(ActionEvent e) {
-			win.change("tans20");
+			win.change("variable_test1Answer20 ");
 			
 		}
 	}
@@ -86,7 +86,7 @@ public class Chap02Test21Ans extends JPanel {
 	class Reset implements ActionListener{
 		@Override
 		public void actionPerformed(ActionEvent e){
-			win.change("list");
+			win.change("variable_part1 ");
 		}
 	}
 	

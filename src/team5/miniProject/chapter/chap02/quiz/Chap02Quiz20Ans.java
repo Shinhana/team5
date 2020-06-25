@@ -61,7 +61,7 @@ public class Chap02Quiz20Ans extends JPanel {
 	class Back implements ActionListener{
 		@Override
 		public void actionPerformed(ActionEvent e){
-			win.change("quiz2");
+			win.change("variable_quiz2 ");
 		}
 	}
 	
@@ -69,7 +69,7 @@ public class Chap02Quiz20Ans extends JPanel {
 	class Reset implements ActionListener{
 		@Override
 		public void actionPerformed(ActionEvent e){
-			win.change("list");
+			win.change("variable_part1 ");
 		}
 	}
 	

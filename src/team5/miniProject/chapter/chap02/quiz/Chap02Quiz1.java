@@ -87,7 +87,7 @@ public class Chap02Quiz1 extends JPanel {
 	class Next implements ActionListener{
 		@Override
 		public void actionPerformed(ActionEvent e) {
-			win.change("quiz2");
+			win.change("variable_quiz2");
 			
 		}
 	}
@@ -96,7 +96,7 @@ public class Chap02Quiz1 extends JPanel {
 	class Reset implements ActionListener{
 		@Override
 		public void actionPerformed(ActionEvent e){
-			win.change("list");
+			win.change("variable_part1");
 		}
 	}
 	
@@ -111,10 +111,10 @@ public class Chap02Quiz1 extends JPanel {
 	       
 	       if(str.equals("O,X,X,O,X,O,X")){
 	    	   JOptionPane.showMessageDialog(null,"정답입니다.");
-	    	   win.change("operator_quizAnswer1");
+	    	   win.change("variable_quizAnswer10 ");
 	       } else {
 	    	   JOptionPane.showMessageDialog(null,"틀렸습니다.");
-	    	   win.change("quiz1");
+	    	   win.change("variable_quiz1 ");
 	       }
 	           
 	            
