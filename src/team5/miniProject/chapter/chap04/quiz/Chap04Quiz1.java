@@ -33,9 +33,9 @@ import team5.miniProject.chapter.chap04.JPanelTest;
 			reset = new JButton("1");
 			reset.setSize(20,20);
 			reset.setLocation(130,626);
-			reset.setBorderPainted(true);
-			reset.setFocusPainted(true);
-			reset.setContentAreaFilled(true);
+			reset.setBorderPainted(false);
+			reset.setFocusPainted(false);
+			reset.setContentAreaFilled(false);
 			add(reset);
 			reset.addActionListener(new Reset());
 
