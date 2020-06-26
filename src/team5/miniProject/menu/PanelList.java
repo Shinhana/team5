@@ -62,9 +62,9 @@ public class PanelList extends JPanel{
 		
 		JButton control = new JButton();//4.control
 		control.setSize(240,30);
-		control.setBorderPainted(true); //占쎈�믭옙紐®뵳占� 占쎈읂占쎌뵥占쎈샒
+		control.setBorderPainted(false); //占쎈�믭옙紐®뵳占� 占쎈읂占쎌뵥占쎈샒
 		control.setFocusPainted(false);
-		control.setContentAreaFilled(true);//占쎈듇�몴占� 占쎈르 占쎈ご占쎈뻻占쎈쭡
+		control.setContentAreaFilled(false);//占쎈듇�몴占� 占쎈르 占쎈ご占쎈뻻占쎈쭡
 		control.setLocation(70,330);
 		add(control);
 		control.addActionListener(new Control());

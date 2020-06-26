@@ -30,58 +30,58 @@ public class Chap03OperatorQuiz1 extends JPanel{
 		
 		image = new ImageIcon("images/Operator_Quiz1.png").getImage();
 		
-		JButton reset = new JButton("¸ñÂ÷·Î");
+		JButton reset = new JButton("ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½");
 		reset.setSize(20,20);
-		reset.setBorderPainted(false); //Å×µÎ¸® ÆäÀÎÆÃ
+		reset.setBorderPainted(false); //ï¿½×µÎ¸ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 		reset.setFocusPainted(false);
-		reset.setContentAreaFilled(false);//´©¸¦ ¶§ Ç¥½ÃµÊ
+		reset.setContentAreaFilled(false);//ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ Ç¥ï¿½Ãµï¿½
 		reset.setLocation(115,615);
 	
 		add(reset);
 		reset.addActionListener(new Reset());
 		
-		JButton next = new JButton("´ÙÀ½Àå");
+		JButton next = new JButton("ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½");
 		next.setSize(20,20);
-		next.setBorderPainted(false); //Å×µÎ¸® ÆäÀÎÆÃ
+		next.setBorderPainted(false); //ï¿½×µÎ¸ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 		next.setFocusPainted(false);
-		next.setContentAreaFilled(false);//´©¸¦ ¶§ Ç¥½ÃµÊ
+		next.setContentAreaFilled(false);//ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ Ç¥ï¿½Ãµï¿½
 		next.setLocation(205,615);
 		add(next);
 		next.addActionListener(new Next());
 		
-		JButton last = new JButton("¸Ç µÚ·Î");
+		JButton last = new JButton("ï¿½ï¿½ ï¿½Ú·ï¿½");
 		last.setSize(20,20);
-		last.setBorderPainted(false); //Å×µÎ¸® ÆäÀÎÆÃ
+		last.setBorderPainted(false); //ï¿½×µÎ¸ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 		last.setFocusPainted(false);
-		last.setContentAreaFilled(false);//´©¸¦ ¶§ Ç¥½ÃµÊ
+		last.setContentAreaFilled(false);//ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ Ç¥ï¿½Ãµï¿½
 		last.setLocation(230,615);
 		add(last);
 		last.addActionListener(new Last());
 		
-		JButton start = new JButton("¸Ç ¾ÕÀ¸·Î");
+		JButton start = new JButton("ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½");
 		start.setSize(20,20);
-		start.setBorderPainted(false); //Å×µÎ¸® ÆäÀÎÆÃ
+		start.setBorderPainted(false); //ï¿½×µÎ¸ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 		start.setFocusPainted(false);
-		start.setContentAreaFilled(false);//´©¸¦ ¶§ Ç¥½ÃµÊ
+		start.setContentAreaFilled(false);//ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ Ç¥ï¿½Ãµï¿½
 		start.setLocation(150,615);
 		add(start);
 		start.addActionListener(new Start());
 		
-		JButton back = new JButton("ÀÌÀü");
+		JButton back = new JButton("ï¿½ï¿½ï¿½ï¿½");
 		back.setSize(20,20);
 		back.setLocation(170,615);
-		back.setBorderPainted(false); //Å×µÎ¸® ÆäÀÎÆÃ
+		back.setBorderPainted(false); //ï¿½×µÎ¸ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 		back.setFocusPainted(false);
-		back.setContentAreaFilled(false);//´©¸¦ ¶§ Ç¥½ÃµÊ
+		back.setContentAreaFilled(false);//ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ Ç¥ï¿½Ãµï¿½
 		add(back);
 		back.addActionListener(new Back());
 		
-		JButton answer = new JButton("Á¤´äÈ®ÀÎ");
+		JButton answer = new JButton("ï¿½ï¿½ï¿½ï¿½È®ï¿½ï¿½");
 		answer.setSize(40,20);
 		answer.setLocation(160,585);
-		answer.setBorderPainted(false); //Å×µÎ¸® ÆäÀÎÆÃ
+		answer.setBorderPainted(false); //ï¿½×µÎ¸ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 		answer.setFocusPainted(false);
-		answer.setContentAreaFilled(true);//´©¸¦ ¶§ Ç¥½ÃµÊ
+		answer.setContentAreaFilled(false);//ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ Ç¥ï¿½Ãµï¿½
 		add(answer);
 		answer.addActionListener(new Answer());
 		
@@ -89,7 +89,7 @@ public class Chap03OperatorQuiz1 extends JPanel{
 		memoTextField.setBounds(50,520,280,100);
 		memoTextField.setOpaque(false);
 		memoTextField.setForeground(Color.WHITE);
-		//Å×½ºÆ® °ø°£ Å×µÎ¸® ¼û±â±â 
+		//ï¿½×½ï¿½Æ® ï¿½ï¿½ï¿½ï¿½ ï¿½×µÎ¸ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ 
 		memoTextField.setBorder(javax.swing.BorderFactory.createEmptyBorder());
 		
 		add(memoTextField);
@@ -101,7 +101,7 @@ public class Chap03OperatorQuiz1 extends JPanel{
 	@Override 
 	public void paint(Graphics g){
 		g.drawImage(image, 0, 0, getWidth(),getHeight(),this);
-		setOpaque(false);//Åõ¸íÇÏ°Ô
+		setOpaque(false);//ï¿½ï¿½ï¿½ï¿½ï¿½Ï°ï¿½
 		super.paint(g);
 	}
 	
@@ -146,10 +146,10 @@ public class Chap03OperatorQuiz1 extends JPanel{
 				str = str.trim();
 				System.out.println(str);
 				if(str.equals("11,11\n10,11")){
-					JOptionPane.showMessageDialog(null,"Á¤´ä");
+					JOptionPane.showMessageDialog(null,"ì •ë‹µ");
 					
 				}else{
-					JOptionPane.showMessageDialog(null,"¶¯");
+					JOptionPane.showMessageDialog(null,"í‹€ë ¸ìŠµë‹ˆë‹¤");
 				}
 				win.change("operator_quizAnswer1");
 				
