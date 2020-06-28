@@ -88,11 +88,11 @@ public class PanelList extends JPanel{
 		nloop.addActionListener(new Nloop());
 		
 		JButton main = new JButton("뒤로");
-		main.setSize(240,30);
+		main.setSize(40,40);
 		main.setBorderPainted(false); //�뀒�몢由� �럹�씤�똿
 		main.setFocusPainted(false);
 		main.setContentAreaFilled(false);//�늻瑜� �븣 �몴�떆�맖
-		main.setLocation(300,300);
+		main.setLocation(35,570);
 		add(main);
 		main.addActionListener(new Main());
 		
@@ -161,7 +161,7 @@ public class PanelList extends JPanel{
  	class Main implements ActionListener{
  		@Override
  		public void actionPerformed(ActionEvent e){
- 			win.change("main");
+ 			win.change("mode");
  		}
  	}	
 // >>>>>>> master

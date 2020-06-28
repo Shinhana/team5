@@ -51,7 +51,7 @@ public class JPanelMode extends JPanel{
       
       JButton messenger = new JButton();
       messenger.setSize(77, 60);
-      messenger.setLocation(141,539);
+      messenger.setLocation(141,525);
       
       
     
@@ -85,7 +85,7 @@ public class JPanelMode extends JPanel{
    class Single implements ActionListener{
       @Override
       public void actionPerformed(ActionEvent e){
-         win.change("PanelList");  //��ø�ݺ������� �̵�
+         win.change("panellist");  //��ø�ݺ������� �̵�
 
       }
    }
