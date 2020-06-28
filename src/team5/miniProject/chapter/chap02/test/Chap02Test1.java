@@ -33,28 +33,31 @@ public class Chap02Test1 extends JPanel {
 		this.win = win;
 		setLayout(null);
 		
-		ImageIcon nextImg = new ImageIcon("images/next.png");
-		next= new JButton(nextImg);
+		//ImageIcon nextImg = new ImageIcon("images/next.png");
+		//next= new JButton(nextImg);
+		next= new JButton();
 		next.setSize(20,20);
-		next.setLocation(206,606);
+		next.setLocation(205,615);
 		next.addActionListener(new Next());
 		next.setBorderPainted(false);
 		next.setFocusPainted(false);
 	    next.setContentAreaFilled(false);
 	    this.add(next);
 	    
-	    ImageIcon resetImg= new ImageIcon("images/reset.png");
-	    reset= new JButton(resetImg);
+	    //ImageIcon resetImg= new ImageIcon("images/reset.png");
+	    //reset= new JButton(resetImg);
+	    reset= new JButton();
 	    reset.setSize(20,20);
-	    reset.setLocation(116,620);
+	    reset.setLocation(115,615);
 	    reset.addActionListener(new Reset());
 	    reset.setBorderPainted(false);
 	    reset.setFocusPainted(false);
 	    reset.setContentAreaFilled(false);
 	    this.add(reset);
 	    
-	    ImageIcon checkImg = new ImageIcon("images/answerCheck.png");
-	    check= new JButton(checkImg);
+	    //ImageIcon checkImg = new ImageIcon("images/answerCheck.png");
+	    //check= new JButton(checkImg);
+	    check= new JButton();
 	    check.setSize(88,34);
 	    check.setLocation(248,448);
 	    check.addActionListener(new Answer());

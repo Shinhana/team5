@@ -28,43 +28,44 @@ public class Chap02Quiz11Ans extends JPanel {
 		this.win = win;
 		setLayout(null);
 		
-		ImageIcon backImg= new ImageIcon("images/back.png");
-		back= new JButton(backImg);
+		//ImageIcon backImg= new ImageIcon("images/back.png");
+		//back= new JButton(backImg);
+		back= new JButton();
 		back.setSize(20,20);
-		back.setLocation(180,620);
+		back.setLocation(170,615);
 		back.addActionListener(new Back());
-
 		back.setBorderPainted(false);
 		back.setFocusPainted(false);
 		back.setContentAreaFilled(false);
 		this.add(back);
 	    
-		ImageIcon lastImg= new ImageIcon("images/last.png");
-		last= new JButton(lastImg);
+		//ImageIcon lastImg= new ImageIcon("images/last.png");
+		//last= new JButton(lastImg);
+		last= new JButton();
 		last.setSize(20,20);
-		last.setLocation(239,622);
+		last.setLocation(230,615);
 		last.addActionListener(new Last());
-
 		last.setBorderPainted(false);
 		last.setFocusPainted(false);
 		last.setContentAreaFilled(false);
 		this.add(last);
 		
-		ImageIcon nextImg= new ImageIcon("images/next.png");
-		next= new JButton(nextImg);
+		//ImageIcon nextImg= new ImageIcon("images/next.png");
+		//next= new JButton(nextImg);
+		next= new JButton();
 		next.setSize(20,20);
-		next.setLocation(200,615);
+		next.setLocation(205,615);
 		next.addActionListener(new Next());
-
 		next.setBorderPainted(true);
 		next.setFocusPainted(false);
 	    next.setContentAreaFilled(true);
 	    this.add(next);
 	    
-	    ImageIcon resetImg= new ImageIcon("images/reset.png");
-	    reset= new JButton(resetImg);
+	    //ImageIcon resetImg= new ImageIcon("images/reset.png");
+	    //reset= new JButton(resetImg);
+	    reset= new JButton();
 	    reset.setSize(20,20);
-	    reset.setLocation(116,620);
+	    reset.setLocation(115,615);
 	    reset.addActionListener(new Reset());
 	    reset.setBorderPainted(false);
 	    reset.setFocusPainted(false);
