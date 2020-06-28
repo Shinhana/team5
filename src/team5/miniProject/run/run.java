@@ -94,7 +94,11 @@ import team5.miniProject.chapter.chap06.test.Chap06Test2;
 import team5.miniProject.chapter.chap06.test.Chap06Test2Ans1;
 import team5.miniProject.chapter.chap06.test.Chap06Test2Ans2;
 import team5.miniProject.game.MiniQuiz1;
-import team5.miniProject.game.MouseCatch;
+import team5.miniProject.game.MouseCatch1;
+import team5.miniProject.game.MouseCatch2;
+import team5.miniProject.game.MouseCatch3;
+import team5.miniProject.game.MouseCatch4;
+import team5.miniProject.game.MouseCatch5;
 import team5.miniProject.game.SpeedQuiz1;
 import team5.miniProject.game.SpeedQuiz2;
 import team5.miniProject.game.SpeedQuiz3;
@@ -293,7 +297,11 @@ import team5.miniProject.menu.PanelList;
 	//-------------------------게임----------------------------------------
 	win.JPanelGame = new JPanelGame(win);
 	
-	win.mousecatch = new MouseCatch(win);
+	win.mousecatch1 = new MouseCatch1(win);
+	win.mousecatch2 = new MouseCatch2(win);
+	win.mousecatch3 = new MouseCatch3(win);
+	win.mousecatch4 = new MouseCatch4(win);
+	win.mousecatch5 = new MouseCatch5(win);
 	
 	win.miniquiz1 = new MiniQuiz1(win);
 	

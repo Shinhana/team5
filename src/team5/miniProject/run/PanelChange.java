@@ -95,7 +95,11 @@ import team5.miniProject.chapter.chap06.test.Chap06Test2;
 import team5.miniProject.chapter.chap06.test.Chap06Test2Ans1;
 import team5.miniProject.chapter.chap06.test.Chap06Test2Ans2;
 import team5.miniProject.game.MiniQuiz1;
-import team5.miniProject.game.MouseCatch;
+import team5.miniProject.game.MouseCatch1;
+import team5.miniProject.game.MouseCatch2;
+import team5.miniProject.game.MouseCatch3;
+import team5.miniProject.game.MouseCatch4;
+import team5.miniProject.game.MouseCatch5;
 import team5.miniProject.game.SpeedQuiz1;
 import team5.miniProject.game.SpeedQuiz2;
 import team5.miniProject.game.SpeedQuiz3;
@@ -251,8 +255,12 @@ public class PanelChange extends JFrame{
 //-------------------------게임---------------------------------------------
   	public JPanelGame JPanelGame = null;
   	
-  	public MouseCatch mousecatch = null;
-  	
+  	public MouseCatch1 mousecatch1 =null;
+  	public MouseCatch2 mousecatch2 =null;
+  	public MouseCatch3 mousecatch3 =null;
+  	public MouseCatch4 mousecatch4 =null;
+  	public MouseCatch5 mousecatch5 =null;
+
 	public MiniQuiz1 miniquiz1 = null;
 	
   	public SpeedQuiz1 speedquiz1=null;
@@ -795,17 +803,38 @@ public class PanelChange extends JFrame{
  		revalidate();
  		repaint();
  //----------------------------게임--------------------------------
- 	}else if(panelName.equals("mousecatch")){
- 		getContentPane().removeAll();
- 		getContentPane().add(mousecatch);
- 		revalidate();
- 		repaint();
  	}
  	else if(panelName.equals("miniquiz1")){
  		getContentPane().removeAll();
  		getContentPane().add(miniquiz1);
  		revalidate();
  		repaint();
+ 	}else if(panelName.equals("mousecatch2")){
+ 	 		getContentPane().removeAll();
+ 	 		getContentPane().add(mousecatch2);
+ 	 		revalidate();
+ 	 		repaint();
+ 	}else if(panelName.equals("mousecatch1")){
+ 		getContentPane().removeAll();
+ 		getContentPane().add(mousecatch1);
+ 		revalidate();
+ 		repaint();
+ 			
+ 	}else if(panelName.equals("mousecatch3")){
+ 	 		getContentPane().removeAll();
+ 	 		getContentPane().add(mousecatch3);
+ 	 		revalidate();
+ 	 		repaint();
+ 	}else if(panelName.equals("mousecatch4")){
+ 	 		getContentPane().removeAll();
+ 	 		getContentPane().add(mousecatch4);
+ 	 		revalidate();
+ 	 		repaint();
+ 	}else if(panelName.equals("mousecatch5")){
+ 	 		getContentPane().removeAll();
+ 	 		getContentPane().add(mousecatch5);
+ 	 		revalidate();
+ 	 		repaint();
  	}else if(panelName.equals("speedquiz1")){
  		getContentPane().removeAll();
  		getContentPane().add(speedquiz1);
