@@ -95,6 +95,15 @@ import team5.miniProject.chapter.chap06.test.Chap06Test2;
 import team5.miniProject.chapter.chap06.test.Chap06Test2Ans1;
 import team5.miniProject.chapter.chap06.test.Chap06Test2Ans2;
 import team5.miniProject.game.MouseCatch;
+import team5.miniProject.game.SpeedQuiz1;
+import team5.miniProject.game.SpeedQuiz2;
+import team5.miniProject.game.SpeedQuiz3;
+import team5.miniProject.game.SpeedQuiz4;
+import team5.miniProject.game.SpeedQuiz5;
+import team5.miniProject.game.SpeedQuiz6;
+import team5.miniProject.game.SpeedQuiz7;
+import team5.miniProject.game.SpeedQuizAns;
+import team5.miniProject.menu.JPanelMode;
 import team5.miniProject.menu.JPanelSignUp;
 import team5.miniProject.menu.JPanel_Login;
 import team5.miniProject.menu.JPanel_Main;
@@ -111,6 +120,7 @@ public class PanelChange extends JFrame{
   	public JPanel_Main jpanel_main = null;
   	public PanelList panellist =null;
   	public JPanelSignUp signup =null;
+  	public JPanelMode mode = null;
 
 //----------------------------1.자바프로그램----------------------
 
@@ -416,6 +426,11 @@ public class PanelChange extends JFrame{
   		}else if(panelName.equals("signup")){
   			getContentPane().removeAll();
   			getContentPane().add(signup);
+  			revalidate();
+  			repaint();
+  		}else if(panelName.equals("mode")){
+  			getContentPane().removeAll();
+  			getContentPane().add(mode);
   			revalidate();
   			repaint();
   		}
