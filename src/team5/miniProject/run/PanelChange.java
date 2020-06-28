@@ -847,10 +847,10 @@ public class PanelChange extends JFrame{
  		revalidate();
  		repaint();
 // <<<<<<< 20200628_mini_2
-//  	} else if(panelName.equals("JPanelGame")){
+  	} else if(panelName.equals("JPanelGame")){
 // =======
-//  	}else if(panelName.equals("JPanelGame")){
-// >>>>>>> master
+  //	}else if(panelName.equals("JPanelGame")){
+ //>>>>>>> master
  		getContentPane().removeAll();
  		getContentPane().add(JPanelGame);
  		revalidate();
