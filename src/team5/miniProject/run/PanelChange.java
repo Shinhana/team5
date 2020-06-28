@@ -846,11 +846,8 @@ public class PanelChange extends JFrame{
  		getContentPane().add(speedquizans);
  		revalidate();
  		repaint();
-// <<<<<<< 20200628_mini_2
-//  	} else if(panelName.equals("JPanelGame")){
-// =======
-//  	}else if(panelName.equals("JPanelGame")){
-// >>>>>>> master
+
+  	} else if(panelName.equals("JPanelGame")){
  		getContentPane().removeAll();
  		getContentPane().add(JPanelGame);
  		revalidate();
@@ -863,6 +860,4 @@ public class PanelChange extends JFrame{
   
   
   }
-// >>>>>>> master
  }
- // >>>>>>> master
