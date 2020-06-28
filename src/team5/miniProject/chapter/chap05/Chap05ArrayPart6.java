@@ -86,19 +86,19 @@ public class Chap05ArrayPart6 extends JPanel {
 
 		imageMain = new ImageIcon("images/Arraytest.PNG").getImage();
 
-		back.setBorderPainted(true);
+		back.setBorderPainted(false);
 		back.setFocusPainted(false);
-		back.setContentAreaFilled(true);
+		back.setContentAreaFilled(false);
 		this.add(back);
 
-		start.setBorderPainted(true);
+		start.setBorderPainted(false);
 		start.setFocusPainted(false);
-		start.setContentAreaFilled(true);
+		start.setContentAreaFilled(false);
 		this.add(start);
 
-		reset.setBorderPainted(true);
+		reset.setBorderPainted(false);
 		reset.setFocusPainted(false);
-		reset.setContentAreaFilled(true);
+		reset.setContentAreaFilled(false);
 		this.add(reset);
 
 		next.setBorderPainted(false);

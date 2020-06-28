@@ -71,9 +71,9 @@ public class Chap05ArrayPart1 extends JPanel {
 		back.setContentAreaFilled(false);
 		this.add(back);
 
-		last.setBorderPainted(true);
+		last.setBorderPainted(false);
 		last.setFocusPainted(false);
-		last.setContentAreaFilled(true);
+		last.setContentAreaFilled(false);
 		this.add(last);
 
 		start.setBorderPainted(false);
