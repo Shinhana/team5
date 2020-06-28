@@ -93,7 +93,9 @@ import team5.miniProject.chapter.chap06.test.Chap06Test1Ans2;
 import team5.miniProject.chapter.chap06.test.Chap06Test2;
 import team5.miniProject.chapter.chap06.test.Chap06Test2Ans1;
 import team5.miniProject.chapter.chap06.test.Chap06Test2Ans2;
+import team5.miniProject.game.MiniQuiz1;
 import team5.miniProject.game.MouseCatch;
+import team5.miniProject.menu.JPanelGame;
 import team5.miniProject.menu.JPanelSignUp;
 import team5.miniProject.menu.JPanel_Login;
 import team5.miniProject.menu.JPanel_Main;
@@ -266,6 +268,8 @@ import team5.miniProject.menu.PanelList;
 	win.darray_test2Answer2 = new Chap06Test2Ans2(win);
 	
 	//-------------------------게임----------------------------------------
+	win.JPanelGame = new JPanelGame(win);
+	
 	win.mousecatch = new MouseCatch(win);
 	
 	win.miniquiz1 = new MiniQuiz1(win);
