@@ -94,16 +94,21 @@ import team5.miniProject.chapter.chap06.test.Chap06Test1Ans2;
 import team5.miniProject.chapter.chap06.test.Chap06Test2;
 import team5.miniProject.chapter.chap06.test.Chap06Test2Ans1;
 import team5.miniProject.chapter.chap06.test.Chap06Test2Ans2;
+import team5.miniProject.game.MiniQuiz1;
 import team5.miniProject.game.MouseCatch;
-import team5.miniProject.game.SpeedQuiz1;
-import team5.miniProject.game.SpeedQuiz2;
-import team5.miniProject.game.SpeedQuiz3;
-import team5.miniProject.game.SpeedQuiz4;
-import team5.miniProject.game.SpeedQuiz5;
-import team5.miniProject.game.SpeedQuiz6;
-import team5.miniProject.game.SpeedQuiz7;
-import team5.miniProject.game.SpeedQuizAns;
-import team5.miniProject.menu.JPanelMode;
+// <<<<<<< 20200628_chap06_1
+// import team5.miniProject.game.SpeedQuiz1;
+// import team5.miniProject.game.SpeedQuiz2;
+// import team5.miniProject.game.SpeedQuiz3;
+// import team5.miniProject.game.SpeedQuiz4;
+// import team5.miniProject.game.SpeedQuiz5;
+// import team5.miniProject.game.SpeedQuiz6;
+// import team5.miniProject.game.SpeedQuiz7;
+// import team5.miniProject.game.SpeedQuizAns;
+// import team5.miniProject.menu.JPanelMode;
+// =======
+// import team5.miniProject.menu.JPanelGame;
+// >>>>>>> master
 import team5.miniProject.menu.JPanelSignUp;
 import team5.miniProject.menu.JPanel_Login;
 import team5.miniProject.menu.JPanel_Main;
@@ -234,9 +239,11 @@ public class PanelChange extends JFrame{
   	public Chap06Test2Ans2 darray_test2Answer2 =null;
   
 //-------------------------게임---------------------------------------------
-  	public MouseCatch mousecatch =null;
+  	public JPanelGame JPanelGame = null;
   	
-	public MiniQuiz1 miniquiz1=null;
+  	public MouseCatch mousecatch = null;
+  	
+	public MiniQuiz1 miniquiz1 = null;
 	
   	public SpeedQuiz1 speedquiz1=null;
   	public SpeedQuiz2 speedquiz2=null;
@@ -246,6 +253,7 @@ public class PanelChange extends JFrame{
   	public SpeedQuiz6 speedquiz6=null;
   	public SpeedQuiz7 speedquiz7=null;
   	public SpeedQuizAns speedquizans =null;
+	
   	
   	
   public void change(String panelName){
