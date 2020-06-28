@@ -193,7 +193,7 @@ import team5.miniProject.menu.PanelList;
    	win.program_part7 = new Chap01ProgramPart07(win);
 
 
-//------------------------2.변수(미완)--------------------------------------
+//------------------------2.변수(완)--------------------------------------
  
    		win.variable_main = new Chap02VariableList(win);
  		win.variable_part1 = new Chap02VariablePart1(win);
@@ -247,7 +247,7 @@ import team5.miniProject.menu.PanelList;
    	win.control_test2Answer = new Chap04Test2Ans(win);
   	
 
-//------------------------5.배열(미완)-----------------------------------
+//------------------------5.배열(완)-----------------------------------
 
    	win.array_main = new  Chap05Array(win); 
    	win.array_part1 = new  Chap05ArrayPart1(win);
@@ -269,7 +269,7 @@ import team5.miniProject.menu.PanelList;
   	
   	
   	
-   	//------------------------6.중첩반복문(미완)-----------------------------------
+   	//------------------------6.중첩반복문(완)-----------------------------------
    	win.nloop_main = new Chap06(win);
    	win.nloop_part1 = new Chap06Part1NLoop1(win);
    	win.nloop_part2 = new Chap06Part1NLoop2(win);
@@ -315,7 +315,7 @@ import team5.miniProject.menu.PanelList;
 	win.speedquizans = new SpeedQuizAns(win);
 	
 	
-     win.add(win.jpanel_main);
+    win.add(win.jpanel_main);
 
   	win.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
   	win.setSize(380,680);
