@@ -95,7 +95,19 @@ import team5.miniProject.chapter.chap06.test.Chap06Test2Ans1;
 import team5.miniProject.chapter.chap06.test.Chap06Test2Ans2;
 import team5.miniProject.game.MiniQuiz1;
 import team5.miniProject.game.MouseCatch;
-import team5.miniProject.menu.JPanelGame;
+// <<<<<<< 20200628_chap06_1
+// import team5.miniProject.game.SpeedQuiz1;
+// import team5.miniProject.game.SpeedQuiz2;
+// import team5.miniProject.game.SpeedQuiz3;
+// import team5.miniProject.game.SpeedQuiz4;
+// import team5.miniProject.game.SpeedQuiz5;
+// import team5.miniProject.game.SpeedQuiz6;
+// import team5.miniProject.game.SpeedQuiz7;
+// import team5.miniProject.game.SpeedQuizAns;
+// import team5.miniProject.menu.JPanelMode;
+// =======
+// import team5.miniProject.menu.JPanelGame;
+// >>>>>>> master
 import team5.miniProject.menu.JPanelSignUp;
 import team5.miniProject.menu.JPanel_Login;
 import team5.miniProject.menu.JPanel_Main;
@@ -154,6 +166,7 @@ import team5.miniProject.menu.PanelList;
    	win.jpanel_login = new JPanel_Login(win);
    	win.jpanel_main = new JPanel_Main(win);
  	win.signup = new JPanelSignUp(win);
+ 	win.mode = new JPanelMode(win);
  	
 //----------------------------1.자바프로그램(완)---------------------------
 

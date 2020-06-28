@@ -154,7 +154,7 @@ public class JPanel_Login extends JPanel{
 	                   if(flag == true) {
 	                   JOptionPane.showMessageDialog(null, "You have logged in successfully!!");
 	                      
-	                      win.change("mousecatch");
+	                      win.change("mode");
 	                      }else {
 	                   JOptionPane.showMessageDialog(null, "You falled to  log in.");
 	                   //
