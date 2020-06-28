@@ -30,45 +30,43 @@ public class JPanelGame extends JPanel {
 		this.win = win;
 		setLayout(null);
 		
-		Image SpeedImg = new ImageIcon("images/b.png").getImage().getScaledInstance(230, 83, 0);
-		speed = new JButton(new ImageIcon(SpeedImg));
-		speed.setSize(100,83);
-		//speed.setBorderPainted(false);
-		//speed.setFocusPainted(false);
-		//speed.setContentAreaFilled(false);
+		speed = new JButton();
+		speed.setSize(100,100);
+		speed.setLocation(125,430);
+		speed.setBorderPainted(false);
+		speed.setFocusPainted(false);
+		speed.setContentAreaFilled(false);
 		speed.addActionListener(new SpeedGame());
 		add(speed);
 
-		Image MiniImg = new ImageIcon("images/a.png").getImage().getScaledInstance(230, 83, 0);
-		mini = new JButton(new ImageIcon(MiniImg));
-		mini.setSize(230,83);
-		//mini.setBorderPainted(false);
-		//mini.setFocusPainted(false);
-		//mini.setContentAreaFilled(false);
+		mini = new JButton();
+		mini.setSize(100,100);
+		mini.setLocation(125,150);
+		mini.setBorderPainted(false);
+		mini.setFocusPainted(false);
+		mini.setContentAreaFilled(false);
 		mini.addActionListener(new MiniGame());
 		add(mini);
 		
-		Image MouseImg = new ImageIcon("images/c.png").getImage().getScaledInstance(230, 83, 0);
-		mouse = new JButton(new ImageIcon(MouseImg));
-		mouse.setSize(500,83);
-		//mouse.setBorderPainted(false);
-		//mouse.setFocusPainted(false);
-		//mouse.setContentAreaFilled(false);
+		mouse = new JButton();
+		mouse.setSize(100,100);
+		mouse.setLocation(125,300);
+		mouse.setBorderPainted(false);
+		mouse.setFocusPainted(false);
+		mouse.setContentAreaFilled(false);
 		mouse.addActionListener(new MouseGame());
 		add(mouse);
 
-		ImageIcon backImg= new ImageIcon("images/back.png");
-		back= new JButton(backImg);
-		back.setSize(20,20);
-		back.setLocation(180,620);
+		back= new JButton();
+		back.setSize(50,50);
+		back.setLocation(300,550);
 		back.addActionListener(new Back());
 		back.setBorderPainted(false);
 		back.setFocusPainted(false);
 		back.setContentAreaFilled(false);
 		this.add(back);
 		
-		
-		imageMain = new ImageIcon("images/quizMain.png").getImage();
+		imageMain = new ImageIcon("images/gameMain.png").getImage();
 		
 	}
 	
