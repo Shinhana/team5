@@ -98,7 +98,7 @@ public class JPanelGame extends JPanel {
 	class MouseGame implements ActionListener{
 		@Override
 		public void actionPerformed(ActionEvent e) {
-			win.change("mousecatch");
+			win.change("mousecatch1");
 		}
 	}
 	
