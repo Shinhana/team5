@@ -94,7 +94,9 @@ import team5.miniProject.chapter.chap06.test.Chap06Test1Ans2;
 import team5.miniProject.chapter.chap06.test.Chap06Test2;
 import team5.miniProject.chapter.chap06.test.Chap06Test2Ans1;
 import team5.miniProject.chapter.chap06.test.Chap06Test2Ans2;
+import team5.miniProject.game.MiniQuiz1;
 import team5.miniProject.game.MouseCatch;
+import team5.miniProject.menu.JPanelGame;
 import team5.miniProject.menu.JPanelSignUp;
 import team5.miniProject.menu.JPanel_Login;
 import team5.miniProject.menu.JPanel_Main;
@@ -224,9 +226,11 @@ public class PanelChange extends JFrame{
   	public Chap06Test2Ans2 darray_test2Answer2 =null;
   
 //-------------------------게임---------------------------------------------
-  	public MouseCatch mousecatch =null;
+  	public JPanelGame JPanelGame = null;
   	
-	public MiniQuiz1 miniquiz1=null;
+  	public MouseCatch mousecatch = null;
+  	
+	public MiniQuiz1 miniquiz1 = null;
 	
   	public SpeedQuiz1 speedquiz1=null;
   	public SpeedQuiz2 speedquiz2=null;
@@ -236,6 +240,7 @@ public class PanelChange extends JFrame{
   	public SpeedQuiz6 speedquiz6=null;
   	public SpeedQuiz7 speedquiz7=null;
   	public SpeedQuizAns speedquizans =null;
+	
   	
   	
   public void change(String panelName){
