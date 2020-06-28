@@ -1,6 +1,7 @@
 package team5.miniProject.chapter.chap03.test;
 
 import java.awt.Color;
+import java.awt.Font;
 import java.awt.Graphics;
 import java.awt.Image;
 import java.awt.event.ActionEvent;
@@ -30,6 +31,7 @@ public class Chap03OperatorTest2 extends JPanel{
 		this.win = win;
 		
 		image = new ImageIcon("images/Operator_Test2.png").getImage();
+		
 		
 		JButton reset = new JButton("������");
 		reset.setSize(20,20);

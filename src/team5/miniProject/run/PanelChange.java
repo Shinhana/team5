@@ -3,101 +3,102 @@
 
 import javax.swing.JFrame;
 
- import team5.miniProject.chapter.chap01.Chap01ProgramPart01;
- import team5.miniProject.chapter.chap01.Chap01ProgramPart02;
- import team5.miniProject.chapter.chap01.Chap01ProgramPart03;
- import team5.miniProject.chapter.chap01.Chap01ProgramPart04;
- import team5.miniProject.chapter.chap01.Chap01ProgramPart05;
- import team5.miniProject.chapter.chap01.Chap01ProgramPart06;
- import team5.miniProject.chapter.chap01.Chap01ProgramPart07;
- import team5.miniProject.chapter.chap02.Chap02VariableList;
- import team5.miniProject.chapter.chap02.Chap02VariablePart1;
- import team5.miniProject.chapter.chap02.Chap02VariablePart2;
- import team5.miniProject.chapter.chap02.Chap02VariablePart3;
- import team5.miniProject.chapter.chap02.Chap02VariablePart4;
- import team5.miniProject.chapter.chap02.Chap02VariablePart5;
- import team5.miniProject.chapter.chap02.quiz.Chap02Quiz1;
- import team5.miniProject.chapter.chap02.quiz.Chap02Quiz10Ans;
- import team5.miniProject.chapter.chap02.quiz.Chap02Quiz11Ans;
- import team5.miniProject.chapter.chap02.quiz.Chap02Quiz2;
- import team5.miniProject.chapter.chap02.quiz.Chap02Quiz20Ans;
- import team5.miniProject.chapter.chap02.test.Chap02Test1;
- import team5.miniProject.chapter.chap02.test.Chap02Test1Ans;
- import team5.miniProject.chapter.chap02.test.Chap02Test2;
- import team5.miniProject.chapter.chap02.test.Chap02Test20Ans;
- import team5.miniProject.chapter.chap02.test.Chap02Test21Ans;
- import team5.miniProject.chapter.chap03.Chap03OperatorPart01;
- import team5.miniProject.chapter.chap03.Chap03OperatorPart02;
- import team5.miniProject.chapter.chap03.Chap03OperatorPart03;
- import team5.miniProject.chapter.chap03.Chap03OperatorPart04;
- import team5.miniProject.chapter.chap03.Chap03OperatorPart05;
- import team5.miniProject.chapter.chap03.quiz.Chap03OperatorQuiz1;
- import team5.miniProject.chapter.chap03.quiz.Chap03OperatorQuiz2;
- import team5.miniProject.chapter.chap03.quiz.Chap03OperatorQuizAnswer1;
- import team5.miniProject.chapter.chap03.quiz.Chap03OperatorQuizAnswer2;
- import team5.miniProject.chapter.chap03.test.Chap03OperatorTest1;
- import team5.miniProject.chapter.chap03.test.Chap03OperatorTest2;
- import team5.miniProject.chapter.chap03.test.Chap03OperatorTestAnswer1;
- import team5.miniProject.chapter.chap03.test.Chap03OperatorTestAnswer2;
- import team5.miniProject.chapter.chap04.Chap04BranchPart1;
- import team5.miniProject.chapter.chap04.Chap04ConditionalPart1;
- import team5.miniProject.chapter.chap04.Chap04ConditionalPart2;
- import team5.miniProject.chapter.chap04.Chap04ControlStatement;
- import team5.miniProject.chapter.chap04.Chap04LoopPart1;
- import team5.miniProject.chapter.chap04.Chap04LoopPart2;
- import team5.miniProject.chapter.chap04.Chap04QuizTime;
- import team5.miniProject.chapter.chap04.quiz.Chap04Quiz1;
- import team5.miniProject.chapter.chap04.quiz.Chap04Quiz1Ans;
- import team5.miniProject.chapter.chap04.quiz.Chap04Quiz2;
- import team5.miniProject.chapter.chap04.test.Chap04Test1;
- import team5.miniProject.chapter.chap04.test.Chap04Test1Ans1;
- import team5.miniProject.chapter.chap04.test.Chap04Test1Ans2;
- import team5.miniProject.chapter.chap04.test.Chap04Test2;
- import team5.miniProject.chapter.chap04.test.Chap04Test2Ans;
- import team5.miniProject.chapter.chap05.Chap05Array;
- import team5.miniProject.chapter.chap05.Chap05ArrayPart1;
- import team5.miniProject.chapter.chap05.Chap05ArrayPart2;
- import team5.miniProject.chapter.chap05.Chap05ArrayPart3;
- import team5.miniProject.chapter.chap05.Chap05ArrayPart4;
- import team5.miniProject.chapter.chap05.Chap05ArrayPart5;
- import team5.miniProject.chapter.chap05.Chap05ArrayPart6;
- import team5.miniProject.chapter.chap05.quiz.Chap05Quiz1;
- import team5.miniProject.chapter.chap05.quiz.Chap05Quiz1AnsO;
- import team5.miniProject.chapter.chap05.quiz.Chap05Quiz1AnsX;
- import team5.miniProject.chapter.chap05.quiz.Chap05Quiz2;
- import team5.miniProject.chapter.chap05.quiz.Chap05Quiz2AnsO;
- import team5.miniProject.chapter.chap05.quiz.Chap05Quiz2AnsX;
- import team5.miniProject.chapter.chap05.test.Chap05Test1;
- import team5.miniProject.chapter.chap05.test.Chap05Test1Ans1;
- import team5.miniProject.chapter.chap05.test.Chap05Test2;
- import team5.miniProject.chapter.chap05.test.Chap05Test2Ans1;
- import team5.miniProject.chapter.chap06.Chap06;
- import team5.miniProject.chapter.chap06.Chap06Part1NLoop1;
- import team5.miniProject.chapter.chap06.Chap06Part1NLoop2;
- import team5.miniProject.chapter.chap06.Chap06Part1NLoop3;
- import team5.miniProject.chapter.chap06.Chap06Part1NLoop4;
- import team5.miniProject.chapter.chap06.Chap06Part1NLoop5;
- import team5.miniProject.chapter.chap06.Chap06Part2DArray1;
- import team5.miniProject.chapter.chap06.Chap06Part2DArray2;
- import team5.miniProject.chapter.chap06.Chap06Part2DArray3;
- import team5.miniProject.chapter.chap06.Chap06Part2DArray4;
- import team5.miniProject.chapter.chap06.quiz.Chap06Ans1;
- import team5.miniProject.chapter.chap06.quiz.Chap06Ans2;
- import team5.miniProject.chapter.chap06.quiz.Chap06AnsO;
- import team5.miniProject.chapter.chap06.quiz.Chap06AnsX;
- import team5.miniProject.chapter.chap06.quiz.Chap06Choice;
- import team5.miniProject.chapter.chap06.quiz.Chap06Quiz1;
- import team5.miniProject.chapter.chap06.quiz.Chap06Quiz2;
- import team5.miniProject.chapter.chap06.test.Chap06Test1;
- import team5.miniProject.chapter.chap06.test.Chap06Test1Ans1;
- import team5.miniProject.chapter.chap06.test.Chap06Test1Ans2;
- import team5.miniProject.chapter.chap06.test.Chap06Test2;
- import team5.miniProject.chapter.chap06.test.Chap06Test2Ans1;
- import team5.miniProject.chapter.chap06.test.Chap06Test2Ans2;
- import team5.miniProject.menu.JPanelSignUp;
- import team5.miniProject.menu.JPanel_Login;
- import team5.miniProject.menu.JPanel_Main;
- import team5.miniProject.menu.PanelList;
+import team5.miniProject.chapter.chap01.Chap01ProgramPart01;
+import team5.miniProject.chapter.chap01.Chap01ProgramPart02;
+import team5.miniProject.chapter.chap01.Chap01ProgramPart03;
+import team5.miniProject.chapter.chap01.Chap01ProgramPart04;
+import team5.miniProject.chapter.chap01.Chap01ProgramPart05;
+import team5.miniProject.chapter.chap01.Chap01ProgramPart06;
+import team5.miniProject.chapter.chap01.Chap01ProgramPart07;
+import team5.miniProject.chapter.chap02.Chap02VariableList;
+import team5.miniProject.chapter.chap02.Chap02VariablePart1;
+import team5.miniProject.chapter.chap02.Chap02VariablePart2;
+import team5.miniProject.chapter.chap02.Chap02VariablePart3;
+import team5.miniProject.chapter.chap02.Chap02VariablePart4;
+import team5.miniProject.chapter.chap02.Chap02VariablePart5;
+import team5.miniProject.chapter.chap02.quiz.Chap02Quiz1;
+import team5.miniProject.chapter.chap02.quiz.Chap02Quiz10Ans;
+import team5.miniProject.chapter.chap02.quiz.Chap02Quiz11Ans;
+import team5.miniProject.chapter.chap02.quiz.Chap02Quiz2;
+import team5.miniProject.chapter.chap02.quiz.Chap02Quiz20Ans;
+import team5.miniProject.chapter.chap02.test.Chap02Test1;
+import team5.miniProject.chapter.chap02.test.Chap02Test1Ans;
+import team5.miniProject.chapter.chap02.test.Chap02Test2;
+import team5.miniProject.chapter.chap02.test.Chap02Test20Ans;
+import team5.miniProject.chapter.chap02.test.Chap02Test21Ans;
+import team5.miniProject.chapter.chap03.Chap03OperatorPart01;
+import team5.miniProject.chapter.chap03.Chap03OperatorPart02;
+import team5.miniProject.chapter.chap03.Chap03OperatorPart03;
+import team5.miniProject.chapter.chap03.Chap03OperatorPart04;
+import team5.miniProject.chapter.chap03.Chap03OperatorPart05;
+import team5.miniProject.chapter.chap03.quiz.Chap03OperatorQuiz1;
+import team5.miniProject.chapter.chap03.quiz.Chap03OperatorQuiz2;
+import team5.miniProject.chapter.chap03.quiz.Chap03OperatorQuizAnswer1;
+import team5.miniProject.chapter.chap03.quiz.Chap03OperatorQuizAnswer2;
+import team5.miniProject.chapter.chap03.test.Chap03OperatorTest1;
+import team5.miniProject.chapter.chap03.test.Chap03OperatorTest2;
+import team5.miniProject.chapter.chap03.test.Chap03OperatorTestAnswer1;
+import team5.miniProject.chapter.chap03.test.Chap03OperatorTestAnswer2;
+import team5.miniProject.chapter.chap04.Chap04BranchPart1;
+import team5.miniProject.chapter.chap04.Chap04ConditionalPart1;
+import team5.miniProject.chapter.chap04.Chap04ConditionalPart2;
+import team5.miniProject.chapter.chap04.Chap04ControlStatement;
+import team5.miniProject.chapter.chap04.Chap04LoopPart1;
+import team5.miniProject.chapter.chap04.Chap04LoopPart2;
+import team5.miniProject.chapter.chap04.Chap04QuizTime;
+import team5.miniProject.chapter.chap04.quiz.Chap04Quiz1;
+import team5.miniProject.chapter.chap04.quiz.Chap04Quiz1Ans;
+import team5.miniProject.chapter.chap04.quiz.Chap04Quiz2;
+import team5.miniProject.chapter.chap04.test.Chap04Test1;
+import team5.miniProject.chapter.chap04.test.Chap04Test1Ans1;
+import team5.miniProject.chapter.chap04.test.Chap04Test1Ans2;
+import team5.miniProject.chapter.chap04.test.Chap04Test2;
+import team5.miniProject.chapter.chap04.test.Chap04Test2Ans;
+import team5.miniProject.chapter.chap05.Chap05Array;
+import team5.miniProject.chapter.chap05.Chap05ArrayPart1;
+import team5.miniProject.chapter.chap05.Chap05ArrayPart2;
+import team5.miniProject.chapter.chap05.Chap05ArrayPart3;
+import team5.miniProject.chapter.chap05.Chap05ArrayPart4;
+import team5.miniProject.chapter.chap05.Chap05ArrayPart5;
+import team5.miniProject.chapter.chap05.Chap05ArrayPart6;
+import team5.miniProject.chapter.chap05.quiz.Chap05Quiz1;
+import team5.miniProject.chapter.chap05.quiz.Chap05Quiz1AnsO;
+import team5.miniProject.chapter.chap05.quiz.Chap05Quiz1AnsX;
+import team5.miniProject.chapter.chap05.quiz.Chap05Quiz2;
+import team5.miniProject.chapter.chap05.quiz.Chap05Quiz2AnsO;
+import team5.miniProject.chapter.chap05.quiz.Chap05Quiz2AnsX;
+import team5.miniProject.chapter.chap05.test.Chap05Test1;
+import team5.miniProject.chapter.chap05.test.Chap05Test1Ans1;
+import team5.miniProject.chapter.chap05.test.Chap05Test2;
+import team5.miniProject.chapter.chap05.test.Chap05Test2Ans1;
+import team5.miniProject.chapter.chap06.Chap06;
+import team5.miniProject.chapter.chap06.Chap06Part1NLoop1;
+import team5.miniProject.chapter.chap06.Chap06Part1NLoop2;
+import team5.miniProject.chapter.chap06.Chap06Part1NLoop3;
+import team5.miniProject.chapter.chap06.Chap06Part1NLoop4;
+import team5.miniProject.chapter.chap06.Chap06Part1NLoop5;
+import team5.miniProject.chapter.chap06.Chap06Part2DArray1;
+import team5.miniProject.chapter.chap06.Chap06Part2DArray2;
+import team5.miniProject.chapter.chap06.Chap06Part2DArray3;
+import team5.miniProject.chapter.chap06.Chap06Part2DArray4;
+import team5.miniProject.chapter.chap06.quiz.Chap06Ans1;
+import team5.miniProject.chapter.chap06.quiz.Chap06Ans2;
+import team5.miniProject.chapter.chap06.quiz.Chap06AnsO;
+import team5.miniProject.chapter.chap06.quiz.Chap06AnsX;
+import team5.miniProject.chapter.chap06.quiz.Chap06Choice;
+import team5.miniProject.chapter.chap06.quiz.Chap06Quiz1;
+import team5.miniProject.chapter.chap06.quiz.Chap06Quiz2;
+import team5.miniProject.chapter.chap06.test.Chap06Test1;
+import team5.miniProject.chapter.chap06.test.Chap06Test1Ans1;
+import team5.miniProject.chapter.chap06.test.Chap06Test1Ans2;
+import team5.miniProject.chapter.chap06.test.Chap06Test2;
+import team5.miniProject.chapter.chap06.test.Chap06Test2Ans1;
+import team5.miniProject.chapter.chap06.test.Chap06Test2Ans2;
+import team5.miniProject.game.MouseCatch;
+import team5.miniProject.menu.JPanelSignUp;
+import team5.miniProject.menu.JPanel_Login;
+import team5.miniProject.menu.JPanel_Main;
+import team5.miniProject.menu.PanelList;
 
 
 
@@ -221,8 +222,22 @@ public class PanelChange extends JFrame{
   	public Chap06Test2 darray_test2 =null;
   	public Chap06Test2Ans1 darray_test2Answer1 =null;
   	public Chap06Test2Ans2 darray_test2Answer2 =null;
-
+  
+//-------------------------게임---------------------------------------------
+  	public MouseCatch mousecatch =null;
+  	
+	public MiniQuiz1 miniquiz1=null;
 	
+  	public SpeedQuiz1 speedquiz1=null;
+  	public SpeedQuiz2 speedquiz2=null;
+  	public SpeedQuiz3 speedquiz3=null;
+  	public SpeedQuiz4 speedquiz4=null;
+  	public SpeedQuiz5 speedquiz5=null;
+  	public SpeedQuiz6 speedquiz6=null;
+  	public SpeedQuiz7 speedquiz7=null;
+  	public SpeedQuizAns speedquizans =null;
+  	
+  	
   public void change(String panelName){
 	 
 	 
@@ -746,7 +761,66 @@ public class PanelChange extends JFrame{
  		getContentPane().add(darray_test2Answer2);
  		revalidate();
  		repaint();
+ //----------------------------게임--------------------------------
+ 	}else if(panelName.equals("mousecatch")){
+ 		getContentPane().removeAll();
+ 		getContentPane().add(mousecatch);
+ 		revalidate();
+ 		repaint();
  	}
+ 	else if(panelName.equals("miniquiz1")){
+ 		getContentPane().removeAll();
+ 		getContentPane().add(miniquiz1);
+ 		revalidate();
+ 		repaint();
+ 	}else if(panelName.equals("speedquiz1")){
+ 		getContentPane().removeAll();
+ 		getContentPane().add(speedquiz1);
+ 		revalidate();
+ 		repaint();
+ 	}else if(panelName.equals("speedquiz2")){
+ 		getContentPane().removeAll();
+ 		getContentPane().add(speedquiz2);
+ 		revalidate();
+ 		repaint();
+ 	}else if(panelName.equals("speedquiz3")){
+ 		getContentPane().removeAll();
+ 		getContentPane().add(speedquiz3);
+ 		revalidate();
+ 		repaint();
+ 	}else if(panelName.equals("speedquiz4")){
+ 		getContentPane().removeAll();
+ 		getContentPane().add(speedquiz4);
+ 		revalidate();
+ 		repaint();
+ 	}else if(panelName.equals("speedquiz5")){
+ 		getContentPane().removeAll();
+ 		getContentPane().add(speedquiz5);
+ 		revalidate();
+ 		repaint();
+ 	}else if(panelName.equals("speedquiz6")){
+ 		getContentPane().removeAll();
+ 		getContentPane().add(speedquiz6);
+ 		revalidate();
+ 		repaint();
+ 	}else if(panelName.equals("speedquiz7")){
+ 		getContentPane().removeAll();
+ 		getContentPane().add(speedquiz7);
+ 		revalidate();
+ 		repaint();
+ 	}else if(panelName.equals("speedquizans")){
+ 		getContentPane().removeAll();
+ 		getContentPane().add(speedquizans);
+ 		revalidate();
+ 		repaint();
+ 	}
+ 	 	
+ 	 	
+ 	 	
+ 	 	
+
+  
+  
   }
 // >>>>>>> master
  }
