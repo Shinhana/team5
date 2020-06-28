@@ -29,30 +29,33 @@ public class Chap02Test1Ans extends JPanel {
 		this.win = win;
 		setLayout(null);
 		
-		ImageIcon nextImg= new ImageIcon("images/next.png");
-		next= new JButton(nextImg);
+		//ImageIcon nextImg= new ImageIcon("images/next.png");
+		//next= new JButton(nextImg);
+		next= new JButton();
 		next.setSize(20,20);
-		next.setLocation(200,615);
+		next.setLocation(205,615);
 		next.addActionListener(new Next());
 		next.setBorderPainted(false);
 		next.setFocusPainted(false);
 	    next.setContentAreaFilled(false);
 	    this.add(next);
 	    
-		ImageIcon lastImg= new ImageIcon("images/last.png");
-		last= new JButton(lastImg);
+		//ImageIcon lastImg= new ImageIcon("images/last.png");
+		//last= new JButton(lastImg);
+		last= new JButton();
 		last.setSize(20,20);
-		last.setLocation(239,622);
+		last.setLocation(230,615);
 		last.addActionListener(new Last());
 		last.setBorderPainted(false);
 		last.setFocusPainted(false);
 		last.setContentAreaFilled(false);
 		this.add(last);
 		
-		ImageIcon startImg = new ImageIcon("images/start.png");
-		start = new JButton(startImg);
+		//ImageIcon startImg = new ImageIcon("images/start.png");
+		//start = new JButton(startImg);
+		start = new JButton();
 		start.setSize(20,20);
-		start.setLocation(150,620);
+		start.setLocation(150,615);
 		start.addActionListener(new Start());
 		start.setBorderPainted(false);
 		start.setFocusPainted(false);
@@ -60,10 +63,11 @@ public class Chap02Test1Ans extends JPanel {
 		this.add(start);
 		
 	    
-	    ImageIcon resetImg= new ImageIcon("images/reset.png");
-	    reset= new JButton(resetImg);
+	    //ImageIcon resetImg= new ImageIcon("images/reset.png");
+	    //reset= new JButton(resetImg);
+	    reset= new JButton();
 	    reset.setSize(20,20);
-	    reset.setLocation(116,620);
+	    reset.setLocation(115,615);
 	    reset.addActionListener(new Reset());
 	    reset.setBorderPainted(false);
 	    reset.setFocusPainted(false);

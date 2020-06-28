@@ -12,7 +12,6 @@ import javax.swing.JButton;
 import javax.swing.JPanel;
 
 import team5.miniProject.chapter.chap02.test.Chap02Test1Ans.Reset;
-import team5.miniProject.chapter.chap02.test.Chap02Test2.MyActionListener3;
 import team5.miniProject.chapter.chap02.test.Chap02Test20Ans.Start;
 
 public class Chap02Test21Ans extends JPanel {
@@ -38,7 +37,7 @@ public class Chap02Test21Ans extends JPanel {
 		//ImageIcon startImg = new ImageIcon("images/start.png");
 		start = new JButton();
 		start.setSize(20,20);
-		start.setLocation(150,620);
+		start.setLocation(150,615);
 		start.addActionListener(new Start());
 		start.setBorderPainted(true);
 		start.setFocusPainted(false);
@@ -48,7 +47,7 @@ public class Chap02Test21Ans extends JPanel {
 		//ImageIcon backImg= new ImageIcon("images/back.png");
 		back= new JButton();
 		back.setSize(20,20);
-		back.setLocation(180,620);
+		back.setLocation(170,615);
 		back.addActionListener(new Back());
 		back.setBorderPainted(true);
 		back.setFocusPainted(false);
@@ -58,7 +57,7 @@ public class Chap02Test21Ans extends JPanel {
 	   // ImageIcon resetImg= new ImageIcon("images/reset.png");
 	    reset= new JButton();
 	    reset.setSize(20,20);
-	    reset.setLocation(116,620);
+	    reset.setLocation(115,615);
 	    reset.addActionListener(new Reset());
 	    reset.setBorderPainted(true);
 	    reset.setFocusPainted(false);
