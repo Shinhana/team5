@@ -34,7 +34,6 @@ public class MiniQuiz1 extends JPanel {
 		
 		setLayout(null);
 		this.win = win;
-		image = new ImageIcon("images/JP_if1.png").getImage().getScaledInstance(360, 640, 0);;
 
 		//문제 필드
 		quiz = new JTextField();
@@ -68,21 +67,11 @@ public class MiniQuiz1 extends JPanel {
 		life.setFont(new Font("굴림", Font.PLAIN, 40));
 		add(life);
 		
-		//목차로 이동 버튼
-		ImageIcon resetImg= new ImageIcon("images/reset.png");
-		reset= new JButton(resetImg);
-		reset.setSize(20,20);
-		reset.setLocation(116,620);
-//		reset.addActionListener(new Reset());
-		add(reset);
-		
 		//정답 확인 버튼
 		check = new JButton("check");
-		check.setSize(20,20);
-		check.setLocation(150,626);
-		check.setBorderPainted(false);
-		check.setFocusPainted(false);
-		check.setContentAreaFilled(false);
+		check.setBounds(200, 250, 230, 40);
+		check.setHorizontalAlignment(SwingConstants.CENTER);
+		check.setFont(new Font("굴림", Font.PLAIN, 40));
 		add(check);
 		
 		//check버튼 클릭 시 실행되는 이벤트
@@ -103,6 +92,7 @@ public class MiniQuiz1 extends JPanel {
 					if(ans == dap){
 						JOptionPane.showMessageDialog(null, "You Right", "JAVA Game", JOptionPane.WARNING_MESSAGE);
 						
+						//win.change(mode);
 						System.exit(0);
 					}
 					
@@ -126,18 +116,12 @@ public class MiniQuiz1 extends JPanel {
 		super.paint(g);
 	}
 	
-//	//reset
-//	class Reset implements ActionListener{
+
+	//
+//	class mode implements ActionListener{
 //		@Override
 //		public void actionPerformed(ActionEvent e){
-//			win.change("panellist");
-//		}
-//	}
-//
-//	class check implements ActionListener{
-//		@Override
-//		public void actionPerformed(ActionEvent e){
-//			win.change("r");
+//			win.change("mode");
 //		}
 //	}
 //	

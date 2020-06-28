@@ -96,6 +96,16 @@ import team5.miniProject.chapter.chap06.test.Chap06Test2Ans1;
 import team5.miniProject.chapter.chap06.test.Chap06Test2Ans2;
 import team5.miniProject.game.MiniQuiz1;
 import team5.miniProject.game.MouseCatch;
+import team5.miniProject.game.SpeedQuiz1;
+import team5.miniProject.game.SpeedQuiz2;
+import team5.miniProject.game.SpeedQuiz3;
+import team5.miniProject.game.SpeedQuiz4;
+import team5.miniProject.game.SpeedQuiz5;
+import team5.miniProject.game.SpeedQuiz6;
+import team5.miniProject.game.SpeedQuiz7;
+import team5.miniProject.game.SpeedQuizAns;
+import team5.miniProject.menu.JPanelGame;
+import team5.miniProject.menu.JPanelMode;
 // <<<<<<< 20200628_chap06_1
 // import team5.miniProject.game.SpeedQuiz1;
 // import team5.miniProject.game.SpeedQuiz2;
@@ -836,8 +846,12 @@ public class PanelChange extends JFrame{
  		getContentPane().add(speedquizans);
  		revalidate();
  		repaint();
+ 	} else if(panelName.equals("JPanelGame")){
+ 		getContentPane().removeAll();
+ 		getContentPane().add(JPanelGame);
+ 		revalidate();
+ 		repaint();
  	}
- 	 	
  	 	
  	 	
  	 	

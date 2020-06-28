@@ -85,7 +85,7 @@ public class JPanelMode extends JPanel{
    class Single implements ActionListener{
       @Override
       public void actionPerformed(ActionEvent e){
-         win.change("PanelList");  //��ø�ݺ������� �̵�
+         win.change("panellist");  //��ø�ݺ������� �̵�
 
       }
    }
