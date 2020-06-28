@@ -25,7 +25,7 @@ public class MiniQuiz1 extends JPanel {
 	private JTextField quiz;
 	private JTextField answer;
 	private JButton check;
-	private JButton reset; //list
+	private JButton back; 
 	
 	int lifeRemaining = 5;
 	int dap = 4;
@@ -35,6 +35,13 @@ public class MiniQuiz1 extends JPanel {
 		setLayout(null);
 		this.win = win;
 
+		//Life
+		JLabel life = new JLabel("Life : " + lifeRemaining);
+		life.setBounds(10, 15, 180, 43);
+		life.setForeground(Color.BLUE);
+		life.setFont(new Font("굴림", Font.PLAIN, 40));
+		add(life);
+		
 		//문제 필드
 		quiz = new JTextField();
 		quiz.setBounds(75, 107, 230, 180);
@@ -52,24 +59,28 @@ public class MiniQuiz1 extends JPanel {
 		answer.setColumns(10);
 		add(answer);
 		
+		//정보 필드
 		JLabel info = new JLabel("Good Luck!");
 		info.setForeground(Color.BLUE);
-		info.setFont(new Font("Tahoma", Font.PLAIN, 42));
+		info.setFont(new Font("Tahoma", Font.PLAIN, 40));
 		info.setHorizontalAlignment(SwingConstants.CENTER);
-		info.setBounds(75, 500, 240, 60);
+		info.setBounds(75, 470, 240, 60);
 		add(info);
-				
-
-		//Life
-		JLabel life = new JLabel("Life : " + lifeRemaining);
-		life.setBounds(0, 15, 180, 43);
-		life.setForeground(Color.BLUE);
-		life.setFont(new Font("굴림", Font.PLAIN, 40));
-		add(life);
+		
+		//뒤로가기 버튼
+		ImageIcon backImg= new ImageIcon("images/backUni.png");
+		back= new JButton(backImg);
+		back.setBounds(170, 580, 20, 20);
+		back.addActionListener(new Back());
+		back.setBorderPainted(false);
+		back.setFocusPainted(false);
+		back.setContentAreaFilled(false);
+		this.add(back);
+		
 		
 		//정답 확인 버튼
 		check = new JButton("check");
-		check.setBounds(200, 250, 230, 40);
+		check.setBounds(75, 390, 230, 40);
 		check.setHorizontalAlignment(SwingConstants.CENTER);
 		check.setFont(new Font("굴림", Font.PLAIN, 40));
 		add(check);
@@ -78,36 +89,31 @@ public class MiniQuiz1 extends JPanel {
 		check.addActionListener(new ActionListener() {
 			@Override
 			public void actionPerformed(ActionEvent arg0) {
-				//text필드에 받은 String타입을 Int형으로 변경하여 값 저장
+				//text필드에 받은 String타입을 int형으로 변경하여 값 저장
 				int ans = Integer.parseInt(answer.getText()); 
-				
 				
 				//life가 0이 되면 아래 구문 실행되지 않게 return
 				if(lifeRemaining < 0) {
 					info.setText("You lost");
 						
-						
-						return;
-					}
-					if(ans == dap){
-						JOptionPane.showMessageDialog(null, "You Right", "JAVA Game", JOptionPane.WARNING_MESSAGE);
-						
-						//win.change(mode);
-						System.exit(0);
-					}
-					
-					life.setText("Life : " + --lifeRemaining);
-					info.setForeground(Color.RED);
-					info.setText("Try Again");
-						
+					return;
 				}
-			});
+				
+				if(ans == dap){
+					JOptionPane.showMessageDialog(null, "You Right", "JAVA Game", JOptionPane.WARNING_MESSAGE);
+					
+					System.exit(0);
+				}
+					
+				life.setText("Life : " + --lifeRemaining);
+				info.setForeground(Color.RED);
+				info.setText("Try Again");
+						
+			}
+		});
 
 		
-		
-		
 	}
-	
 	
 	@Override 
 	public void paint(Graphics g){
@@ -116,14 +122,11 @@ public class MiniQuiz1 extends JPanel {
 		super.paint(g);
 	}
 	
-
-	//
-//	class mode implements ActionListener{
-//		@Override
-//		public void actionPerformed(ActionEvent e){
-//			win.change("mode");
-//		}
-//	}
-//	
-	
+	//back
+	class Back implements ActionListener{
+		@Override
+		public void actionPerformed(ActionEvent e){
+			win.change("mode");
+		}
+	}
 }
