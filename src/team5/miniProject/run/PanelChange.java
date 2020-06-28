@@ -846,8 +846,7 @@ public class PanelChange extends JFrame{
  		getContentPane().add(speedquizans);
  		revalidate();
  		repaint();
-
-  	} else if(panelName.equals("JPanelGame")){
+} else if(panelName.equals("JPanelGame")){
  		getContentPane().removeAll();
  		getContentPane().add(JPanelGame);
  		revalidate();

@@ -77,7 +77,7 @@ public class SpeedQuiz1 extends JPanel{
     class Back implements ActionListener{
         @Override
         public void actionPerformed(ActionEvent e){
-           win.change("panellist");  //2�����迭������ �̵�
+           win.change("JPanelGame");  //2�����迭������ �̵�
           
         }
  }
