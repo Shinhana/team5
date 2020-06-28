@@ -51,7 +51,7 @@ public class JPanelMode extends JPanel{
       
       JButton messenger = new JButton();
       messenger.setSize(77, 60);
-      messenger.setLocation(141,539);
+      messenger.setLocation(141,525);
       
       
     
