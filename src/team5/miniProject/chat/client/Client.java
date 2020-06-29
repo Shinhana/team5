@@ -1,4 +1,6 @@
 package team5.miniProject.chat.client;
+import java.awt.Graphics;
+import java.awt.Image;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.awt.event.KeyEvent;
@@ -13,6 +15,7 @@ import java.net.UnknownHostException;
 import java.util.StringTokenizer;
 import java.util.Vector;
 
+import javax.swing.ImageIcon;
 import javax.swing.JButton;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
@@ -24,6 +27,7 @@ import javax.swing.JTextField;
 import javax.swing.border.EmptyBorder;
 
 public class Client  extends JFrame implements ActionListener,KeyListener{
+	private Image background1 = new ImageIcon("images/chatingroom184.png").getImage();	
 
 
 	//Login GUI 변수
@@ -85,54 +89,56 @@ public class Client  extends JFrame implements ActionListener,KeyListener{
 	private void Main_init()
 	{
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-		setBounds(100,100,516,450);
+		setBounds(100,100,360,640);
+
 		contentPane = new JPanel();
 		contentPane.setBorder(new EmptyBorder(5,5,5,5));
 		setContentPane(contentPane);
 		contentPane.setLayout(null);
 		
 		JLabel label = new JLabel("전체 접속자");
-		label.setBounds(12, 10, 86, 15);
+		label.setBounds(12, 40, 86, 15);
 		contentPane.add(label);
 		
 		
-		User_list.setBounds(12, 32, 109, 117);
+		User_list.setBounds(12, 55, 100, 160);
+
 		contentPane.add(User_list);
 		User_list.setListData(user_list);
 		
-		notesend_btn.setBounds(12, 159, 109, 23);
+		notesend_btn.setBounds(12, 220, 109, 23);
 		contentPane.add(notesend_btn);
 		
 		JLabel label1 = new JLabel("채팅방 목록");
-		label1.setBounds(12, 192, 97, 15);
+		label1.setBounds(12, 260, 97, 15);
 		contentPane.add(label1);
 		
 		
-		Room_list.setBounds(12, 213, 109, 135);
+		Room_list.setBounds(12, 280, 109, 250);
 		contentPane.add(Room_list);
 		Room_list.setListData(room_list);
 		
 		
-		joinroom_btn.setBounds(12, 358, 109, 23);
+		joinroom_btn.setBounds(12, 545, 109, 23);
 		contentPane.add(joinroom_btn);
 		
 	
-		createroom_btn.setBounds(12, 386, 109, 23);
+		createroom_btn.setBounds(12, 570, 109, 23);
 		contentPane.add(createroom_btn);
 		
 		
-		Chat_area.setBounds(133, 29, 344, 347);
+		Chat_area.setBounds(133, 29, 205, 513);
 		contentPane.add(Chat_area);
 		Chat_area.setEditable(false);
 		
 		
 		message_tf = new JTextField();
-		message_tf.setBounds(133, 387, 279, 21);
+		message_tf.setBounds(133, 562, 170, 40);
 		contentPane.add(message_tf);
 		message_tf.setColumns(10);
 		message_tf.setEnabled(false);
 		
-		send_btn.setBounds(414, 386, 63, 23);
+		send_btn.setBounds(312, 563, 30, 32);
 		contentPane.add(send_btn);
 		send_btn.setEnabled(false);
 		
@@ -471,4 +477,8 @@ public class Client  extends JFrame implements ActionListener,KeyListener{
 		// TODO Auto-generated method stub
 		
 	}
+	public void paint (Graphics g) {
+		g.drawImage(background1, 0, 0, null);
+	}
+
 }
